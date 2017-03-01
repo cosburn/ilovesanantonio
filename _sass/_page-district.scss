@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    #PAGE - DISTRICT
+\*------------------------------------*/
+
+.ballot-box {
+	background-color: col("light-gray");
+	padding: 20px 10px;
+	margin-bottom: 20px;
+	.option-box {
+		background-color: col("sa-white");
+		padding: 10px;
+		margin-bottom:10px;
+	}
+}

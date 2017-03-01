@@ -1,0 +1,256 @@
+{
+	"1": [
+		{	"name":				"Robert Feria",
+			"photo":			"",
+			"website":		"https://feriaforfirst.com/",
+			"fb":					"https://www.facebook.com/feriaforfirst",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D1-RobertFeria.pdf" 
+		},
+		{	"name":				"Adrian Flores",
+			"photo":			"",
+			"website":		"",
+			"fb":					"",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D1%20-%20Adrian%20Flores.pdf?ver=2017-02-14-133513-677" 
+		},
+		{	"name":				"Ross A. Treviño",
+			"photo":			"",
+			"website":		"",
+			"fb":					"",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D1%20-%20Ross%20A.%20Trevino.pdf?ver=2017-02-17-171218-463" 
+		},
+		{	"name":				"Lauro A. Bustamante",
+			"photo":			"",
+			"website":		"",
+			"fb":					"",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D1%20-%20Lauro%20Bustamante.pdf?ver=2017-01-30-105509-647" 
+		},
+		{	"name":				"Michael Montaño",
+			"photo":			"",
+			"website":		"https://www.michaelmontano.org/",
+			"fb":					"https://www.facebook.com/montanotx",
+			"twitter":		"https://twitter.com/montanotx",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D1%20-%20Michael%20Montano.pdf?ver=2017-02-17-170942-570" 
+		},
+		{	"name":				"Roberto C. Treviño",
+			"photo":			"",
+			"website":		"http://voterobertotrevino.com/",
+			"fb":					"https://www.facebook.com/robertotrevinotx/",
+			"twitter":		"https://twitter.com/Trevino_D1/",
+			"instagram":	"https://www.instagram.com/rct_d1satx/",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D1%20-%20Roberto%20C.%20Trevino.pdf?ver=2017-01-18-122852-650" 
+		}
+	],
+	"2": [
+		{	"name":				"",
+			"photo":			"",
+			"website":		"",
+			"fb":					"",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"" 
+		}
+	],
+	"3": [
+		{	"name":				"",
+			"photo":			"",
+			"website":		"",
+			"fb":					"",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"" 
+		}
+	],
+	"4": [
+		{	"name":				"",
+			"photo":			"",
+			"website":		"",
+			"fb":					"",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"" 
+		}
+	],
+	"5": [
+		{	"name":				"",
+			"photo":			"",
+			"website":		"",
+			"fb":					"",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"" 
+		}
+	],
+	"6": [
+		{	"name":				"",
+			"photo":			"",
+			"website":		"",
+			"fb":					"",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"" 
+		}
+	],
+	"7": [
+		{	"name":				"",
+			"photo":			"",
+			"website":		"",
+			"fb":					"",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"" 
+		}
+	],
+	"8": [
+		{	"name":				"",
+			"photo":			"",
+			"website":		"",
+			"fb":					"",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"" 
+		}
+	],
+	"9": [
+		{	"name":				"",
+			"photo":			"",
+			"website":		"",
+			"fb":					"",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"" 
+		}
+	],
+	"10": [
+		{	"name":				"",
+			"photo":			"",
+			"website":		"",
+			"fb":					"",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"" 
+		}
+	],
+	"mayor": [
+		{	"name":				"Napoleon Madrid",
+			"photo":			"",
+			"website":		"http://www.napoleonmadrid.com",
+			"fb":					"",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/M%20-%20Napoleon%20Madrid.pdf?ver=2017-02-17-173024-767" 
+		},
+		{	"name":				"Keven Roles",
+			"photo":			"",
+			"website":		"http://www.kevenrolesformayorsa.com",
+			"fb":					"https://www.facebook.com/kevenrolesformayorsa",
+			"twitter":		"https://twitter.com/KevenformayorSA",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/M%20-%20Keven%20Roles.pdf?ver=2017-01-18-181110-927" 
+		},
+		{	"name":				"Felicio Hernandez Flores II",
+			"photo":			"",
+			"website":		"",
+			"fb":					"",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/LinkClick.aspx?fileticket=KGYWTAF298k%3d&portalid=0" 
+		},
+		{	"name":				"Michael “Commander” Idrigo",
+			"photo":			"",
+			"website":		"",
+			"fb":					"",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/M-%20Michael%20Idrogo.pdf?ver=2017-02-07-104307-287" 
+		},
+		{	"name":				"Ron Nirenberg",
+			"photo":			"",
+			"website":		"https://voteron.com/",
+			"fb":					"https://www.facebook.com/nirenberg/",
+			"twitter":		"https://twitter.com/Ron_Nirenberg",
+			"instagram":	"https://www.instagram.com/ron_nirenberg/",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/M%20-%20Ron%20Nirenberg.pdf?ver=2017-01-18-124057-240" 
+		},
+		{	"name":				"Will McLeod",
+			"photo":			"",
+			"website":		"",
+			"fb":					"",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/M%20-%20Will%20McLeod.pdf?ver=2017-02-08-190526-227" 
+		},
+		{	"name":				"John Martin Velasquez",
+			"photo":			"",
+			"website":		"",
+			"fb":					"https://www.facebook.com/Velasquez4SAMayor/",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/M%20-%20John%20Martin%20Velasquez.pdf?ver=2017-02-17-173313-733" 
+		},
+		{	"name":				"Manuel Medina",
+			"photo":			"",
+			"website":		"https://www.medina-for-mayor.com/",
+			"fb":					"https://www.facebook.com/MedinaForMayor/",
+			"twitter":		"https://twitter.com/MedinaForMayor",
+			"instagram":	"https://www.instagram.com/medinaformayor/",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/M%20-%20Manuel%20Medina.pdf?ver=2017-01-27-132636-050" 
+		},
+		{	"name":				"Mama Bexar",
+			"photo":			"",
+			"website":		"",
+			"fb":					"",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/M%20-%20Mama%20Bexar.pdf?ver=2017-02-17-173142-860" 
+		},
+		{	"name":				"Stephen Lucke",
+			"photo":			"",
+			"website":		"https://www.stephenlucke.com/",
+			"fb":					"https://www.facebook.com/VoteforLucke/",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/M%20-%20Stephen%20Lucke.pdf?ver=2017-02-17-172839-480" 
+		},
+		{	"name":				"Rhett (Whitefeather) Smith",
+			"photo":			"",
+			"website":		"",
+			"fb":					"https://www.facebook.com/rhettsmithmayor/",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/M%20-%20Rhett%20Smith.pdf?ver=2017-02-17-173535-993" 
+		},
+		{	"name":				"Ivy R. Taylor",
+			"photo":			"",
+			"website":		"https://www.voteivy.com/",
+			"fb":					"https://www.facebook.com/IvyRTaylorSA",
+			"twitter":		"https://twitter.com/IvyRTaylor",
+			"instagram":	"https://www.instagram.com/mayor.ivytaylor/",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/Mayor%20-%20Ivy%20R.%20Taylor.pdf?ver=2017-01-18-112207-090" 
+		},
+		{	"name":				"Gerard Xavier Ponce",
+			"photo":			"",
+			"website":		"",
+			"fb":					"",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/M%20-%20Gerard%20Xavier%20Ponce.pdf?ver=2017-01-18-181210-583" 
+		},
+		{	"name":				"Antonio “Tony” Diaz",
+			"photo":			"",
+			"website":		"",
+			"fb":					"https://www.facebook.com/AntonioDiazSA/",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/M%20-%20Antonio%20Diaz.pdf?ver=2017-01-18-181012-380" 
+		}
+	],
+}

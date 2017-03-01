@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+<section class="hero bg-light-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center">
+				<h1>{{ page.title }}</h1>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="district-body">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h2>What's on the ballot</h2>
+
+				<div class="ballot-box">
+					{% assign mayorCandidates = site.data.candidates["mayor"] %}
+					<h3>Mayor</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit.
+					</p>
+					<p><strong>Candidates: {{ mayorCandidates|size }}</strong></p>
+					<p><a class="" role="button" data-toggle="collapse" href="#mayorCollapse" aria-expanded="false" aria-controls="mayorCollapse">Show Candidates</a></p>
+					
+					<div class="collapse" id="mayorCollapse">
+						{% for candidate in mayorCandidates %}
+						<div class="option-box">
+							<h4>{{ candidate.name }}</h4>
+							<p><a class="btn btn-primary" target="_blank" href="{{ candidate.website }}" title="view website">Website</a></p>
+						</div>
+						{% endfor %}
+					</div>
+				</div><!--./ballot-box -->
+
+				<div class="ballot-box">
+					{% assign councilCandidates = site.data.candidates[page.district] %}
+					<h3>City Council</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit.
+					</p>
+					<p><strong>Candidates: {{ councilCandidates|size }}</strong></p>
+					<p><a class="" role="button" data-toggle="collapse" href="#councilCollapse" aria-expanded="false" aria-controls="councilCollapse">Show Candidates</a></p>
+					
+					<div class="collapse" id="councilCollapse">
+						{% for candidate in councilCandidates %}
+						<div class="option-box">
+							<h4>{{ candidate.name }}</h4>
+							<p><a class="btn btn-primary" target="_blank" href="{{ candidate.website }}" title="view website">Website</a></p>
+						</div>
+						{% endfor %}
+					</div>
+				</div><!--./ballot-box -->
+
+			</div>
+
+			<div class="col-md-4">
+				<h2>Resources</h2>
+			
+			</div>
+		</div>
+	</div>
+</section>
