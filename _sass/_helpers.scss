@@ -1,0 +1,117 @@
+/*------------------------------------*\
+    #BASIC HELPERS
+\*------------------------------------*/
+
+.full-width {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+.max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.underline {
+  text-decoration: underline;
+}
+.muted {
+  color:#666;
+}
+.clearfix {
+  @include clearfix();
+}
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+
+.has-bg-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+img.grayscale {
+  -webkit-filter: grayscale(1);
+  -webkit-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  filter: url('../images/grayscale.svg#greyscale');
+}
+
+@media (max-width:769px) {
+  .hidden-mobile {display:none;}
+}
+
+/*------------------------------------*\
+    #TEXT COLOR TRUMPS
+\*------------------------------------*/
+@each $color, $hex in $colors {
+  .text-#{$color} {
+    color: $hex !important;
+  }
+}
+
+/*------------------------------------*\
+    #BACKGROUND COLOR TRUMPS
+\*------------------------------------*/
+@each $color, $hex in $colors {
+  .bg-#{$color} {
+    background-color: $hex !important;
+  }
+}
+
+/*------------------------------------*\
+    #BACKGROUND IMAGE COLOR OVERLAYS
+\*------------------------------------*/
+@each $color, $hex in $colors {
+  .has-bg-img.bg-color-overlay-#{$color} {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($hex,.9);
+      z-index: 1;
+    }
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
+
+/*------------------------------------*\
+    #SVG FILL TRUMPS
+\*------------------------------------*/
+@each $color, $hex in $colors {
+  .fill-#{$color} {
+    fill: $hex !important;
+  }
+}
+
+/*------------------------------------*\
+    #ELEMENT BORDERS
+\*------------------------------------*/
+@each $color, $hex in $colors {
+  .border-#{$color} {
+    border: 2px solid $hex !important;
+    padding-top: 20px;
+  }
+}

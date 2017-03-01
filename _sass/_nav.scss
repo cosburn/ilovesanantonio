@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    #NAV
+\*------------------------------------*/
+
+nav.global-nav {
+	text-align: right;
+	li { 
+		padding-top: 10px; 
+	}
+	a { padding: 10px; }
+}
+
+.site-title {
+	&:hover { text-decoration: none; }
+	.site-title-intro,
+	.site-title-main,
+	.site-title-sub {
+		margin: 0;
+	}
+	.site-title-intro {}
+	.site-title-main {
+		font-family: $headline-type;
+		@include font-size(5);
+		line-height: 1em;
+		font-weight: 700;
+	}
+	.site-title-sub {}
+}

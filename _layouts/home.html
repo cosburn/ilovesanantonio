@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <section class="hero hero-home bg-tertiary">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 text-center">
+          <p class="h2 text-sa-white">You say you love San Antonio. We say...</p>
+          <p class="h1 text-sa-white uppercase">Put up or Shut Up</p>
+          <div class="spacer-sm"></div>
+          <!-- Button trigger modal -->
+          <p class="text-sa-white">The best way to show you care?</p>
+          <button class="btn btn-lg btn-sa-white text-sa-black" data-toggle="modal" data-target="#demo-modal">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-options">
+    <div class="container">
+      <div class="row">
+        <h2 class="uppercase text-center">Do These Things</h2>
+        <div class="options-container text-center">
+          <div class="option">
+            <h3>1. Register</h3>
+            <p>Make sure you're registered and your information is up to date.</p>
+          </div>
+          <div class="option">
+            <h3>2. Learn</h3>
+            <p>Figure out what district you live in, and what's on the ballot.</p>
+          </div>
+          <div class="option">
+            <h3>3. Vote</h3>
+            <p>Find your nearest polling place, and go do the dang thing!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  
+  
+  {{ content }}
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+</div>
+
+<!-- Modal -->
+  <form class="modal multi-step" id="demo-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title step-1" data-step="1">Step 1</h4>
+            <h4 class="modal-title step-2" data-step="2">Step 2</h4>
+        </div>
+        <div class="modal-body step step-1">
+        This is step 1.
+        </div>
+        <div class="modal-body step step-2">
+        This is step 2.
+        </div>
+        <div class="modal-body step step-3">
+        This is step 3.
+        </div>
+        <div class="modal-body step step-4">
+        This is step 4.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary step modal-step step-1" data-step="2">Go to Step 2</button>
+            <button type="button" class="btn btn-primary step modal-step step-1" data-step="3">Go to Step 3</button>
+            <button type="button" class="btn btn-primary step modal-step step-1" data-step="4">Go to Step 4</button>
+        </div>
+      </div>
+    </div>
+  </form>

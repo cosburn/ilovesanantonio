@@ -1,0 +1,62 @@
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+/* Button default */
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  font-family: $headline-type;
+  display: inline-block;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  border: 2px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance:none;
+  box-sizing: border-box;
+  margin: 20px 0;
+  padding: 0 30px;
+  @include font-size(1.5);
+  min-width: 150px;
+  line-height: 3;
+}
+
+.btn-lg {
+  padding: 8px 20px;
+  min-width: 250px;
+  line-height: 2.7;
+}
+
+// Button loop
+@each $color, $hex in $colors {
+  .btn.btn-#{$color} {
+    color:#fff;
+    background-color: $hex;
+    border-color: $hex;
+    &:hover {
+      background-color: darken($hex, 10%);
+      border-color: darken($hex, 10%);
+    }
+  }
+  .btn.btn-outline-#{$color} {
+    color: col("primary");
+    background-color: transparent;
+    border-color: $hex;
+    &:hover {
+      background-color: $hex;
+      color: #fff;
+    }
+  }
+}
+
+// special case for buttons with white fill and white text
+.btn.btn-outline-sa-white:hover {
+  color: col("primary") !important;
+}

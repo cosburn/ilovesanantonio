@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    #LIST STYLES
+\*------------------------------------*/
+
+ul.bulleted {
+	padding-left: 0;
+	list-style: none;
+	li { 
+		padding-bottom: 15px; 
+		padding-left: 2em;
+		position: relative;
+	}
+	li:before {
+		content: "•";
+		position: absolute;
+		top: 0;
+		left: .5em;
+	}
+}
+
+ul.inline {
+	list-style: none;
+	padding: 0;
+	li { display: inline-block; }
+}
+
+ul.unstyled {
+	list-style: none;
+	padding: 0;
+}

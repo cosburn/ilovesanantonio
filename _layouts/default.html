@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <main class="page-content" aria-label="Content">
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    <script src="{{ "/js/multi-step-modal/multi-step-modal.js" | relative_url }}"></script>
+    
+  
+    <script>
+    $('.modal-step').click(function() {
+        var num = $(this).attr('data-step');
+        var trig = 'next.m.' + num;
+        var trigg = trig.toString();
+        console.log(trigg);
+        $('#demo-modal').trigger(trigg);
+    });
+    </script>
+  </body>
+
+</html>

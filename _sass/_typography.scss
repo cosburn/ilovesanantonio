@@ -1,0 +1,136 @@
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+
+$body-type:                 "Open Sans", sans-serif;
+$headline-type:             "Montserrat", sans-serif;
+$headline-secondary-type:   "Montserrat", sans-serif;
+
+$headline-color:            col("primary");
+$body-color:                col("sa-black");
+$link-color:                col("tertiary");
+$link-hover:                darken($link-color, 10%);
+
+/**
+ * NOTE
+ * html is set to 62.5% so that all the REM measurements
+ * are based on 10px sizing. So 1.5rem = 15px
+ *
+ */
+
+html {
+  font-size: 62.5%;
+}
+body {
+  @include font-size(1.8);
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: $body-type;
+  color: $body-color;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+h1, h2, h3, .h1, .h2, .h3 {
+  font-family: $headline-type;
+  font-weight: 700;
+}
+h4, h5, h6, .h4, .h5, .h6 {
+  font-family: $headline-secondary-type;
+  font-weight: 400;
+}
+
+h1, .h1  { @include font-size(7.5); line-height: .9;  letter-spacing: -.1rem;  }
+h2, .h2  { @include font-size(3.6); line-height: 1.25; letter-spacing: .1rem;  }
+h3, .h3  { @include font-size(3); line-height: 1;  letter-spacing: .1rem;  }
+h4, .h4  { @include font-size(2.2); line-height: 1.25; letter-spacing: 0; }
+h5, .h5  { @include font-size(1.6); line-height: 1.5;  letter-spacing: 0rem; }
+h6, .h6  { @include font-size(1.4); line-height: 1.6;  letter-spacing: 0; }
+@media (max-width:769px) {
+  h1, .h1 { @include font-size(4.5); }
+  h2, .h2 { @include font-size(3.6); }
+}
+
+h1, .h1  { color: $headline-color; }
+h2, .h2  { color: $headline-color; }
+h3, .h3  { color: $headline-color; }
+h4, .h4  { color: $headline-color; }
+h5, .h5  { color: $headline-color; }
+h6, .h6  { color: $headline-color; }
+
+.text-xl  { @include font-size(2.6); line-height:1.6; }
+.text-lg  { @include font-size(2.2); line-height:1.6; }
+.text-med { @include font-size(1.8); line-height:1.6; }
+.text-sm  { @include font-size(1.4) }
+.text-xsm { @include font-size(1.2) }
+
+
+p { margin-top: 0; line-height:2;}
+
+p strong { font-weight: 700; }
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  font-weight: 200;
+ }
+a:hover { color: $link-hover; }
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid col("mid-gray");
+}
+
+blockquote {
+  padding-left: 80px;
+  margin: 1em 0 0 0;
+  @include font-size(2.1);
+  font-style: italic;
+  position: relative;
+  &::before {
+    content: url('/img/quotemark.svg');
+    @include font-size(5.5);
+    line-height: .4;
+    padding: 15px;
+    color: col("ss-white");
+    background-color: col("secondary-dark");
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 30px;
+  }
+  .attribution { color: col("secondary-dark"); }
+}
+.indent-small {text-indent: -.35em}
+
+.highlight {
+  @include font-size(4.2);
+  letter-spacing: -.1rem;
+  line-height: 1em;
+  font-weight: lighter;
+  margin-bottom: 20px;
+  font-family: $body-type;
+}
+
+.icon-large {
+  @include font-size(5.2);
+}
+
+.has-subtitle {
+  margin-bottom: 0;
+}
+
+.lg-line-height {
+  line-height: 2;
+}
+.md-line-height {
+  line-height: 1.5;
+}
+.sm-line-height {
+  line-height: 1;
+}

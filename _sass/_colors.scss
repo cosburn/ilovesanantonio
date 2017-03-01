@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    #COLOR LIST
+\*------------------------------------*/
+
+$colors: (
+  primary:                 #ED7503,
+  secondary:               #E01B1A,
+  tertiary:                #00C9C7,
+  primary-dark:            #E47717,
+  secondary-dark:          #CC1817,
+  tertiary-dark:           #15B9B6,
+  sa-dark-aqua:            #1B9896,
+  sa-black:                #191919,
+  border-gray:             #E8E8E8,
+  mid-gray:                #737271,
+  hush-gray:               #E9ECF0,
+  light-gray:              #FBFBFB,
+  sa-white:                #FFFFFF
+);
+
+// Use key for color
+// Usage: foo { color: col("primary"); }
+// Compiles: foo { color: #57C9B4; }
+@function col($col) {
+  @return map-get($colors, '#{$col}');
+}
+
+
+body {
+  background-color: col("sa-white");
+}

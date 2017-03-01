@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    #ICONS STYLES
+\*------------------------------------*/
+
+.icon-large,
+.icon-med,
+.icon-small { display:inline-block; }
+
+.icon-large svg { width: 100px; height: 100px; }
+.icon-med svg   { width: 53px; height: 53px; }
+.icon-small svg { width: 35px; height: 35px; }
+
+.media-figure.icon { margin-top: 10px; }
+
+.icon-box {
+	display: inline-block;
+	border: 1px solid col(border-gray);
+	@include border-radius(8px);
+	padding: 60px 55px;
+  margin-right: 20px; 
+	margin-bottom: 20px; 
+}
+
+/*------------------------------------*\
+    #SVG ICON INCLUDES COLOR TRUMPS
+    #Apply class to parent element
+\*------------------------------------*/
+@each $color, $hex in $colors {
+  .icon-fill-#{$color} {
+    svg g#Line_Icons * { fill: $hex !important; }
+  }
+}
+
