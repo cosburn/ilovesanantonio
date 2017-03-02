@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    #SECTION - CREDIT LOGOS
+\*------------------------------------*/
+
+.logo-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	.credit-logo {
+		width: 150px;
+		margin: 20px;
+	}
+}

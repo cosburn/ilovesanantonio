@@ -1,0 +1,28 @@
+{
+	"bond": [
+		{
+			"title": 					"title of prop1",
+			"description":		"description of prop",
+			"percent":				"20%",
+			"icon":						""
+		},
+		{
+			"title":					"title of prop2",
+			"description":		"description of prop2",
+			"percent":				"80%",
+			"icon":						""
+		}
+	],
+	"districtTotals": {
+		"1": 	"4.5",
+		"2": 	".4",
+		"3": 	"1.9",
+		"4": 	"1.2",
+		"5": 	"2.1",
+		"6": 	"3.2",
+		"7": 	".8",
+		"8": 	"2.4",
+		"9": 	"1.1",
+		"10": "2.3",
+	}
+}

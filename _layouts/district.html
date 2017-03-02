@@ -60,11 +60,52 @@ layout: default
 					</div>
 				</div><!--./ballot-box -->
 
+				<div class="ballot-box ballot-box--bond">
+					{% assign bondProps = site.data.bond["bond"] %}
+					{% assign bondTotal = site.data.bond["districtTotals"][page.district] %}
+
+					<div class="number-box bg-sa-white pull-right">
+						<p class="number-box--number text-sa-dark-aqua">${{ bondTotal }}m</p>
+						<p class="number-box--description">in bond money dedicated to D{{ page.district }}</p>
+					</div>
+
+					<h3>2017 Bond</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit.
+					</p>
+					<p><a class="" role="button" data-toggle="collapse" href="#bondCollapse" aria-expanded="false" aria-controls="bondCollapse">Show Bond Propositions</a></p>
+					
+					<div class="collapse" id="bondCollapse">
+						{% for prop in bondProps %}
+						<div class="option-box option-box--bond">
+							<h5>{{ prop.title }}</h5>
+							<p>{{ prop.description }}</p>
+							<div class="bond-percent">{{ prop.percent }}</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div><!--./ballot-box -->
+
 			</div>
 
-			<div class="col-md-4">
-				<h2>Resources</h2>
-			
+			<div class="col-md-3 col-md-offset-1">
+				<h2>Helpful Things to Know</h2>
+				<p class="h4 text-primary">Election Day is May 6th</p>
+				<p class="h4 text-primary">Early voting starts: April [day?]</p>
+				<div class="spacer-sm"></div>
+				<h2>Helpful Links</h2>
+				<ul class="unstyled resources-list">
+					<li><a href="https://www.bexar.org/DocumentCenter/View/4572" title="Document with Early Voting Locations">Early Voting Locations</a></li>
+					<li><a href="https://www.bexar.org/2231/Precinct-Finder" title="Precinct Finder tool">Election Day Polling Places</a></li>
+					<li><a href="#" title=""><em>Move San Antonio</em> Voter's Guide</a></li>
+					<li><a href="#" title=""><em>League of Women Voters of San Antonio</em> Voter's Guide</a></li>
+					<li><a href="http://thinkvoting.com/the-voting-app/" title="">The Voting App</a></li>
+					<li><a href="http://www.votetexas.gov/register-to-vote/" title="">Register or Check Your Registration</a></li>
+					<li><a href="http://www.votetexas.gov/?page_id=548" title="">What to bring with you when you vote</a></li>
+					<li><a href="http://www.saspeakup.com/" title="">Participate in the 2017 Budget Process</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>

@@ -4,10 +4,10 @@
 
 nav.global-nav {
 	text-align: right;
-	li { 
-		padding-top: 10px; 
+	ul.top-level-nav > li,
+	ul.top-level-nav > li a {
+		padding: 10px;
 	}
-	a { padding: 10px; }
 }
 
 .site-title {

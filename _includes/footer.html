@@ -1,46 +1,11 @@
-<footer class="site-footer">
-
+<footer class="site-footer bg-light-gray">
   <div class="container">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <p>Powered by:</p>
+        <a href="http://sa2020.org" title="visit SA2020.org"><img src="" alt="SA2020" /></a>
+        <p>Learn more at <a href="http://sa2020.org/" title="SA2020 website">SA2020.org</a></p>
       </div>
     </div>
-
   </div>
-
 </footer>

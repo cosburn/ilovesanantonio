@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    #COMPONENT - NUMBER BOX
+\*------------------------------------*/
+
+.number-box-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.number-box {
+	min-width: 280px;
+	padding: 70px 55px;
+	text-align: center;
+	margin: 5px;
+	margin-bottom: 20px;
+	display: inline-block;
+	.number-box--number,
+	.number-box--description {
+		margin: 0;
+	}
+	.number-box--description {
+		@include font-size(1.4);
+	}
+	.number-box--number {
+		font-family: $headline-type;
+		@include font-size(8.5);
+		line-height: .9;
+		font-weight: 700;
+	}
+}

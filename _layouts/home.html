@@ -4,16 +4,16 @@ layout: default
 
 <div class="home">
 
-  <section class="hero hero-home bg-tertiary">
+  <section class="hero hero-home bg-light-gray">
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-md-offset-1 text-center">
-          <p class="h2 text-sa-white">You say you love San Antonio. We say...</p>
-          <p class="h1 text-sa-white uppercase">Put up or Shut Up</p>
+          <p class="h2">You say you love San Antonio. We say...</p>
+          <p class="h1 uppercase">Put up or Shut Up.</p>
           <div class="spacer-sm"></div>
           <!-- Button trigger modal -->
-          <p class="text-sa-white">The best way to show you care?</p>
-          <button class="btn btn-lg btn-sa-white text-sa-black" data-toggle="modal" data-target="#demo-modal">Get Started</button>
+          <p class="">The best way to show you care?</p>
+          <button class="btn btn-lg btn-sa-dark-aqua" data-toggle="modal" data-target="#demo-modal">Start Here</button>
         </div>
       </div>
     </div>
@@ -25,14 +25,23 @@ layout: default
         <h2 class="uppercase text-center">Do These Things</h2>
         <div class="options-container text-center">
           <div class="option">
+            <div class="icon-large icon-circle bg-primary">
+              <img src="/img/thumbs-up.svg" alt="" />
+            </div>
             <h3>1. Register</h3>
             <p>Make sure you're registered and your information is up to date.</p>
           </div>
           <div class="option">
+            <div class="icon-large icon-circle bg-primary">
+              <img src="/img/magnifying-glass.svg" alt="" />
+            </div>
             <h3>2. Learn</h3>
             <p>Figure out what district you live in, and what's on the ballot.</p>
           </div>
           <div class="option">
+            <div class="icon-large icon-circle bg-primary">
+              <img src="/img/map-check.svg" alt="" />
+            </div>
             <h3>3. Vote</h3>
             <p>Find your nearest polling place, and go do the dang thing!</p>
           </div>
@@ -41,25 +50,67 @@ layout: default
     </div>
   </section>
 
+  <section class="bg-hush-gray">
+    <div class="container">
+      <div class="row text-center">
+        <h2>Did you know?</h2>
+        <div class="number-box-container">
+          <div class="number-box bg-sa-dark-aqua">
+            <p class="number-box--number text-sa-white">1.5</p>
+            <p class="number-box--description text-sa-white">is a number that exists.</p>
+          </div>
+          <div class="number-box bg-sa-dark-aqua">
+            <p class="number-box--number text-sa-white">1.5</p>
+            <p class="number-box--description text-sa-white">is a number that exists.</p>
+          </div>
+          <div class="number-box bg-sa-dark-aqua">
+            <p class="number-box--number text-sa-white">1.5</p>
+            <p class="number-box--description text-sa-white">is a number that exists.</p>
+          </div>
+          <div class="number-box bg-sa-dark-aqua">
+            <p class="number-box--number text-sa-white">1.5</p>
+            <p class="number-box--description text-sa-white">is a number that exists.</p>
+          </div>
+        </div>
+        <p class="h4">Learn more at sa2020.org/progress</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="bg-light-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center">
+          <h2>Want a reminder?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+          <form>
+            <input type="email" placeholder="Your email address">
+            <button type="submit" class="btn btn-sa-dark-aqua">Don't let me forget</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 text-center">
+          <h2>Where did all this amazing info come from?</h2>
+          <div class="logo-container">
+            <img src="/img/Bexar-County.jpg" title="Bexar County" class="credit-logo"/>
+            <img src="/img/City-of-San-Antonio.png" title="City of San Antonio" class="credit-logo"/>
+            <img src="/img/League-of-Women-Voters.jpeg" title="League of Women Voters" class="credit-logo"/>
+            <img src="/img/Texas-Secretary-of-State.png" title="Texas Secretary of State" class="credit-logo"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   
 
-  
-  
-  {{ content }}
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
 </div>
 

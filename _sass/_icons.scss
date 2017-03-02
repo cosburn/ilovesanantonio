@@ -12,12 +12,12 @@
 
 .media-figure.icon { margin-top: 10px; }
 
-.icon-box {
+.icon-circle {
+  width: 200px;
+  height: 200px;
 	display: inline-block;
-	border: 1px solid col(border-gray);
-	@include border-radius(8px);
-	padding: 60px 55px;
-  margin-right: 20px; 
+	@include border-radius(50%);
+	padding: 55px;
 	margin-bottom: 20px; 
 }
 

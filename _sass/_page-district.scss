@@ -4,11 +4,18 @@
 
 .ballot-box {
 	background-color: col("light-gray");
-	padding: 20px 10px;
+	padding: 20px;
 	margin-bottom: 20px;
 	.option-box {
 		background-color: col("sa-white");
-		padding: 10px;
+		padding: 20px;
 		margin-bottom:10px;
 	}
+}
+.ballot-box--bond .number-box .number-box--number {
+	@include font-size(6.5);
+}
+
+.resources-list li {
+	padding: 10px 0;
 }

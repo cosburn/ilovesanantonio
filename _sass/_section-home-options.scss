@@ -1,3 +1,14 @@
 /*------------------------------------*\
     #SECTION - HOME OPTIONS
 \*------------------------------------*/
+
+.options-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex-direction: row;
+	.option {
+		width: 250px;
+		margin: 30px;
+	}
+}

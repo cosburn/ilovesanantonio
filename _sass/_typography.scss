@@ -6,7 +6,7 @@ $body-type:                 "Open Sans", sans-serif;
 $headline-type:             "Montserrat", sans-serif;
 $headline-secondary-type:   "Montserrat", sans-serif;
 
-$headline-color:            col("primary");
+$headline-color:            col("sa-black");
 $body-color:                col("sa-black");
 $link-color:                col("tertiary");
 $link-hover:                darken($link-color, 10%);
@@ -22,7 +22,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  @include font-size(1.8);
+  @include font-size(1.6);
   line-height: 1.6;
   font-weight: 400;
   font-family: $body-type;
@@ -44,8 +44,8 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 
 h1, .h1  { @include font-size(7.5); line-height: .9;  letter-spacing: -.1rem;  }
-h2, .h2  { @include font-size(3.6); line-height: 1.25; letter-spacing: .1rem;  }
-h3, .h3  { @include font-size(3); line-height: 1;  letter-spacing: .1rem;  }
+h2, .h2  { @include font-size(3.2); line-height: 1.25; letter-spacing: .1rem;  }
+h3, .h3  { @include font-size(2.8); line-height: 1;  letter-spacing: .1rem;  }
 h4, .h4  { @include font-size(2.2); line-height: 1.25; letter-spacing: 0; }
 h5, .h5  { @include font-size(1.6); line-height: 1.5;  letter-spacing: 0rem; }
 h6, .h6  { @include font-size(1.4); line-height: 1.6;  letter-spacing: 0; }
