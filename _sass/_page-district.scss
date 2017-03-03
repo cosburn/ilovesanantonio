@@ -3,14 +3,19 @@
 \*------------------------------------*/
 
 .ballot-box {
-	background-color: col("light-gray");
 	padding: 20px;
 	margin-bottom: 20px;
+	background-color: col(light-gray);
+	h3 { @include font-size(2.8); }
 	.option-box {
 		background-color: col("sa-white");
 		padding: 20px;
 		margin-bottom:10px;
+		// border-top: 5px solid col(secondary);
 	}
+	&.ballot-box--mayor 	{ border-left: 8px solid col(sa-dark-aqua); }
+	&.ballot-box--council 	{ border-left: 8px solid col(primary); }
+	&.ballot-box--bond 		{ border-left: 8px solid col(secondary); }
 }
 .ballot-box--bond .number-box .number-box--number {
 	@include font-size(6.5);

@@ -45,8 +45,8 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 h1, .h1  { @include font-size(7.5); line-height: .9;  letter-spacing: -.1rem;  }
 h2, .h2  { @include font-size(3.2); line-height: 1.25; letter-spacing: .1rem;  }
-h3, .h3  { @include font-size(2.8); line-height: 1;  letter-spacing: .1rem;  }
-h4, .h4  { @include font-size(2.2); line-height: 1.25; letter-spacing: 0; }
+h3, .h3  { @include font-size(2.4); line-height: 1;  letter-spacing: .1rem;  }
+h4, .h4  { @include font-size(2.0); line-height: 1.25; letter-spacing: 0; }
 h5, .h5  { @include font-size(1.6); line-height: 1.5;  letter-spacing: 0rem; }
 h6, .h6  { @include font-size(1.4); line-height: 1.6;  letter-spacing: 0; }
 @media (max-width:769px) {

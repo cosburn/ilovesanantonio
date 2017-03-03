@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="hero bg-light-gray">
+<section class="hero bg-hush-gray">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 text-center">
@@ -18,9 +18,9 @@ layout: default
 			<div class="col-md-8">
 				<h2>What's on the ballot</h2>
 
-				<div class="ballot-box">
+				<div class="ballot-box ballot-box--mayor">
 					{% assign mayorCandidates = site.data.candidates["mayor"] %}
-					<h3>Mayor</h3>
+					<h3 class="">Mayor</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -31,7 +31,7 @@ layout: default
 					
 					<div class="collapse" id="mayorCollapse">
 						{% for candidate in mayorCandidates %}
-						<div class="option-box">
+						<div class="option-box text-sa-black">
 							<h4>{{ candidate.name }}</h4>
 							<p><a class="btn btn-primary" target="_blank" href="{{ candidate.website }}" title="view website">Website</a></p>
 						</div>
@@ -39,7 +39,7 @@ layout: default
 					</div>
 				</div><!--./ballot-box -->
 
-				<div class="ballot-box">
+				<div class="ballot-box ballot-box--council">
 					{% assign councilCandidates = site.data.candidates[page.district] %}
 					<h3>City Council</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -88,14 +88,36 @@ layout: default
 					</div>
 				</div><!--./ballot-box -->
 
+				<div class="ballot-box ballot-box--schools">
+					{% assign schools = site.data.schools["candidates"] %}
+					{% assign district = page.title %}
+					{% assign districtSchools = site.data.schools["districts"][0][page.title] %}
+
+					<h3>School Board</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit.
+					</p>
+					<p><a class="" role="button" data-toggle="collapse" href="#schoolsCollapse" aria-expanded="false" aria-controls="bondCollapse">Show School Board Candidates</a></p>
+					
+					<div class="collapse" id="schoolsCollapse">
+						{% for school in districtSchools %}
+						<div class="option-box option-box--schools">
+							<p>{{ school }}</p>
+						</div>
+						{% endfor %}
+					</div>
+				</div><!--./ballot-box -->
+
 			</div>
 
 			<div class="col-md-3 col-md-offset-1">
-				<h2>Important Dates</h2>
+				<h3>Important Dates</h3>
 				<p class="h4 text-primary">Election Day: May 6th</p>
 				<p class="h4 text-primary">Early voting starts: April [day?]</p>
 				<div class="spacer-sm"></div>
-				<h2>Helpful Things</h2>
+				<h3>Helpful Things</h3>
 				<ul class="unstyled resources-list">
 					<li><a href="https://www.bexar.org/DocumentCenter/View/4572" title="Document with Early Voting Locations">Early Voting Locations</a></li>
 					<li><a href="https://www.bexar.org/2231/Precinct-Finder" title="Precinct Finder tool">Election Day Polling Places</a></li>
