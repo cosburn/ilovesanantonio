@@ -103,8 +103,25 @@ layout: default
 					
 					<div class="collapse" id="schoolsCollapse">
 						{% for school in districtSchools %}
+						{% assign candidates = schools[school] %}
 						<div class="option-box option-box--schools">
-							<p>{{ school }}</p>
+							{% assign website = site.data.schools["websites"][school] %}
+							<p class="h4">
+								<a href="{{ website }}" title="school board website">{{ school }}</a>
+							</p>
+							<ul class="unstyled">
+								{% for candidate_hash in candidates %}
+								{% for candidate in candidate_hash %}
+								<li>{{ candidate[0] }}
+									<ul class="">
+										{% for name in candidate[1] %}
+										<li>{{ name }}</li>
+										{% endfor %}
+									</ul>
+								</li>
+								{% endfor %}
+								{% endfor %}
+							</ul>
 						</div>
 						{% endfor %}
 					</div>

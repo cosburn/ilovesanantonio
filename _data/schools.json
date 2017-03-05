@@ -1,40 +1,40 @@
 {
-"candidates": [
-	{"Alamo Heights ISD": [
+"candidates": {
+	"Alamo Heights ISD": [
 		{ "Place 3": ["Ryan Anderson","Jim Nittoli"]},
 		{ "Place 4": ["Margaret Judson","Aimee Voorhies"]}
-	]},
-	{"San Antonio ISD": [
+	],
+	"San Antonio ISD": [
 		{ "District 1": ["Steve Lechlop","Sandra Ojeda Medina"]},
 		{ "District 3": ["Debra Guerrero","George Hinojosa","Lorna 'Ms. K' Klokkenga"]},
 		{ "District 4": ["Arthur V. Valdez, Jr.","Adela R. Segovia"]},
 		{ "District 7": ["Ed Garza"]},
-	]},
-	{"Judson ISD": [
+	],
+	"Judson ISD": [
 		{ "District 1": ["Suzanne Kenoyer","Michael Holdman"]},
 		{ "District 2": ["Richard LaFoille","Sonny Peter-Merrell"]},
 		{ "District 3": ["Gilbert Flores","Debra Eaton"]},
 		{ "District 4": ["Jose A. Macias, Jr."]},
 		{ "District 5": ["Arnoldo Salinas","Jennifer Rodriguez"]}
-	]},
-	{"Handlandale ISD": [
+	],
+	"Harlandale ISD": [
 		{ "District 1": ["Juan Mancha"]},
 		{ "District 2": ["Christine Carrillo","Orlando Salazar"]},
 		{ "District 3": ["Esequiel “Zeke” Mendoza"]},
 		{ "District 4": ["David Abundos"]},
 		{ "District 5": ["Josie Scales","Jesus Tejeda"]}
-	]},
-	{"Southside ISD": [
+	],
+	"Southside ISD": [
 		{ "Position 3": ["Norberto Chavez","Sonny Santos","Ruth S. Arocha"]},
 		{ "Position 4": ["Loren Brewer","Maggie Morales","Benito Flores","Daniel “Buddy” Vallego"]},
 		{ "Position 5": ["Anita Reyna","Bruce Alan Brannon"]}
-	]},
-	{"Northside ISD": [
+	],
+	"Northside ISD": [
 		{ "District 5": ["Katie Reed"]},
 		{ "District 6": ["Carol Harle","Paul Gass"]},
 		{ "District 7": ["Karen Freeman","Kurt Rohmeier"]}
 	]}
-],
+,
 "districts": [{
 	"District 1": ["Alamo Heights ISD","San Antonio ISD"],
 	"District 2": ["Judson ISD","San Antonio ISD"],
@@ -46,5 +46,13 @@
 	"District 8": ["Northside ISD"],
 	"District 9": ["Northside ISD"],
 	"District 10": ["Alamo Heights ISD","Judson ISD"]
-	}]
+	}],
+"websites": {
+	"Alamo Heights ISD": "http://google.com",
+	"San Antonio ISD": "http://google.com",
+	"Judson ISD": "http://google.com",
+	"Handlandale ISD": "http://google.com",
+	"Southside ISD": "http://google.com",
+	"Northside ISD": "http://google.com"
+	}
 }
