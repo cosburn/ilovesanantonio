@@ -3,6 +3,7 @@ layout: page
 bodyClass: outside-sa
 title: Outside City Limits
 permalink: /outside-sa/
+hero-img: https://www.sa2020.org/wp-content/uploads/2017/03/bg-map-outside-sa.png
 ---
 
 ## No matter where you live, you can still participate.

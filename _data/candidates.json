@@ -41,7 +41,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D1%20-%20Michael%20Montano.pdf?ver=2017-02-17-170942-570" 
 		},
 		{	"name":				"Roberto C. Treviño",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"/img/candidates/D1_Trevino.jpeg",
 			"website":		"http://voterobertotrevino.com/",
 			"fb":					"https://www.facebook.com/robertotrevinotx/",
 			"twitter":		"https://twitter.com/Trevino_D1/",
@@ -150,14 +150,6 @@
 			"instagram":	"",
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D4%20-%20Johnny%20Arredondo.pdf?ver=2017-02-17-171729-630" 
 		},
-		{	"name":				"Rey Guevera",
-			"photo":			"/img/candidates/no-photo.png",
-			"website":		"",
-			"fb":					"",
-			"twitter":		"",
-			"instagram":	"",
-			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D4%20-%20Rey%20Guevara.pdf?ver=2017-02-10-144717-243" 
-		},
 		{	"name":				"Rey Saldaña",
 			"photo":			"/img/candidates/D4_Saldana.jpeg",
 			"website":		"http://reysaldana.com/",
@@ -165,6 +157,14 @@
 			"twitter":		"https://twitter.com/rey4sa",
 			"instagram":	"https://www.instagram.com/rey4sa/",
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D4-ReySaldana.pdf" 
+		},
+		{	"name":				"Rey Guevera",
+			"photo":			"/img/candidates/no-photo.png",
+			"website":		"",
+			"fb":					"",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D4%20-%20Rey%20Guevara.pdf?ver=2017-02-10-144717-243" 
 		}
 	],
 	"5": [
@@ -225,6 +225,14 @@
 			"twitter":		"https://twitter.com/BrockhouseD6",
 			"instagram":	"",
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D6%20-%20Greg%20Brockhouse.pdf?ver=2017-02-15-151116-793" 
+		},
+		{	"name":				"Melissa Cabello Havrda",
+			"photo":			"/img/candidates/D6_Havrda.jpeg",
+			"website":		"http://www.melissaforsa.com/",
+			"fb":					"https://www.facebook.com/MelissaforDistrict6/",
+			"twitter":		"https://twitter.com/MelissaforSA",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017 Election/D6 - Melissa Cabello Havrda.pdf?ver=2017-02-07-100927-317" 
 		},
 		{	"name":				"Eric Gosset",
 			"photo":			"/img/candidates/D6_Gosset.jpeg",
@@ -301,7 +309,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D7%20-%20Alfredo%20Esparza%20Colunga.pdf?ver=2017-02-17-172128-207" 
 		},
 		{	"name":				"Ana Sandoval",
-			"photo":			"/img/candidates/D7_Robledo.jpeg",
+			"photo":			"/img/candidates/D7_Sandoval.jpeg",
 			"website":		"http://anasandoval.org/",
 			"fb":					"https://www.facebook.com/anasandovalSATX/",
 			"twitter":		"https://twitter.com/sandovalfor7",
@@ -522,7 +530,7 @@
 			"instagram":	"",
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D10%20-%20Jonathan%20Delmer.pdf?ver=2017-01-24-170904-933" 
 		},
-		{	"name":				"Ezra Johnson",
+		{	"name":				"Ezra A. Johnson",
 			"photo":			"/img/candidates/D10_Johnson.jpeg",
 			"website":		"http://www.ezra4sa.com/",
 			"fb":					"https://www.facebook.com/Ezra4SA/",

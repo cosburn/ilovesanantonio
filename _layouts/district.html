@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<section class="hero bg-hush-gray">
+<section class="hero has-bg-img bg-color-overlay-hush-gray" style="background-image: url(https://www.sa2020.org/wp-content/uploads/2017/03/bg-map-d{{page.district}}.png">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 text-center">
-				<h1>{{ page.title }}</h1>
+				<h1 class="">{{ page.title }}</h1>
 			</div>
 		</div>
 	</div>
@@ -21,20 +21,17 @@ layout: default
 				<div class="ballot-box ballot-box--mayor">
 					{% assign mayorCandidates = site.data.candidates["mayor"] %}
 					<h3 class="">Mayor</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit.
+					<p>The Mayor of San Antonio works closely with City Council to pass laws and create policies for the City. While City Council members are elected by district, the Mayor represents all of San Antonio (for a two-year term, with a four-term limit). The Mayor also hires our City Manager, who serves as the City’s chief administrator and carries out day-to-day operations, provides information to City Council as they make decisions, and develops an annual City budget.
 					</p>
-					<p><strong>Candidates: {{ mayorCandidates|size }}</strong></p>
+					<p class="text-med"><strong>Candidates: {{ mayorCandidates|size }}</strong></p>
 					<p><a class="" role="button" data-toggle="collapse" href="#mayorCollapse" aria-expanded="false" aria-controls="mayorCollapse">Show Candidates</a></p>
 					
 					<div class="collapse" id="mayorCollapse">
 						{% for candidate in mayorCandidates %}
-						<div class="option-box option-box--candidate">
-							<img class="pull-left" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
-							<div class="clearfix">
-								<h4 class="">{{ candidate.name }}</h4>
+						<div class="option-box option-box--candidate media">
+							<img class="media-object" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
+							<div class="media-body">
+								<h4 class="media-heading">{{ candidate.name }}</h4>
 								<div class="btn-group">
 									{% if candidate.website != "" %}
 									<a class="btn btn-sm btn-sa-dark-aqua" target="_blank" href="{{ candidate.website }}" title="view website">Website</a>
@@ -62,21 +59,20 @@ layout: default
 
 				<div class="ballot-box ballot-box--council">
 					{% assign councilCandidates = site.data.candidates[page.district] %}
-					<h3>City Council</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit.
+					<h3>City Council Members</h3>
+					<p>The City of San Antonio is divided into 10 districts, and each district elects one representative to City Council (for a two-year term, with a four-term limit). Together, City Council creates policies and passes laws on city services, capitalimprovement projects, land use and development, economic development, and other City issues. City Council members focus on how policies and decisions will affect both the city as a whole and the constituents in their district. Click here to contact your City Council member and get more information about what’s happening in your district.
 					</p>
-					<p><strong>Candidates: {{ councilCandidates|size }}</strong></p>
+					<p class="text-med"><strong>Candidates: {{ councilCandidates|size }}</strong></p>
 					<p><a class="" role="button" data-toggle="collapse" href="#councilCollapse" aria-expanded="false" aria-controls="councilCollapse">Show Candidates</a></p>
 					
 					<div class="collapse" id="councilCollapse">
 						{% for candidate in councilCandidates %}
-						<div class="option-box option-box--candidate">
-							<img class="pull-left" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
-							<div class="clearfix">
-								<h4 class="">{{ candidate.name }}</h4>
+						<div class="option-box option-box--candidate media">
+							<div class="media-left">
+								<img class="media-object" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">{{ candidate.name }}</h4>
 								<div class="btn-group">
 									{% if candidate.website != "" %}
 									<a class="btn btn-sm btn-primary" target="_blank" href="{{ candidate.website }}" title="view website">Website</a>
@@ -112,24 +108,32 @@ layout: default
 					</div>
 
 					<h3>2017 Bond</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit.
+					<p>A municipal bond allows a city to borrow money in order to fund public projects and improvements. San Antonio’s 2017 Bond Program totals $850 million and is made up of 6 propositions (streets; drainage and flood control; parks, recreation, and open space; library and cultural facilities; public safety facilities; and neighborhoods), with pre-determined projects developed by a committee of community members. 
+					<p/><p>Fun facts: there will be no property tax increases as part of the 2017 Bond, andevery San Antonian lives or works within one mile of a planned Bond project. 
 					</p>
+					<p class="text-sm"><a href="http://www.sanantonio.gov/2017Bond" title="learn more about the 2017 bond"></a></p>
+
 					<p><a class="" role="button" data-toggle="collapse" href="#bondCollapse" aria-expanded="false" aria-controls="bondCollapse">Show Bond Propositions</a></p>
 					
 					<div class="collapse" id="bondCollapse">
 						{% for prop in bondProps %}
 						<div class="option-box option-box--bond">
-							<div class="bond-icon pull-left bg-sa-dark-aqua"><img src="/img/thumbs-up.svg" alt="" /></div>
+							<!-- <div class="bond-icon pull-left bg-sa-dark-aqua"><img src="/img/thumbs-up.svg" alt="" /></div> -->
 							<h5>{{ prop.title }}</h5>
 							<p class="text-sm">{{ prop.description }}</p>
-							<p>Percent of total bond: <span class="bg-cause-civic bond-percent">{{ prop.percent }}</span></p>
+							<p>Total allocated: <span class="bg-cause-civic bond-percent">{{ prop.total }}</span></p>
+							<p>Percent of total bond: <span class="bg-cause-civic bond-percent">{{ prop.percent }}%</span></p>
+							<p>Number of projects: <span class="bg-cause-civic bond-percent">{{ prop.projects }}</span></p>
 						</div>
 						{% endfor %}
 					</div>
 				</div><!--./ballot-box -->
+
+				<div class="ballot-box ballot-box--ac-bond">
+					<h3>Alamo Colleges Bond</h3>
+					<p>The Alamo Colleges Bond is a $450 million package for improvements to all of the Alamo Colleges District’s schools located throughout the city. The bond will also fund new facilities to support San Antonio’s educational priorities and in anticipation of continued population growth. Just like the City of San Antonio’s 2017 Bond, the Alamo Colleges Bond will not require a property tax increase.
+					</p>
+				</div>
 
 				<div class="ballot-box ballot-box--schools">
 					{% assign schools = site.data.schools["candidates"] %}
@@ -137,10 +141,7 @@ layout: default
 					{% assign districtSchools = site.data.schools["districts"][0][page.title] %}
 
 					<h3>School Board</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit.
+					<p>Each San Antonio school district is governed by a school board made up of elected district residents. These board members - or trustees - create policies for the school district, adopt annual budgets and set tax rates, report district progress to the public, and more. School districts are further divided by districts (or positions or places), and residents vote for a representative from their district. School districts overlap into several City Council districts, so if you’re not sure which of the following school districts you live in, <a href="#" title="find you school district">you can enter your information here and find out.</a>
 					</p>
 					<p><a class="" role="button" data-toggle="collapse" href="#schoolsCollapse" aria-expanded="false" aria-controls="bondCollapse">Show School Board Candidates</a></p>
 					
@@ -149,14 +150,14 @@ layout: default
 						{% assign candidates = schools[school] %}
 						<div class="option-box option-box--schools">
 							{% assign website = site.data.schools["websites"][school] %}
-							<p class="h4">
-								<a href="{{ website }}" title="school board website">{{ school }}</a>
-							</p>
+							<p class="h4 has-subtitle">{{ school }}</p>
+							<a href="{{ website }}" class="text-sm subtitle" title="school board website">View Website</a>
+
 							<ul class="unstyled">
 								{% for candidate_hash in candidates %}
 								{% for candidate in candidate_hash %}
-								<li>{{ candidate[0] }}
-									<ul class="">
+								<li><strong>{{ candidate[0] }}</strong>
+									<ul class="unstyled">
 										{% for name in candidate[1] %}
 										<li>{{ name }}</li>
 										{% endfor %}
@@ -173,21 +174,57 @@ layout: default
 
 			<div class="col-md-3 col-md-offset-1">
 				<h3>Important Dates</h3>
-				<p class="h4 text-primary">Election Day: May 6th</p>
-				<p class="h4 text-primary">Early voting starts: April [day?]</p>
-				<div class="spacer-sm"></div>
-				<h3>Helpful Things</h3>
-				<ul class="unstyled resources-list">
-					<li><a href="" title="Download sample ballot">Download Sample Ballot</a></li>
-					<li><a href="https://www.bexar.org/DocumentCenter/View/4572" title="Document with Early Voting Locations">Early Voting Locations</a></li>
-					<li><a href="https://www.bexar.org/2231/Precinct-Finder" title="Precinct Finder tool">Election Day Polling Places</a></li>
-					<li><a href="#" title=""><em>Move San Antonio</em> Voter's Guide</a></li>
-					<li><a href="#" title=""><em>League of Women Voters of San Antonio</em> Voter's Guide</a></li>
-					<li><a href="http://thinkvoting.com/the-voting-app/" title="">The Voting App</a></li>
-					<li><a href="http://www.votetexas.gov/register-to-vote/" title="">Register or Check Your Registration</a></li>
-					<li><a href="http://www.votetexas.gov/?page_id=548" title="">What to bring with you when you vote</a></li>
-					<li><a href="http://www.saspeakup.com/" title="">Participate in the 2017 Budget Process</a></li>
-				</ul>
+
+				<p class="h4 text-primary has-subtitle">Early Voting</p>
+				<p class="has-subtitle"><strong>April 24 - May 2</strong></p>
+				<p class="subtitle text-sm">Locations: <a href="http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations" title="map">View Map</a> | <a href="https://www.bexar.org/DocumentCenter/View/4572" title="download list">Download List</a></p>
+
+				<p class="h4 text-primary has-subtitle">Election Day</p>
+				<p class="has-subtitle"><strong>May 6</strong></p>
+				<!-- <a class="subtitle" href="#">Find your polling place ></a> -->
+
+				<hr />
+
+				<h3 class="">Resources</h3>
+				<div class="resources-list">
+					<h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-align-left" aria-hidden="true"></i> Read</h4>
+					<ul class="unstyled">
+						<!-- <li><a href="#" title=""><em>Move San Antonio</em> Voter's Guide</a></li>
+						<li><a href="#" title=""><em>League of Women Voters of San Antonio</em> Voter's Guide</a></li> -->
+						<li><a href="#" title="http://www.sanantonio.gov/Portals/0/Files/2017Bond/BondInfoGuide.pdf">2017 Bond Guide</a></li>
+						<li><a href="http://thinkvoting.com/the-voting-app/" title="">The Voting App</a></li>
+						<li><a href="" title="Download sample ballot">Download Sample Ballot</a></li>
+					</ul>
+
+					<h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-play" aria-hidden="true"></i> Watch</h4>
+					<ul class="unstyled">
+						<li><a href="http://www.ksat.com/news/ksat-hosts-debate-with-sa-mayoral-candidates">KSAT-12 and SA Hispanic Chamber Mayoral Debate (3.2.17)</a></li>
+						<li><a href="https://therivardreport.com/mayoral-candidates-sharpen-positions-at-town-hall/">Rivard Report Mayoral Town Hall: (2.8.17)</a></li>
+						<li><a href="http://video.klrn.org/video/2365932909/">KLRN This Week with Manuel Medina (1.13.17)</a></li>
+						<li><a href="http://video.klrn.org/video/2365928797/">KLRN This Week with Ron Nirenberg (1.6.17)</a></li>
+						<li><a href="http://video.klrn.org/video/2365894944/">KLRN This Week with Ivy Taylor (11.18.16)</a></li>
+					</ul>
+
+					<h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-volume-up" aria-hidden="true"></i> Listen</h4>
+					<ul class="unstyled">
+						<li><a href="http://tpr.org/post/source-alamo-colleges-asks-bexar-county-voters-450-million#stream/0">The Source: Alamo Colleges Bond</a></li>
+						<li><a href="http://tpr.org/post/source-study-shows-abysmally-low-mayoral-voter-turnout-texas#stream/0">The Source: Voter Turnout in Bexar County</a></li>
+						<li><a href="https://www.sanantonio.gov/Manager/CityInsider">City Insider Podcast</a></li>
+					</ul>
+
+					<h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-rocket" aria-hidden="true"></i> Do</h4>
+					<ul class="unstyled">
+						<li><a href="http://www.votetexas.gov/?page_id=548" title="">Bring These With You to Vote</a></li>
+						<li><a href="http://www.votetexas.gov/register-to-vote/" title="">Register: Download and Print Mail-In Application</a></li>
+						<li><a href="http://www.votetexas.gov/register-to-vote/" title="">Check Your Registration</a></li>
+						<li><a href="http://www.saspeakup.com/" title="">Voice Your 2017 City of San Antonio Budget Priorities</a></li>
+					</ul>
+
+					<!-- <h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-check-square-o" aria-hidden="true"></i> Know</h4>
+					<ul class="unstyled">
+					</ul> -->
+				</div>
+
 			</div>
 		</div>
 

@@ -123,6 +123,10 @@ blockquote {
 
 .has-subtitle {
   margin-bottom: 0;
+  & + .subtitle {
+    margin-bottom: 20px;
+    display: inline-block;
+  }
 }
 
 .lg-line-height {

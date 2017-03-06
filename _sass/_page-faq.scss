@@ -1,9 +1,10 @@
 /*------------------------------------*\
-    #SECTION - HOME OPTIONS
+    #PAGE - FAQ
 \*------------------------------------*/
 
-.options-container {
-	.option {
-		padding: 0 70px;
+.faq {
+	margin-top: 30px;
+	.question {
+		@include font-size(1.8);
 	}
 }

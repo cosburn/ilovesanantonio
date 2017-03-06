@@ -4,13 +4,25 @@
 
 nav.global-nav {
 	text-align: right;
+	float: right;
+	ul { 
+		margin-top: 8px;
+		margin-bottom: 0; 
+	}
 	ul.top-level-nav > li,
 	ul.top-level-nav > li a {
 		padding: 10px;
 	}
+	@media screen and (max-width: 600px) {
+		float: none;
+		text-align: center;
+		ul.top-level-nav > li a { font-weight: 700; }
+	}
 }
 
 .site-title {
+	float: left;
+	display: inline-block;
 	&:hover { text-decoration: none; }
 	.site-title-intro,
 	.site-title-main,
@@ -25,4 +37,25 @@ nav.global-nav {
 		font-weight: 700;
 	}
 	.site-title-sub {}
+	@media screen and (max-width: 600px) {
+		float: none;
+		text-align: center;
+	}
+}
+
+/* SLIDEBARS */
+
+[off-canvas] { 
+	background-color: col(sa-white);
+	border-left: 2px solid col(hush-gray);
+	li > a { 
+		display: block;
+		border-bottom: 1px solid col(hush-gray);
+		padding: 20px;
+		width: 100%; 
+		&:hover { 
+			background-color: col(light-gray); 
+			text-decoration: none;
+		}
+	}
 }

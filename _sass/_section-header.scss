@@ -4,5 +4,8 @@
 
 header {
 	border-bottom: 2px solid col(light-gray);
-	padding-bottom: 20px;
+	padding: 10px 0;
+	@media screen and (max-width: 600px) {
+		text-align: center;
+	}
 }

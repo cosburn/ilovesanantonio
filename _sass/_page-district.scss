@@ -23,6 +23,7 @@
 	&.ballot-box--council 	{ border-left: 8px solid col(primary); }
 	&.ballot-box--bond 			{ border-left: 8px solid col(cause-civic); }
 	&.ballot-box--schools		{ border-left: 8px solid col(cause-education); }
+	&.ballot-box--ac-bond		{ border-left: 8px solid col(cause-economic); }
 	&.ballot-box--bond {
 		.bond-icon {
 			width: 150px;
@@ -33,11 +34,23 @@
 			padding: 3px;
 		}
 	}
+	&.ballot-box--schools {
+		ul ul {
+			margin-left: 20px;
+			margin-bottom: 20px;
+		}
+	}
 }
 .ballot-box--bond .number-box .number-box--number {
 	@include font-size(6.5);
 }
 
-.resources-list li {
-	padding: 10px 0;
+.resources-list {
+	h4 { 
+		margin-bottom: 0;
+		&:not(:first-of-type) {
+			margin-top: 30px;
+		}
+	}
+	li { padding: 7px 0; }
 }

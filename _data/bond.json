@@ -1,16 +1,48 @@
 {
 	"bond": [
 		{
-			"title": 					"Proposition 1: Sidewalks",
-			"description":		"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-			"percent":				"20%",
-			"icon":						""
+			"title": 					"Proposition 1: Streets, Bridges, & Sidewalks Improvements",
+			"description":		"This proposition authorizes the City of San Antonio to issue bonds, the proceeds from which will be used to make permanent public improvements to streets, bridges and sidewalks, as well as other improvements necessary or related to the following, including, but not limited to: bicycle lanes, landscaping, relocation of utilities, street lighting, technology improvements and signage. This proposition will also provide acquisition of lands and rights-of-way necessary for such purposes and for the acquiring and installation of public art related to the proposition.",
+			"percent":				"52",
+			"total":					"$445.263 Million",
+			"projects":				"64"
 		},
 		{
-			"title":					"Proposition 2: Transportation Stuff",
-			"description":		"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-			"percent":				"80%",
-			"icon":						""
+			"title":					"Proposition 2: Drainage & Flood Control Improvements",
+			"description":		"This proposition authorizes the City of San Antonio to issue bonds, the proceeds from which will be used to provide drainage and flood water improvements and 
+facilities to be used for the removal of and protection from harmful excess water. This proposition will also provide for the acquisition of lands and rights-of-way necessary for such purposes and for the acquiring and installation of public art related to the proposition.",
+			"percent":				"16",
+			"total":					"$138.988 Million",
+			"projects":				"19"
+		},
+		{
+			"title":					"Proposition 3: Parks, Recreation, & Open Space Improvements",
+			"description":		"This proposition authorizes the City of San Antonio to issue bonds, the proceeds from which will be used to acquire, construct, equip and renovate various park, recreation and open space venues. This proposition will also provide park additions and for the acquisition of lands and rights-of-way necessary for such purposes and for the acquiring and installation of public art related to the proposition.",
+			"percent":				"22",
+			"total":					"$187.313 Million",
+			"projects":				"79"
+		},
+		{
+			"title":					"Proposition 4: Library & Cultural Facilities Improvements",
+			"description":		"This proposition authorizes the City of San Antonio to issue bonds, the proceeds from which will be used to acquire, construct, improve, renovate and equip libraries, cultural facilities or other facilities. This proposition will also provide for the acquisition of lands and rights-of- way necessary for such purposes and for the acquiring and installation of public art related to the proposition.",
+			"percent":				"3",
+			"total":					"$24.025 Million",
+			"projects":				"13"
+		},
+		{
+			"title":					"Proposition 5: Public Safety Facilities Improvements",
+			"description":		"This proposition authorizes the City of San Antonio to issue bonds, the proceeds from which will be used to acquire, construct, improve, renovate and equip public safety facilities to include fire, police, emergency medical services (EMS), animal control facilities and other facilities promoting the health, safety and welfare of the City’s residents. This proposition will also provide for the acquisition of lands and rights-of-way necessary to accomplish such purposes as well as the acquiring and installation of public art related to the proposition.",
+			"percent":				"4",
+			"total":					"$34.411 Million",
+			"projects":				"5"
+		},
+		{
+			"title":					"Proposition 6: Neighborhood Improvements",
+			"description":		"The primary goal is to prepare sites for private sector development of single-family or multi-family workforce housing construction. Permitted expenditures include 
+land acquisition, demolition of dilapidated/unusable structures, right-of-way improvements, extension of utilities and remediation of environmental conditions impeding development.",
+			"percent":				"2",
+			"total":					"$20.000 Million",
+			"projects":				"TBD"
 		}
 	],
 	"districtTotals": {

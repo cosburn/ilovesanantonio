@@ -4,46 +4,49 @@
 
 #start-here-modal {
 	.modal-header {
-    border-bottom: none;
+	    border-bottom: none;
 	}
 	.modal-body {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
+		// display: flex;
+		// flex-wrap: wrap;
+		// justify-content: center;
 		max-width: 100%;
 		.modal-box {
 			padding: 40px 20px 40px 20px;
 			border: 2px solid col(hush-gray);
 			margin: 10px;
 			text-align: center;
+			display: inline-block;
+			height: 135px;
 			position: relative;
 			&:hover {
 				cursor: pointer;
 				text-decoration: none;
+				border: 2px solid col(tertiary) !important; 
 			}
-			&.option-1:hover { border: 2px solid col(tertiary) !important; }
-			&.option-2:hover { border: 2px solid col(tertiary) !important; }
-			&.option-3:hover { border: 2px solid col(tertiary) !important; }
-			.btn {
-				position: absolute;
-				display: inline-block;
-				bottom: 20px;
-				margin-left: auto;
-				margin-right: auto;
-				left: 0;
-				right: 0;
-				width: 80%;
-			}
+			// .btn {
+			// 	position: absolute;
+			// 	display: inline-block;
+			// 	bottom: 20px;
+			// 	margin-left: auto;
+			// 	margin-right: auto;
+			// 	left: 0;
+			// 	right: 0;
+			// 	width: 80%;
+			// }
 		}
 		.btn-group {
-			margin-bottom: 30px;
+			margin-bottom: 30px;    
+			width: 80%;
+			margin: 0 auto;
+			text-align: center;
 		}
 	}
 	a:hover { cursor: pointer; text-decoration: none; }
 	@media (min-width: 768px) {
 		.modal-dialog { width: 700px; }
-		.modal-header h4 { padding-top: 50px; }
-		.modal-body { padding: 50px 15px 100px 15px; }
+		.modal-header h4 { padding-top: 125px; }
+		.modal-body { padding: 50px 15px 150px 15px; }
 		.modal-box { width: 29%;	}
 	}
 }
