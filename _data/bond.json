@@ -1,28 +1,28 @@
 {
 	"bond": [
 		{
-			"title": 					"title of prop1",
-			"description":		"description of prop",
+			"title": 					"Proposition 1: Sidewalks",
+			"description":		"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 			"percent":				"20%",
 			"icon":						""
 		},
 		{
-			"title":					"title of prop2",
-			"description":		"description of prop2",
+			"title":					"Proposition 2: Transportation Stuff",
+			"description":		"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 			"percent":				"80%",
 			"icon":						""
 		}
 	],
 	"districtTotals": {
-		"1": 	"4.5",
-		"2": 	".4",
-		"3": 	"1.9",
-		"4": 	"1.2",
-		"5": 	"2.1",
-		"6": 	"3.2",
-		"7": 	".8",
-		"8": 	"2.4",
-		"9": 	"1.1",
-		"10": "2.3",
+		"1": 	"xx",
+		"2": 	"xx",
+		"3": 	"xx",
+		"4": 	"xx",
+		"5": 	"xx",
+		"6": 	"xx",
+		"7": 	"xx",
+		"8": 	"xx",
+		"9": 	"xx",
+		"10": "xx",
 	}
 }

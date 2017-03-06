@@ -12,10 +12,27 @@
 		padding: 20px;
 		margin-bottom:10px;
 		// border-top: 5px solid col(secondary);
+		&.option-box--candidate {
+			img {
+				max-width: 150px;
+				margin-right: 20px;
+			}
+		}
 	}
-	&.ballot-box--mayor 	{ border-left: 8px solid col(sa-dark-aqua); }
+	&.ballot-box--mayor 		{ border-left: 8px solid col(sa-dark-aqua); }
 	&.ballot-box--council 	{ border-left: 8px solid col(primary); }
-	&.ballot-box--bond 		{ border-left: 8px solid col(secondary); }
+	&.ballot-box--bond 			{ border-left: 8px solid col(cause-civic); }
+	&.ballot-box--schools		{ border-left: 8px solid col(cause-education); }
+	&.ballot-box--bond {
+		.bond-icon {
+			width: 150px;
+			height: 150px;
+			padding: 40px;
+		}
+		.bond-percent {
+			padding: 3px;
+		}
+	}
 }
 .ballot-box--bond .number-box .number-box--number {
 	@include font-size(6.5);

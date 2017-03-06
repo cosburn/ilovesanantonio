@@ -13,7 +13,7 @@ layout: default
           <div class="spacer-sm"></div>
           <!-- Button trigger modal -->
           <p class="">The best way to show you care?</p>
-          <button class="btn btn-lg btn-sa-dark-aqua" data-toggle="modal" data-target="#demo-modal">Start Here</button>
+          <button class="btn btn-lg btn-sa-dark-aqua" data-toggle="modal" data-target="#start-here-modal">Start Here</button>
         </div>
       </div>
     </div>
@@ -115,30 +115,77 @@ layout: default
 </div>
 
 <!-- Modal -->
-  <form class="modal multi-step" id="demo-modal">
+  <form class="modal multi-step" id="start-here-modal">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-            <h4 class="modal-title step-1" data-step="1">Step 1</h4>
-            <h4 class="modal-title step-2" data-step="2">Step 2</h4>
+        <div class="modal-header text-center">
+            <a type="button" class="pull-right" data-dismiss="modal">x</a>
+            <a type="button" class="pull-left step modal-step step-2" data-step="1">< back</a>
+            <a type="button" class="pull-left step modal-step step-3" data-step="2">< back</a>
+            <h4 class="modal-title step-1" data-step="1">Are you registered to vote?</h4>
+            <h4 class="modal-title step-2" data-step="2">Do you live in a San Antonio City Council district?</h4>
+            <h4 class="modal-title step-3" data-step="3">Which district do you live in?</h4>
         </div>
         <div class="modal-body step step-1">
-        This is step 1.
+         <!--  <div class="modal-box bg-hush-gray">
+            <p class="h5">No, but I want to register now!</p>
+            <a class="btn btn-sm btn-sa-dark-aqua" href="#">Register</a>
+          </div>
+          <div class="modal-box bg-hush-gray">
+            <p class="h5">I'm not sure, I need to check.<br/></p>
+            <a class="btn btn-sm btn-sa-dark-aqua" href="">Check</a>
+          </div>
+          <div class="modal-box bg-hush-gray">
+            <p class="h5">Yes! Let's do this!<br /></p>
+            <button type="button" class="btn btn-sm btn-sa-dark-aqua step modal-step step-1" data-step="2">Next</button>
+          </div> -->
+          <a class="modal-box bg-hush-gray option-1" href="#">
+            <span class="h5">No, I'd like to register now.</span>
+          </a>
+          <a class="modal-box bg-hush-gray option-2" href="#">
+            <span class="h5">I'm not sure, I need to check.</span>
+          </a>
+          <a class="modal-box bg-hush-gray step modal-step step-1 option-3" data-step="2">
+            <span class="h5">Yes! What's next?</span>
+          </a>
         </div>
         <div class="modal-body step step-2">
-        This is step 2.
+          <!-- <div class="modal-box bg-hush-gray">
+            <p class="h5">Yes, and I know which one!</p>
+            <button type="button" class="btn btn-sm btn-sa-dark-aqua step modal-step step-2" data-step="3">Next</button>
+          </div>
+          <div class="modal-box bg-hush-gray">
+            <p class="h5">I'm not sure...</p>
+            <a class="btn btn-sm btn-sa-dark-aqua" href="">Check</a>
+          </div>
+          <div class="modal-box bg-hush-gray">
+            <p class="h5">Nope, outside city limits</p>
+            <a class="btn btn-sm btn-sa-dark-aqua" href="/outside-sa/">Next</a>
+          </div> -->
+          <a class="modal-box bg-hush-gray step modal-step step-2 option-1" data-step="3">
+            <span class="h5">Yes, and I know which one!</span>
+          </a>
+          <a class="modal-box bg-hush-gray option-2" href="#">
+            <span class="h5">I'm not sure...</span>
+          </a>
+          <a class="modal-box bg-hush-gray option-3" href="/outside-sa">
+            <span class="h5">Nope, outside city limits.</span>
+          </a>
         </div>
         <div class="modal-body step step-3">
-        This is step 3.
-        </div>
-        <div class="modal-body step step-4">
-        This is step 4.
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary step modal-step step-1" data-step="2">Go to Step 2</button>
-            <button type="button" class="btn btn-primary step modal-step step-1" data-step="3">Go to Step 3</button>
-            <button type="button" class="btn btn-primary step modal-step step-1" data-step="4">Go to Step 4</button>
+          <div class="btn-group">
+            <a class="btn btn-sm btn-sa-dark-aqua" href="/district-1" title="district 1 voting information">D1</a>
+            <a class="btn btn-sm btn-sa-dark-aqua" href="/district-2" title="district 2 voting information">D2</a>
+            <a class="btn btn-sm btn-sa-dark-aqua" href="/district-3" title="district 3 voting information">D3</a>
+            <a class="btn btn-sm btn-sa-dark-aqua" href="/district-4" title="district 4 voting information">D4</a>
+            <a class="btn btn-sm btn-sa-dark-aqua" href="/district-5" title="district 5 voting information">D5</a>
+            <a class="btn btn-sm btn-sa-dark-aqua" href="/district-6" title="district 6 voting information">D6</a>
+            <a class="btn btn-sm btn-sa-dark-aqua" href="/district-7" title="district 7 voting information">D7</a>
+            <a class="btn btn-sm btn-sa-dark-aqua" href="/district-8" title="district 8 voting information">D8</a>
+            <a class="btn btn-sm btn-sa-dark-aqua" href="/district-9" title="district 9 voting information">D9</a>
+            <a class="btn btn-sm btn-sa-dark-aqua" href="/district-10" title="district 10 voting information">D10</a>
+          </div>
+          <a href="btn btn-hush-gray" title="need to double-check?">Need to check?</a>
         </div>
       </div>
     </div>

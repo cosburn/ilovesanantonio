@@ -31,9 +31,30 @@ layout: default
 					
 					<div class="collapse" id="mayorCollapse">
 						{% for candidate in mayorCandidates %}
-						<div class="option-box text-sa-black">
-							<h4>{{ candidate.name }}</h4>
-							<p><a class="btn btn-primary" target="_blank" href="{{ candidate.website }}" title="view website">Website</a></p>
+						<div class="option-box option-box--candidate">
+							<img class="pull-left" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
+							<div class="clearfix">
+								<h4 class="">{{ candidate.name }}</h4>
+								<div class="btn-group">
+									{% if candidate.website != "" %}
+									<a class="btn btn-sm btn-sa-dark-aqua" target="_blank" href="{{ candidate.website }}" title="view website">Website</a>
+									{% endif %}
+									{% if candidate.filing != ""  %}
+									<a class="btn btn-sm btn-sa-dark-aqua" target="_blank" href="{{ candidate.filing }}" title="view filing document">Filing Document</a>
+									{% endif %}
+								</div>
+								<div class="social-icons">
+									{% if candidate.fb != ""  %}
+									<a class="text-xl" target="_blank" href="{{ candidate.fb }}" title="view facebook page"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+									{% endif %}
+									{% if candidate.twitter != ""  %}
+									<a class="text-xl" target="_blank" href="{{ candidate.twitter }}" title="view twitter page"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+									{% endif %}
+									{% if candidate.instagram != ""  %}
+									<a class="text-xl" target="_blank" href="{{ candidate.instagram }}" title="view instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+									{% endif %}
+								</div>
+							</div>
 						</div>
 						{% endfor %}
 					</div>
@@ -52,9 +73,30 @@ layout: default
 					
 					<div class="collapse" id="councilCollapse">
 						{% for candidate in councilCandidates %}
-						<div class="option-box">
-							<h4>{{ candidate.name }}</h4>
-							<p><a class="btn btn-primary" target="_blank" href="{{ candidate.website }}" title="view website">Website</a></p>
+						<div class="option-box option-box--candidate">
+							<img class="pull-left" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
+							<div class="clearfix">
+								<h4 class="">{{ candidate.name }}</h4>
+								<div class="btn-group">
+									{% if candidate.website != "" %}
+									<a class="btn btn-sm btn-primary" target="_blank" href="{{ candidate.website }}" title="view website">Website</a>
+									{% endif %}
+									{% if candidate.filing != ""  %}
+									<a class="btn btn-sm btn-primary" target="_blank" href="{{ candidate.filing }}" title="view filing document">Filing Document</a>
+									{% endif %}
+								</div>
+								<div class="social-icons">
+									{% if candidate.fb != ""  %}
+									<a class="text-xl" target="_blank" href="{{ candidate.fb }}" title="view facebook page"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+									{% endif %}
+									{% if candidate.twitter != ""  %}
+									<a class="text-xl" target="_blank" href="{{ candidate.twitter }}" title="view twitter page"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+									{% endif %}
+									{% if candidate.instagram != ""  %}
+									<a class="text-xl" target="_blank" href="{{ candidate.instagram }}" title="view instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+									{% endif %}
+								</div>
+							</div>
 						</div>
 						{% endfor %}
 					</div>
@@ -80,9 +122,10 @@ layout: default
 					<div class="collapse" id="bondCollapse">
 						{% for prop in bondProps %}
 						<div class="option-box option-box--bond">
+							<div class="bond-icon pull-left bg-sa-dark-aqua"><img src="/img/thumbs-up.svg" alt="" /></div>
 							<h5>{{ prop.title }}</h5>
-							<p>{{ prop.description }}</p>
-							<div class="bond-percent">{{ prop.percent }}</div>
+							<p class="text-sm">{{ prop.description }}</p>
+							<p>Percent of total bond: <span class="bg-cause-civic bond-percent">{{ prop.percent }}</span></p>
 						</div>
 						{% endfor %}
 					</div>
