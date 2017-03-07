@@ -1,0 +1,72 @@
+{
+	"1": {
+		"turnout": 		"14.63%",
+		"size":				"22",
+		"population":	"112,465",
+		"income":			"$16,452",
+		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD1-Map8.5x11.pdf"
+	},
+	"2": {
+		"turnout": 		"9.56%",
+		"size":				"55",
+		"population":	"123,533",
+		"income":			"$14,512",
+		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD2-Map8.5x11.pdf"
+	},
+	"3": {
+		"turnout": 		"12.34%",
+		"size":				"92",
+		"population":	"118,883",
+		"income":			"$11,651",
+		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD3-Map8.5x11.pdf"
+	},
+	"4": {
+		"turnout": 		"8.80%",
+		"size":				"63",
+		"population":	"123,165",
+		"income":			"$11,914",
+		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD4-Map8.5x11.pdf"
+	},
+	"5": {
+		"turnout": 		"8.29%",
+		"size":				"19",
+		"population":	"106,589",
+		"income":			"$9,149",
+		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD5-Map8.5x11.pdf"
+	},
+	"6": {
+		"turnout": 		"9.55%",
+		"size":				"57",
+		"population":	"152,533",
+		"income":			"$15,224",
+		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD6-Map8.5x11.pdf"
+	},
+	"7": {
+		"turnout": 		"14.22%",
+		"size":				"30",
+		"population":	"137,533",
+		"income":			"$19,081",
+		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD7-Map8.5x11.pdf"
+	},
+	"8": {
+		"turnout": 		"13.28%",
+		"size":				"59",
+		"population":	"159,568",
+		"income":			"$28,345",
+		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD8-Map8.5x11.pdf"
+	},
+	"9": {
+		"turnout": 		"15.94%",
+		"size":				"55",
+		"population":	"159,214",
+		"income":			"$31,302",
+		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD9-Map8.5x11.pdf"
+	},
+	"10": {
+		"turnout": 		"14.09%",
+		"size":				"51",
+		"population":	"133,045",
+		"income":			"$22,822",
+		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD10-Map8.5x11.pdf"
+	}
+}

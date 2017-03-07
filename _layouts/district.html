@@ -8,6 +8,26 @@ layout: default
 			<div class="col-md-8 col-md-offset-2 text-center">
 				<h1 class="">{{ page.title }}</h1>
 			</div>
+			<div class="row">
+        <div class="col-md-4">
+          <div class="number-box bg-sa-dark-aqua">
+            <p class="number-box--number text-sa-white">12.4%</p>
+            <p class="number-box--description text-sa-white">of registered voters voted in 2015.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="number-box bg-sa-dark-aqua">
+            <p class="number-box--number text-sa-white">63</p>
+            <p class="number-box--description text-sa-white">Average age of voter in 2015 Municipal Election</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="number-box bg-sa-dark-aqua">
+            <p class="number-box--number text-sa-white">34.1</p>
+            <p class="number-box--description text-sa-white">Median age of San Antonio residents</p>
+          </div>
+        </div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -62,7 +82,7 @@ layout: default
 					<h3>City Council Members</h3>
 					<p>The City of San Antonio is divided into 10 districts, and each district elects one representative to City Council (for a two-year term, with a four-term limit). Together, City Council creates policies and passes laws on city services, capitalimprovement projects, land use and development, economic development, and other City issues. City Council members focus on how policies and decisions will affect both the city as a whole and the constituents in their district. Click here to contact your City Council member and get more information about what’s happening in your district.
 					</p>
-					<p class="text-med"><strong>Candidates: {{ councilCandidates|size }}</strong></p>
+					<p class="text-med uppercase"><strong>Candidates: {{ councilCandidates|size }}</strong></p>
 					<p><a class="" role="button" data-toggle="collapse" href="#councilCollapse" aria-expanded="false" aria-controls="councilCollapse">Show Candidates</a></p>
 					
 					<div class="collapse" id="councilCollapse">
