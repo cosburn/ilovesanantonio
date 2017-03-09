@@ -4,8 +4,30 @@
 
 header {
 	border-bottom: 2px solid col(light-gray);
-	padding: 10px 0;
+	padding: 10px 10px;
+	.site-title {
+		float: left;
+		display: inline-block;
+		&:hover { text-decoration: none; }
+		.site-title-intro,
+		.site-title-main,
+		.site-title-sub {
+			margin: 0;
+		}
+		.site-title-intro {}
+		.site-title-main {
+			font-family: $headline-type;
+			@include font-size(5);
+			line-height: 1em;
+			font-weight: 700;
+		}
+		.site-title-sub {}
+	}
 	@media screen and (max-width: 600px) {
-		text-align: center;
+		.site-title .site-title-main {
+			@include font-size(3);
+			// float: none;
+			// text-align: center;
+		}
 	}
 }

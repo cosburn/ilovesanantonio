@@ -49,9 +49,10 @@ h3, .h3  { @include font-size(2.4); line-height: 1;  letter-spacing: .1rem;  }
 h4, .h4  { @include font-size(2.0); line-height: 1.25; letter-spacing: 0; }
 h5, .h5  { @include font-size(1.6); line-height: 1.5;  letter-spacing: 0rem; }
 h6, .h6  { @include font-size(1.4); line-height: 1.6;  letter-spacing: 0; }
-@media (max-width:769px) {
-  h1, .h1 { @include font-size(4.5); }
-  h2, .h2 { @include font-size(3.6); }
+
+@media screen and (max-width:769px) {
+  h1, .h1 { @include font-size(5.5); }
+  h2, .h2 { @include font-size(3.0); }
 }
 
 h1, .h1  { color: $headline-color; }

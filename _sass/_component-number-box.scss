@@ -33,4 +33,10 @@
 			@include font-size(5.5);
 		}
 	}
+	@media screen and (max-width: 769px) {
+		padding: 50px 55px;
+		.number-box--number {
+			@include font-size(5.5);
+		}
+	}
 }

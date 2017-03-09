@@ -38,5 +38,14 @@ footer {
     column-count: 3;
 }
 
+/* MOBILE SHOW/HIDE */
+.mobile-show { 
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .mobile-show { display: inherit; }
+  .mobile-hide { display: none; }
+  .desktop-hide { display: none; }
+} 
 
 
