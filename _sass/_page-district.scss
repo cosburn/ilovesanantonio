@@ -45,6 +45,13 @@
 	@include font-size(6.5);
 }
 
+.map-thumb {
+	padding: 13px;
+	max-width: 300px;
+	border: 1px solid col(hush-gray);
+	margin-bottom: 8px;
+}
+
 .resources-list {
 	h4 { 
 		margin-bottom: 0;

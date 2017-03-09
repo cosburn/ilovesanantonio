@@ -7,24 +7,25 @@ layout: default
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 text-center">
 				<h1 class="">{{ page.title }}</h1>
+				<div class="spacer-sm"></div>
 			</div>
 			<div class="row">
-        <div class="col-md-4">
-          <div class="number-box bg-sa-dark-aqua">
-            <p class="number-box--number text-sa-white">12.4%</p>
+        <div class="col-md-4 col-sm-4">
+          <div class="number-box number-box--district bg-sa-dark-aqua">
+            <p class="number-box--number text-sa-white">{{ site.data.stats[page.district]["turnout"] }}</p>
             <p class="number-box--description text-sa-white">of registered voters voted in 2015.</p>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="number-box bg-sa-dark-aqua">
-            <p class="number-box--number text-sa-white">63</p>
-            <p class="number-box--description text-sa-white">Average age of voter in 2015 Municipal Election</p>
+        <div class="col-md-4 col-sm-4">
+          <div class="number-box number-box--district bg-sa-dark-aqua">
+            <p class="number-box--number text-sa-white">{{ site.data.stats[page.district]["size"] }}</p>
+            <p class="number-box--description text-sa-white">Square Miles in D{{page.district}}</p>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="number-box bg-sa-dark-aqua">
-            <p class="number-box--number text-sa-white">34.1</p>
-            <p class="number-box--description text-sa-white">Median age of San Antonio residents</p>
+        <div class="col-md-4 col-sm-4">
+          <div class="number-box number-box--district bg-sa-dark-aqua">
+            <p class="number-box--number text-sa-white">{{ site.data.stats[page.district]["population"] }}</p>
+            <p class="number-box--description text-sa-white">Population of D{{page.district}}</p>
           </div>
         </div>
 			</div>
@@ -44,7 +45,7 @@ layout: default
 					<p>The Mayor of San Antonio works closely with City Council to pass laws and create policies for the City. While City Council members are elected by district, the Mayor represents all of San Antonio (for a two-year term, with a four-term limit). The Mayor also hires our City Manager, who serves as the City’s chief administrator and carries out day-to-day operations, provides information to City Council as they make decisions, and develops an annual City budget.
 					</p>
 					<p class="text-med"><strong>Candidates: {{ mayorCandidates|size }}</strong></p>
-					<p><a class="" role="button" data-toggle="collapse" href="#mayorCollapse" aria-expanded="false" aria-controls="mayorCollapse">Show Candidates</a></p>
+					<p><a class="show-hide" role="button" data-toggle="collapse" href="#mayorCollapse" aria-expanded="false" aria-controls="mayorCollapse"><i class="fa fa-caret-down text-med" aria-hidden="true"></i> <span class="toggle-text">Show</span> Candidates</a></p>
 					
 					<div class="collapse" id="mayorCollapse">
 						{% for candidate in mayorCandidates %}
@@ -83,7 +84,7 @@ layout: default
 					<p>The City of San Antonio is divided into 10 districts, and each district elects one representative to City Council (for a two-year term, with a four-term limit). Together, City Council creates policies and passes laws on city services, capitalimprovement projects, land use and development, economic development, and other City issues. City Council members focus on how policies and decisions will affect both the city as a whole and the constituents in their district. Click here to contact your City Council member and get more information about what’s happening in your district.
 					</p>
 					<p class="text-med uppercase"><strong>Candidates: {{ councilCandidates|size }}</strong></p>
-					<p><a class="" role="button" data-toggle="collapse" href="#councilCollapse" aria-expanded="false" aria-controls="councilCollapse">Show Candidates</a></p>
+					<p><a class="show-hide" role="button" data-toggle="collapse" href="#councilCollapse" aria-expanded="false" aria-controls="councilCollapse"><i class="fa fa-caret-down text-med" aria-hidden="true"></i> <span class="toggle-text">Show</span> Candidates</a></p>
 					
 					<div class="collapse" id="councilCollapse">
 						{% for candidate in councilCandidates %}
@@ -133,7 +134,7 @@ layout: default
 					</p>
 					<p class="text-sm"><a href="http://www.sanantonio.gov/2017Bond" title="learn more about the 2017 bond"></a></p>
 
-					<p><a class="" role="button" data-toggle="collapse" href="#bondCollapse" aria-expanded="false" aria-controls="bondCollapse">Show Bond Propositions</a></p>
+					<p><a class="show-hide" role="button" data-toggle="collapse" href="#bondCollapse" aria-expanded="false" aria-controls="bondCollapse"><i class="fa fa-caret-down text-med" aria-hidden="true"></i> <span class="toggle-text">Show</span> Bond Propositions</a></p>
 					
 					<div class="collapse" id="bondCollapse">
 						{% for prop in bondProps %}
@@ -163,7 +164,7 @@ layout: default
 					<h3>School Board</h3>
 					<p>Each San Antonio school district is governed by a school board made up of elected district residents. These board members - or trustees - create policies for the school district, adopt annual budgets and set tax rates, report district progress to the public, and more. School districts are further divided by districts (or positions or places), and residents vote for a representative from their district. School districts overlap into several City Council districts, so if you’re not sure which of the following school districts you live in, <a href="#" title="find you school district">you can enter your information here and find out.</a>
 					</p>
-					<p><a class="" role="button" data-toggle="collapse" href="#schoolsCollapse" aria-expanded="false" aria-controls="bondCollapse">Show School Board Candidates</a></p>
+					<p><a class="show-hide" role="button" data-toggle="collapse" href="#schoolsCollapse" aria-expanded="false" aria-controls="bondCollapse"><i class="fa fa-caret-down text-med" aria-hidden="true"></i> <span class="toggle-text">Show</span> School Board Candidates</a></p>
 					
 					<div class="collapse" id="schoolsCollapse">
 						{% for school in districtSchools %}
@@ -193,6 +194,14 @@ layout: default
 			</div>
 
 			<div class="col-md-3 col-md-offset-1">
+				<h3>{{ page.title }} Map</h3>
+				<a href="{{ site.data.stats[page.district]['map'] }}" target="_blank" title="View larger map">
+					<img class="responsive map-thumb" src="{{ site.data.stats[page.district]['map-thumb'] }}" />
+				</a>
+				<p class="text-sm"><a href="{{ site.data.stats[page.district]['map'] }}" target="_blank" title="View larger map">View larger PDF >></a></p>
+
+				<hr />
+
 				<h3>Important Dates</h3>
 
 				<p class="h4 text-primary has-subtitle">Early Voting</p>

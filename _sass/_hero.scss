@@ -3,8 +3,9 @@
 \*------------------------------------*/
 
 .hero {
-  padding: 150px 0;
+  padding: 100px 0;
 	&.hero-home {
+		padding: 150px 0;
 		.h1 { 
 			@include font-size(8.5); 
 	    // text-shadow: 5px 5px 0px rgba(25, 25, 25, 0.75);

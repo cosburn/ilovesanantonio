@@ -77,7 +77,7 @@ a {
   text-decoration: none;
   font-weight: 200;
  }
-a:hover { color: $link-hover; }
+a:hover { color: $link-hover; cursor: pointer; }
 
 hr {
   margin-top: 3rem;
