@@ -4,7 +4,6 @@
 .row { @include clearfix();}
 
 section,
-footer,
 .page-section {
 	padding: 80px 0;
 	position: relative;
@@ -12,10 +11,6 @@ footer,
     min-height: auto;
     padding: 40px 0;
   }
-}
-
-footer {
-  padding: 30px 0;
 }
 
 .spacer-lg {

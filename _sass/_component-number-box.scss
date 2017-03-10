@@ -27,6 +27,9 @@
 		line-height: .9;
 		font-weight: 700;
 	}
+	@media screen and (max-width: 1200px) {
+		.number-box--number { @include font-size(6.5); }
+	}
 	@media screen and (max-width: 769px) {
 		padding: 50px 55px;
 	    display: block;

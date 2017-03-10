@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    #SECTION - FOOTER
+\*------------------------------------*/
+
+footer {
+  padding: 30px 0;
+  .footer-logo  { margin: 10px 0; }
+  nav           { margin-top: 50px; }
+  .attribution  { margin: 40px 0 0 0;}
+  .footer-left  { float: left; text-align: left; }
+  .footer-right { float: right; text-align: right; }
+  .btn          { margin: 0; }
+  @media screen and (max-width: 769px) {
+    .footer-left,
+    .footer-right {
+      display: block;
+      float: none;
+      text-align: center;
+    }
+    .footer-left { margin-top: 40px; }
+  }
+}

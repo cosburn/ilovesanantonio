@@ -6,10 +6,13 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	.credit-logo {
-		width: 150px;
+		max-width: 150px;
 		margin: 20px;
+		@media screen and (max-width: 769px) {
+			max-width: 100px;
+		}
 	}
 }
