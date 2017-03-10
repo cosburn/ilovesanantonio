@@ -7,7 +7,7 @@ layout: default
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 text-center">
 				<h1 class="">{{ page.title }}</h1>
-				<div class="spacer-sm"></div>
+				<div class="spacer-sm mobile-hide"></div>
 			</div>
 			<div class="row">
         <div class="col-md-4 col-sm-4">
@@ -50,27 +50,35 @@ layout: default
 					<div class="collapse" id="mayorCollapse">
 						{% for candidate in mayorCandidates %}
 						<div class="option-box option-box--candidate media">
-							<img class="media-object" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
-							<div class="media-body">
-								<h4 class="media-heading">{{ candidate.name }}</h4>
-								<div class="btn-group">
-									{% if candidate.website != "" %}
-									<a class="btn btn-sm btn-sa-dark-aqua" target="_blank" href="{{ candidate.website }}" title="view website">Website</a>
-									{% endif %}
-									{% if candidate.filing != ""  %}
-									<a class="btn btn-sm btn-sa-dark-aqua" target="_blank" href="{{ candidate.filing }}" title="view filing document">Filing Document</a>
+							<div class="row">
+								<div class="col-sm-3">
+									{% if candidate.photo != "" %}
+									<img class="responsive" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
+									{% else %}
+									<img class="responsive mobile-hide" src="/img/candidates/no-photo.png" alt="no photo provided" />
 									{% endif %}
 								</div>
-								<div class="social-icons">
-									{% if candidate.fb != ""  %}
-									<a class="text-xl" target="_blank" href="{{ candidate.fb }}" title="view facebook page"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-									{% endif %}
-									{% if candidate.twitter != ""  %}
-									<a class="text-xl" target="_blank" href="{{ candidate.twitter }}" title="view twitter page"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-									{% endif %}
-									{% if candidate.instagram != ""  %}
-									<a class="text-xl" target="_blank" href="{{ candidate.instagram }}" title="view instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-									{% endif %}
+								<div class="col-sm-9">
+									<h4 class="">{{ candidate.name }}</h4>
+									<div class="">
+										{% if candidate.website != "" %}
+										<a class="btn btn-sm btn-sa-dark-aqua" target="_blank" href="{{ candidate.website }}" title="view website">Website</a>
+										{% endif %}
+										{% if candidate.filing != ""  %}
+										<a class="btn btn-sm btn-sa-dark-aqua" target="_blank" href="{{ candidate.filing }}" title="view filing document">Filing Document</a>
+										{% endif %}
+									</div>
+									<div class="social-icons">
+										{% if candidate.fb != ""  %}
+										<a class="text-xl" target="_blank" href="{{ candidate.fb }}" title="view facebook page"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+										{% endif %}
+										{% if candidate.twitter != ""  %}
+										<a class="text-xl" target="_blank" href="{{ candidate.twitter }}" title="view twitter page"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+										{% endif %}
+										{% if candidate.instagram != ""  %}
+										<a class="text-xl" target="_blank" href="{{ candidate.instagram }}" title="view instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+										{% endif %}
+									</div>
 								</div>
 							</div>
 						</div>
@@ -88,31 +96,37 @@ layout: default
 					
 					<div class="collapse" id="councilCollapse">
 						{% for candidate in councilCandidates %}
-						<div class="option-box option-box--candidate media">
-							<div class="media-left">
-								<img class="media-object" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
-							</div>
-							<div class="media-body">
-								<h4 class="media-heading">{{ candidate.name }}</h4>
-								<div class="btn-group">
-									{% if candidate.website != "" %}
-									<a class="btn btn-sm btn-primary" target="_blank" href="{{ candidate.website }}" title="view website">Website</a>
-									{% endif %}
-									{% if candidate.filing != ""  %}
-									<a class="btn btn-sm btn-primary" target="_blank" href="{{ candidate.filing }}" title="view filing document">Filing Document</a>
-									{% endif %}
-								</div>
-								<div class="social-icons">
-									{% if candidate.fb != ""  %}
-									<a class="text-xl" target="_blank" href="{{ candidate.fb }}" title="view facebook page"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-									{% endif %}
-									{% if candidate.twitter != ""  %}
-									<a class="text-xl" target="_blank" href="{{ candidate.twitter }}" title="view twitter page"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-									{% endif %}
-									{% if candidate.instagram != ""  %}
-									<a class="text-xl" target="_blank" href="{{ candidate.instagram }}" title="view instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-									{% endif %}
-								</div>
+							<div class="option-box option-box--candidate media">
+								<div class="row">
+									<div class="col-sm-3">
+										{% if candidate.photo != "" %}
+										<img class="responsive" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
+										{% else %}
+										<img class="responsive mobile-hide" src="/img/candidates/no-photo.png" alt="no photo provided" />
+										{% endif %}
+									</div>
+									<div class="col-sm-9">
+										<h4 class="">{{ candidate.name }}</h4>
+										<div class="">
+											{% if candidate.website != "" %}
+											<a class="btn btn-sm btn-primary" target="_blank" href="{{ candidate.website }}" title="view website">Website</a>
+											{% endif %}
+											{% if candidate.filing != ""  %}
+											<a class="btn btn-sm btn-primary" target="_blank" href="{{ candidate.filing }}" title="view filing document">Filing Document</a>
+											{% endif %}
+										</div>
+										<div class="social-icons">
+											{% if candidate.fb != ""  %}
+											<a class="text-xl" target="_blank" href="{{ candidate.fb }}" title="view facebook page"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+											{% endif %}
+											{% if candidate.twitter != ""  %}
+											<a class="text-xl" target="_blank" href="{{ candidate.twitter }}" title="view twitter page"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+											{% endif %}
+											{% if candidate.instagram != ""  %}
+											<a class="text-xl" target="_blank" href="{{ candidate.instagram }}" title="view instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+											{% endif %}
+										</div>
+									</div>
 							</div>
 						</div>
 						{% endfor %}
@@ -123,7 +137,7 @@ layout: default
 					{% assign bondProps = site.data.bond["bond"] %}
 					{% assign bondTotal = site.data.bond["districtTotals"][page.district] %}
 
-					<div class="number-box bg-sa-white pull-right">
+					<div class="number-box bg-sa-white">
 						<p class="number-box--number text-sa-dark-aqua">${{ bondTotal }}m</p>
 						<p class="number-box--description">in bond money dedicated to D{{ page.district }}</p>
 					</div>

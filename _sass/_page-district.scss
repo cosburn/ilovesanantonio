@@ -11,11 +11,15 @@
 		background-color: col("sa-white");
 		padding: 20px;
 		margin-bottom:10px;
-		// border-top: 5px solid col(secondary);
 		&.option-box--candidate {
-			img {
-				max-width: 150px;
-				margin-right: 20px;
+			h4, img { margin-bottom: 1rem; }
+			.btn { margin: 5px 0; }
+			@media screen and (max-width: 769px) {
+				img { max-width: 100px; }
+				.btn {
+					min-width: 70px;
+			    @include font-size(1.2);
+				}
 			}
 		}
 	}
@@ -41,9 +45,7 @@
 		}
 	}
 }
-.ballot-box--bond .number-box .number-box--number {
-	@include font-size(6.5);
-}
+
 
 .map-thumb {
 	padding: 13px;
@@ -61,3 +63,40 @@
 	}
 	li { padding: 7px 0; }
 }
+
+/* DISTRICT PAGE NUMBER BOXES */
+
+.number-box.number-box--district {
+	padding: 50px 35px;
+	.number-box--number {
+		@include font-size(5.5);
+	}
+	@media screen and (max-width: 769px) {
+		display: none;
+	}
+}
+.ballot-box--bond {
+	.number-box {
+		padding: 20px; 
+		width: 100%;
+		margin: 0 0 2a0px 0;
+		.number-box--number {
+			@include font-size(6.5);
+		}
+		@media screen and (max-width: 769px) {
+			padding: 20px; 
+			.number-box--number { 
+				@include font-size(4.5); 
+			}
+		}
+	}
+}
+
+/* SHOW/HIDE TOGGLE STYLES */
+a.show-hide {
+	&:hover { text-decoration: none; }
+	@media screen and (max-width: 769px) {
+		padding: 15px 0;
+	}
+}
+

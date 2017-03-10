@@ -27,6 +27,9 @@ body {
   font-weight: 400;
   font-family: $body-type;
   color: $body-color;
+  @media screen and (max-width: 769px) {
+    @include font-size(1.4);
+  }
 }
 
 h1, h2, h3, h4, h5, h6,

@@ -46,6 +46,11 @@ footer {
   .mobile-show { display: inherit; }
   .mobile-hide { display: none; }
   .desktop-hide { display: none; }
+}
+
+/* OFF CANVAS NAV OVERFLOW FIX */
+[canvas] {
+  overflow-x: hidden;
 } 
 
 

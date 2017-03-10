@@ -9,7 +9,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D1-RobertFeria.pdf" 
 		},
 		{	"name":				"Adrian Flores",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -17,7 +17,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D1%20-%20Adrian%20Flores.pdf?ver=2017-02-14-133513-677" 
 		},
 		{	"name":				"Ross A. Treviño",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -25,7 +25,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D1%20-%20Ross%20A.%20Trevino.pdf?ver=2017-02-17-171218-463" 
 		},
 		{	"name":				"Lauro A. Bustamante",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -51,7 +51,7 @@
 	],
 	"2": [
 		{	"name":				"Dori L. Brown",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"http://doribrown.today/",
 			"fb":					"https://www.facebook.com/Dori-L-Brown-1837328703207175/",
 			"twitter":		"",
@@ -85,7 +85,7 @@
 	],
 	"3": [
 		{	"name":				"Jessica O. Guerrero",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -93,7 +93,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D3%20-%20Jessica%20O.%20Guerrero.pdf?ver=2017-02-17-171545-357" 
 		},
 		{	"name":				"Jerome C. Durham",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -109,7 +109,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D3%20-%20Rebecca%20J.%20Viagran.pdf?ver=2017-01-19-171725-860" 
 		},
 		{	"name":				"Nathan Carrizales",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -117,7 +117,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D3%20-%20Nathan%20Carrizales.pdf?ver=2017-01-18-180824-067" 
 		},
 		{	"name":				"Sylvia E. Don",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -125,7 +125,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D3%20-%20Sylvia%20E.%20Don.pdf?ver=2017-02-02-160915-843" 
 		},
 		{	"name":				"Ismael Reyes",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -133,7 +133,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D3%20-%20Ismael%20Reyes.pdf?ver=2017-02-15-182335-750" 
 		},
 		{	"name":				"Ralph E. Gerber",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -143,7 +143,7 @@
 	],
 	"4": [
 		{	"name":				"Johnny Arrendondo",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -159,7 +159,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D4-ReySaldana.pdf" 
 		},
 		{	"name":				"Rey Guevera",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -177,7 +177,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D5%20-%20Cynthia%20T.%20Cavazos.pdf?ver=2017-02-07-170135-400" 
 		},
 		{	"name":				"David C. Yañez",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -185,7 +185,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D5%20-%20David%20Yanez.pdf?ver=2017-02-10-160420-797" 
 		},
 		{	"name":				"Dolores Sotomayor",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -209,7 +209,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D5%20-%20Richard%20Montez.pdf?ver=2017-02-14-161218-673" 
 		},
 		{	"name":				"Daniel Lopez",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -259,7 +259,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D6%20-%20Rick%20Trevino.pdf?ver=2017-02-01-143304-560" 
 		},
 		{	"name":				"Robert Castaneda",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -267,7 +267,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D6%20-%20Robert%20Castaneda.pdf?ver=2017-02-16-183402-473" 
 		},
 		{	"name":				"Ropal Anderson",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -285,7 +285,7 @@
 	],
 	"7": [
 		{	"name":				"Cris Medina",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -293,7 +293,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D7%20-%20Cris%20Medina.pdf?ver=2017-02-02-155623-000" 
 		},
 		{	"name":				"Marco Reyes",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -301,7 +301,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D7%20-%20Marco%20Reyes.pdf?ver=2017-02-10-091117-207" 
 		},
 		{	"name":				"Alfredo Esparza Colunga",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -343,7 +343,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D8%20-%20Shane%20Hinze.pdf?ver=2017-01-20-105742-203" 
 		},
 		{	"name":				"Paul Martin",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -385,7 +385,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D9%20-%20Lynlie%20Wallace.pdf?ver=2017-01-25-114315-333" 
 		},
 		{	"name":				"Adam Goodman",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -393,7 +393,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D9%20-%20Adam%20Goodman.pdf?ver=2017-02-10-145043-607" 
 		},
 		{	"name":				"Sandra Martinez-Deyarmond",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -425,7 +425,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D9-MarcoBarros.pdf?ver=2017-02-09-155418-207" 
 		},
 		{	"name":				"Bert T. Cecconi",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -499,7 +499,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D10%20-%20Reinette%20King.pdf?ver=2017-01-30-165437-030" 
 		},
 		{	"name":				"Andrew J. Padilla",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -541,7 +541,7 @@
 	],
 	"mayor": [
 		{	"name":				"Napoleon Madrid",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"http://www.napoleonmadrid.com",
 			"fb":					"",
 			"twitter":		"",
@@ -557,7 +557,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/M%20-%20Keven%20Roles.pdf?ver=2017-01-18-181110-927" 
 		},
 		{	"name":				"Felicio Hernandez Flores II",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -565,7 +565,7 @@
 			"filing":			"http://www.sanantonio.gov/LinkClick.aspx?fileticket=KGYWTAF298k%3d&portalid=0" 
 		},
 		{	"name":				"Michael “Commander” Idrigo",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -581,7 +581,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/M%20-%20Ron%20Nirenberg.pdf?ver=2017-01-18-124057-240" 
 		},
 		{	"name":				"Will McLeod",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -605,7 +605,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/M%20-%20Manuel%20Medina.pdf?ver=2017-01-27-132636-050" 
 		},
 		{	"name":				"Mama Bexar",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",
@@ -613,7 +613,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/M%20-%20Mama%20Bexar.pdf?ver=2017-02-17-173142-860" 
 		},
 		{	"name":				"Stephen Lucke",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"https://www.stephenlucke.com/",
 			"fb":					"https://www.facebook.com/VoteforLucke/",
 			"twitter":		"",
@@ -637,7 +637,7 @@
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/Mayor%20-%20Ivy%20R.%20Taylor.pdf?ver=2017-01-18-112207-090" 
 		},
 		{	"name":				"Gerard Xavier Ponce",
-			"photo":			"/img/candidates/no-photo.png",
+			"photo":			"",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",

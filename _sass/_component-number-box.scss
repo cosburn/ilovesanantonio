@@ -27,14 +27,10 @@
 		line-height: .9;
 		font-weight: 700;
 	}
-	&.number-box--district {
-		padding: 50px 35px;
-		.number-box--number {
-			@include font-size(5.5);
-		}
-	}
 	@media screen and (max-width: 769px) {
 		padding: 50px 55px;
+	    display: block;
+	    margin: 0 auto 20px auto;
 		.number-box--number {
 			@include font-size(5.5);
 		}
