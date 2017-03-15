@@ -2,18 +2,18 @@
 layout: default
 ---
 
-<section class="hero has-bg-img bg-color-overlay-hush-gray" style="background-image: url(https://www.sa2020.org/wp-content/uploads/2017/03/bg-map-d{{page.district}}.png">
+<section class="hero has-bg-img bg-color-overlay-hush-gray" style="background-image: url('/img/maps/bg-map-d{{page.district}}.png')">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 text-center">
-				<h1 class="">{{ page.title }}</h1>
+				<h1 class="hero-header">{{ page.title }}</h1>
 				<div class="spacer-sm mobile-hide"></div>
 			</div>
 			<div class="row">
         <div class="col-md-4 col-sm-4">
           <div class="number-box number-box--district bg-sa-dark-aqua">
             <p class="number-box--number text-sa-white">{{ site.data.stats[page.district]["turnout"] }}</p>
-            <p class="number-box--description text-sa-white">of registered voters voted in 2015.</p>
+            <p class="number-box--description text-sa-white">of registered voters in D{{page.district}} voted in 2015</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-4">
@@ -137,10 +137,10 @@ layout: default
 					{% assign bondProps = site.data.bond["bond"] %}
 					{% assign bondTotal = site.data.bond["districtTotals"][page.district] %}
 
-					<div class="number-box bg-sa-white">
+					<!-- <div class="number-box bg-sa-white">
 						<p class="number-box--number text-sa-dark-aqua">${{ bondTotal }}m</p>
 						<p class="number-box--description">in bond money dedicated to D{{ page.district }}</p>
-					</div>
+					</div> -->
 
 					<h3>2017 Bond</h3>
 					<p>A municipal bond allows a city to borrow money in order to fund public projects and improvements. San Antonio’s 2017 Bond Program totals $850 million and is made up of 6 propositions (streets; drainage and flood control; parks, recreation, and open space; library and cultural facilities; public safety facilities; and neighborhoods), with pre-determined projects developed by a committee of community members. 
@@ -280,3 +280,5 @@ layout: default
 		</div>
 	</div>
 </section>
+
+{% include newsletter.html %}

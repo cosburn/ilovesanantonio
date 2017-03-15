@@ -37,7 +37,7 @@ section,
 .mobile-show { 
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 769px) {
   .mobile-show { display: inherit; }
   .mobile-hide { display: none; }
   .desktop-hide { display: none; }
