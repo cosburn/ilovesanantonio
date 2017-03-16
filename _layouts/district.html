@@ -37,6 +37,7 @@ layout: default
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8">
+				<div class="addthis_inline_share_toolbox pull-right"></div>
 				<h2>What's on the ballot</h2>
 
 				<div class="ballot-box ballot-box--mayor">
@@ -137,14 +138,10 @@ layout: default
 					{% assign bondProps = site.data.bond["bond"] %}
 					{% assign bondTotal = site.data.bond["districtTotals"][page.district] %}
 
-					<!-- <div class="number-box bg-sa-white">
-						<p class="number-box--number text-sa-dark-aqua">${{ bondTotal }}m</p>
-						<p class="number-box--description">in bond money dedicated to D{{ page.district }}</p>
-					</div> -->
 
 					<h3>2017 Bond</h3>
 					<p>A municipal bond allows a city to borrow money in order to fund public projects and improvements. San Antonio’s 2017 Bond Program totals $850 million and is made up of 6 propositions (streets; drainage and flood control; parks, recreation, and open space; library and cultural facilities; public safety facilities; and neighborhoods), with pre-determined projects developed by a committee of community members. 
-					<p/><p>Fun facts: there will be no property tax increases as part of the 2017 Bond, andevery San Antonian lives or works within one mile of a planned Bond project. 
+					<p/><p>Fun facts: there will be no property tax increases as part of the 2017 Bond, and every San Antonian lives or works within one mile of a planned Bond project. (Find yours on <a href="https://qagis.sanantonio.gov/tci/proposedbonds2017/" title="bond project map">this map!</a>)
 					</p>
 					<p class="text-sm"><a href="http://www.sanantonio.gov/2017Bond" title="learn more about the 2017 bond"></a></p>
 
@@ -271,14 +268,19 @@ layout: default
 			</div>
 		</div>
 
+	</div>
+</section>
+
+{% include newsletter.html %}
+
+<section class="faq-cta bg-sa-dark-aqua">
+	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3 text-center">
-				<div class="spacer-lg"></div>
-				<h3>Got Questions?</h3>
-				<p><a class="btn btn-lg btn-sa-dark-aqua" href="/faq/" title="frequently asked questions">FAQs</a></p>
+				<h3 class="text-sa-white">Still Got Questions?</h3>
+				<p><a class="btn btn-lg btn-sa-white text-sa-dark-aqua" href="/faq/" title="frequently asked questions">FAQs</a></p>
 			</div>
 		</div>
 	</div>
 </section>
 
-{% include newsletter.html %}

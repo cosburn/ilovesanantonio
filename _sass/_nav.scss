@@ -21,6 +21,7 @@ nav.global-nav {
 }
 
 
+
 /* SLIDEBARS */
 
 [off-canvas] { 
@@ -37,4 +38,8 @@ nav.global-nav {
 		}
 	}
 	.toggle-off-canvas-nav { padding: 10px; }
+}
+.off-canvas-nav-exit {
+	margin-bottom: 0;
+	max-height: 25px;
 }
