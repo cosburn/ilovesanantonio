@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body id="page-body">
     <div off-canvas="off-canvas-nav right push">
       <p class="text-right mobile-hide off-canvas-nav-exit"><a class="toggle-off-canvas-nav text-xsm underline" title="close sidebar">Close X</a></p>
 
@@ -42,51 +42,51 @@
 
           <div class="modal-header text-center">
             <a type="button" class="pull-right" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></a>
-            <a type="button" class="uppercase pull-left step modal-step step-2" data-step="1"><i class="fa fa-chevron-left" aria-hidden="true"></i> back</a>
-            <a type="button" class="uppercase pull-left step modal-step step-3" data-step="2"><i class="fa fa-chevron-left" aria-hidden="true"></i> back</a>
+            <a type="button" class="uppercase pull-left step modal-step step-2" data-step="1" onclick="trackInboundLink('Modal','Step 2: Back');"><i class="fa fa-chevron-left" aria-hidden="true"></i> back</a>
+            <a type="button" class="uppercase pull-left step modal-step step-3" data-step="2" onclick="trackInboundLink('Modal','Step 3: Back');"><i class="fa fa-chevron-left" aria-hidden="true"></i> back</a>
             <h4 class="modal-title step-1 h2" data-step="1">Are you registered to vote?</h4>
             <h4 class="modal-title step-2 h2" data-step="2">Do you live in a San Antonio City Council district?</h4>
             <h4 class="modal-title step-3 h2" data-step="3">Which district do you live in?</h4>
           </div><!--./modal-header-->
 
           <div class="modal-body step step-1">
-            <a class="step modal-step step-1 bg-hush-gray modal-box" data-step="2">
+            <a class="step modal-step step-1 bg-hush-gray modal-box" data-step="2" onclick="trackInboundLink('Modal','Step 1: Option 1');">
               <span class="h5">Yes!<br />What's next?</span>
             </a>
-            <a class="bg-hush-gray h5 modal-box" target="_blank" href="https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio">
+            <a class="bg-hush-gray h5 modal-box" target="_blank" href="https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio" onclick="trackInboundLink('Modal','Step 1: Option 2');">
               <span class="h5">I'm not sure, I need to check.</span>
             </a>
-            <a class="bg-hush-gray modal-box" target="_blank" href="https://webservices.sos.state.tx.us/vrapp/index.asp">
+            <a class="bg-hush-gray modal-box" target="_blank" href="https://webservices.sos.state.tx.us/vrapp/index.asp" onclick="trackInboundLink('Modal','Step 1: Option 3');">
               <span class="h5">No, I need to fill out the form now.</span>
             </a>
           </div><!--./modal-body ./step-1-->
 
           <div class="modal-body step step-2">
-            <a class="modal-box bg-hush-gray step modal-step step-2" data-step="3">
+            <a class="modal-box bg-hush-gray step modal-step step-2" data-step="3" onclick="trackInboundLink('Modal','Step 2: Option 1');">
               <span class="h5">Yes, and I know which one!</span>
             </a>
-            <a class="modal-box bg-hush-gray" href="http://www.sanantonio.gov/Council/Find-My-Council-Member" target="_blank">
+            <a class="modal-box bg-hush-gray" href="http://www.sanantonio.gov/Council/Find-My-Council-Member" target="_blank" onclick="trackInboundLink('Modal','Step 2: Option 2');">
               <span class="h5">I'm not sure... I need to check!</span>
             </a>
-            <a class="modal-box bg-hush-gray" href="/outside-sa">
+            <a class="modal-box bg-hush-gray" href="/outside-sa" onclick="trackInboundLink('Modal','Step 2: Option 3');">
               <span class="h5">Nope, outside city limits.</span>
             </a>
           </div><!--./modal-body ./step-2-->
 
           <div class="modal-body step step-3 text-center">
             <div class="btn-box">
-              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-1" title="district 1 voting information">D1</a>
-              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-2" title="district 2 voting information">D2</a>
-              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-3" title="district 3 voting information">D3</a>
-              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-4" title="district 4 voting information">D4</a>
-              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-5" title="district 5 voting information">D5</a>
-              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-6" title="district 6 voting information">D6</a>
-              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-7" title="district 7 voting information">D7</a>
-              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-8" title="district 8 voting information">D8</a>
-              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-9" title="district 9 voting information">D9</a>
-              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-10" title="district 10 voting information">D10</a>
+              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-1" title="district 1 voting information" onclick="trackInboundLink('Modal','Step 3: D1');">D1</a>
+              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-2" title="district 2 voting information" onclick="trackInboundLink('Modal','Step 3: D2');">D2</a>
+              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-3" title="district 3 voting information" onclick="trackInboundLink('Modal','Step 3: D3');">D3</a>
+              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-4" title="district 4 voting information" onclick="trackInboundLink('Modal','Step 3: D4');">D4</a>
+              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-5" title="district 5 voting information" onclick="trackInboundLink('Modal','Step 3: D5');">D5</a>
+              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-6" title="district 6 voting information" onclick="trackInboundLink('Modal','Step 3: D6');">D6</a>
+              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-7" title="district 7 voting information" onclick="trackInboundLink('Modal','Step 3: D7');">D7</a>
+              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-8" title="district 8 voting information" onclick="trackInboundLink('Modal','Step 3: D8');">D8</a>
+              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-9" title="district 9 voting information" onclick="trackInboundLink('Modal','Step 3: D9');">D9</a>
+              <a class="btn btn-sm btn-sa-dark-aqua" href="/district-10" title="district 10 voting information" onclick="trackInboundLink('Modal','Step 3: D10');">D10</a>
             </div>
-            <a class="btn btn-mid-gray" href="http://www.sanantonio.gov/Council/Find-My-Council-Member" title="need to double-check?">Need to check?</a>
+            <a class="btn btn-mid-gray" href="http://www.sanantonio.gov/Council/Find-My-Council-Member" title="need to double-check?" onclick="trackInboundLink('Modal','Step 3: Check Your District');">Need to check?</a>
           </div><!--./modal-body ./step-3-->
 
         </div>
@@ -100,6 +100,19 @@
     <script>
     
     ( function ( $ ) {
+
+      // $( document ).ready(function() {
+      //     console.log( "ready!" );
+      //     $('#page-body').fadeIn(50, function() {
+      //     console.log('so faded');
+      //   });
+      // });
+
+      var $hamburger = $(".hamburger");
+      $hamburger.on("click", function(e) {
+        $hamburger.toggleClass("is-active");
+      });
+      
 
       // Initialize Slidebars
       var controller = new slidebars();
@@ -124,17 +137,21 @@
       });
 
       $('.show-hide').click(function() {
-        var caret = $(this).children().first();
-        caret.toggleClass('fa-caret-down');
-        caret.toggleClass('fa-caret-up');
+        $(this).fadeOut(100, function() {
+          var caret = $(this).children().first();
+          caret.toggleClass('fa-caret-down');
+          caret.toggleClass('fa-caret-up');
 
-        var t = $(this).children('.toggle-text').first();
-        var txt = t.text();
-        if (txt == "Show") {
-          t.text(txt.replace('Show','Hide'));
-        } else {
-          t.text(txt.replace('Hide','Show'));
-        }
+          var t = $(this).children('.toggle-text').first();
+          var txt = t.text();
+          if (txt == "Show") {
+            t.text(txt.replace('Show','Hide'));
+          } else {
+            t.text(txt.replace('Hide','Show'));
+          }
+          $(this).fadeIn(200);
+        });
+        
       });
 
     } ) ( jQuery );

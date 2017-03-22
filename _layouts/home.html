@@ -8,12 +8,12 @@ layout: default
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-md-offset-1 text-center">
-          <p class="h2">You say you love San Antonio...</p>
+          <p class="h2">You say you love San Antonio, so</p>
           <p class="h1 uppercase">It's time to show it.</p>
           <div class="spacer-sm"></div>
           <!-- Button trigger modal -->
-          <p class="text-lg">Wanna get engaged?</p>
-          <button class="btn btn-lg btn-sa-dark-aqua" data-toggle="modal" data-target="#start-here-modal">Start Here</button>
+          <p class="text-lg">San Antonio needs your voice!</p>
+          <button class="btn btn-lg btn-sa-dark-aqua" data-toggle="modal" data-target="#start-here-modal" onclick="trackInboundLink('Modal','Start Here');">Start Here</button>
         </div>
       </div>
     </div>
@@ -35,9 +35,9 @@ layout: default
             </div>
             <h3 class="">Register</h3>
           </div>
-          <p>Make sure you're registered and your information is up to date. To register, you'll need to print the application and mail it in.</p>
-          <p class="uppercase"><a href="https://webservices.sos.state.tx.us/vrapp/index.asp" title="Register to vote"><strong>Registration Application ></strong></a></p>
-          <p class="uppercase"><a href="https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio" title="Check your registration status"><strong>Check Registration ></strong></a></p>
+          <p>To register, you’ll need to print the application and mail it in. But there are <a href="https://www.sa2020.org/blog/civic-engagement/get-ready-for-san-antonios-local-election/" title="sa2020 blog">plenty of chances</a> to also get registered in person.</p>
+          <p class="uppercase"><a href="https://webservices.sos.state.tx.us/vrapp/index.asp" title="Register to vote" target="_blank" onclick="trackOutboundLink('https://webservices.sos.state.tx.us/vrapp/index.asp', true, 'Registration Application');"><strong>Registration Application ></strong></a></p>
+          <p class="uppercase"><a href="https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio" title="Check your registration status" target="_blank" onclick="trackOutboundLink('https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio', true, 'Check Registration');"><strong>Check Your Registration ></strong></a></p>
         </div>
         <div class="col-md-4 option">
           <div class="text-center">
@@ -46,8 +46,8 @@ layout: default
             </div>
             <h3>Learn</h3>
           </div>
-          <p>Figure out what district you live in, and what's on the ballot.</p>
-          <p class="uppercase"><a href="http://www.sanantonio.gov/Council/Find-My-Council-Member" title="Find your council district"><strong>Check your district ></strong></a></p>
+          <p>Figure out what council district you live in and what's on the ballot.</p>
+          <p class="uppercase"><a href="http://www.sanantonio.gov/Council/Find-My-Council-Member" title="Find your council district" target="_blank" onclick="trackOutboundLink('http://www.sanantonio.gov/Council/Find-My-Council-Member', true, 'Check Your District');"><strong>Check your district ></strong></a></p>
           <p class="uppercase"><a href="#" title="Voting information by location" class="uppercase toggle-off-canvas-nav"><strong>I know my district ></strong></a></p>
         </div>
         <div class="col-md-4 option">
@@ -57,8 +57,8 @@ layout: default
             </div>
             <h3>Vote</h3>
           </div>
-          <p>Find your nearest polling place, and go do the dang thing!</p>
-          <p class="uppercase"><a href="#" title=""><strong>Early Voting Locations ></strong></a></p>
+          <p>Find your nearest polling place and go vote! San Antonio needs you!</p>
+          <p class="uppercase"><a href="https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png" title="Early voting locations list" target="_blank" onclick="trackOutboundLink('https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png', true, 'Early Voting Locations');"><strong>Early Voting Locations ></strong></a></p>
           <p class="uppercase"><a href="/faq/" title=""><strong>I have questions ></strong></a></p>
         </div>
       </div>
@@ -102,7 +102,7 @@ layout: default
       </div>
       <div class="row">
         <div class="col-md-12 text-center">
-          <p class="h4">Learn more at <a href="http://sa2020.org/progress" title="sa2020 data dashboard" class="text-sa-black underline">sa2020.org/progress</a></p>
+          <p class="h4">More community indicators can be found at <a href="http://dashboard.sa2020.org/progress_type/civic-engagement/6/" title="sa2020 data dashboard" class="text-sa-black underline" target="_blank" onclick="trackOutboundLink('http://sa2020.org/progress', true, 'SA2020.org/progress');">sa2020.org/progress</a></p>
         </div>
       </div>
     </div>
@@ -135,6 +135,4 @@ layout: default
   </section>
 
   
-
-
 </div>

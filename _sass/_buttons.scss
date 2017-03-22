@@ -26,6 +26,15 @@ input[type="button"] {
   min-width: 150px;
   line-height: 3;
   @include border-radius(0px);
+  &:focus { outline: none; }
+}
+
+.btn-xsm {
+  margin: 4px 0;
+  padding: 2px;
+  line-height: 1;
+  min-width: 80px;
+  font-size: 1.2rem;
 }
 
 .btn-sm {
@@ -45,6 +54,10 @@ input[type="button"] {
 .btn-box {
   text-align: center;
   .btn { margin: 5px; }
+}
+button.hamburger {
+  min-width: 0;
+  padding: 5px;
 }
 
 // Button loop

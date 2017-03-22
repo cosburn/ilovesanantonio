@@ -43,10 +43,10 @@ layout: default
 				<div class="ballot-box ballot-box--mayor">
 					{% assign mayorCandidates = site.data.candidates["mayor"] %}
 					<h3 class="">Mayor</h3>
-					<p>The Mayor of San Antonio works closely with City Council to pass laws and create policies for the City. While City Council members are elected by district, the Mayor represents all of San Antonio (for a two-year term, with a four-term limit). The Mayor also hires our City Manager, who serves as the City’s chief administrator and carries out day-to-day operations, provides information to City Council as they make decisions, and develops an annual City budget.
+					<p>The Mayor of San Antonio works closely with City Council to pass laws and create policies for the City, as well as the City Manager, who serves as the City’s chief administrator. While City Council members are elected by district, the Mayor represents all of San Antonio (for a two-year term, with a four-term limit). Candidates are listed here as they will appear on the ballot. All information shared is public information.
 					</p>
 					<p class="text-med"><strong>Candidates: {{ mayorCandidates|size }}</strong></p>
-					<p><a class="show-hide" role="button" data-toggle="collapse" href="#mayorCollapse" aria-expanded="false" aria-controls="mayorCollapse"><i class="fa fa-caret-down text-med" aria-hidden="true"></i> <span class="toggle-text">Show</span> Candidates</a></p>
+					<p><a class="show-hide" role="button" data-toggle="collapse" href="#mayorCollapse" aria-expanded="false" aria-controls="mayorCollapse" onclick="trackInboundLink('Show/Hide','Mayor Candidates');"><i class="fa fa-caret-down text-med" aria-hidden="true"></i> <span class="toggle-text">Show</span> Candidates</a></p>
 					
 					<div class="collapse" id="mayorCollapse">
 						{% for candidate in mayorCandidates %}
@@ -63,21 +63,21 @@ layout: default
 									<h4 class="">{{ candidate.name }}</h4>
 									<div class="">
 										{% if candidate.website != "" %}
-										<a class="btn btn-sm btn-sa-dark-aqua" target="_blank" href="{{ candidate.website }}" title="view website">Website</a>
+										<a class="btn btn-sm btn-sa-dark-aqua" target="_blank" href="{{ candidate.website }}" title="view website" onclick="trackOutboundLink('{{ candidate.website }}', true, '{{ candidate.name }} Website');">Website</a>
 										{% endif %}
 										{% if candidate.filing != ""  %}
-										<a class="btn btn-sm btn-sa-dark-aqua" target="_blank" href="{{ candidate.filing }}" title="view filing document">Filing Document</a>
+										<a class="btn btn-sm btn-sa-dark-aqua" target="_blank" href="{{ candidate.filing }}" title="view filing document" onclick="trackOutboundLink('{{ candidate.filing }}', true, '{{ candidate.name }} Filing');">Filing Document</a>
 										{% endif %}
 									</div>
 									<div class="social-icons">
 										{% if candidate.fb != ""  %}
-										<a class="text-xl" target="_blank" href="{{ candidate.fb }}" title="view facebook page"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+										<a class="text-xl" target="_blank" href="{{ candidate.fb }}" title="view facebook page" onclick="trackOutboundLink('{{ candidate.fb }}', true, '{{ candidate.name }} Facebook');"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
 										{% endif %}
 										{% if candidate.twitter != ""  %}
-										<a class="text-xl" target="_blank" href="{{ candidate.twitter }}" title="view twitter page"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+										<a class="text-xl" target="_blank" href="{{ candidate.twitter }}" title="view twitter page" onclick="trackOutboundLink('{{ candidate.twitter }}', true, '{{ candidate.name }} Twitter');"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
 										{% endif %}
 										{% if candidate.instagram != ""  %}
-										<a class="text-xl" target="_blank" href="{{ candidate.instagram }}" title="view instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+										<a class="text-xl" target="_blank" href="{{ candidate.instagram }}" title="view instagram" onclick="trackOutboundLink('{{ candidate.instagram }}', true, '{{ candidate.name }} Instagram');"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 										{% endif %}
 									</div>
 								</div>
@@ -90,10 +90,10 @@ layout: default
 				<div class="ballot-box ballot-box--council">
 					{% assign councilCandidates = site.data.candidates[page.district] %}
 					<h3>City Council Members</h3>
-					<p>The City of San Antonio is divided into 10 districts, and each district elects one representative to City Council (for a two-year term, with a four-term limit). Together, City Council creates policies and passes laws on city services, capitalimprovement projects, land use and development, economic development, and other City issues. City Council members focus on how policies and decisions will affect both the city as a whole and the constituents in their district. Click here to contact your City Council member and get more information about what’s happening in your district.
+					<p>The City of San Antonio is divided into 10 districts, and each district elects one representative to City Council (for a two-year term, with a four-term limit). Together, City Council creates policies and passes laws on city services, capital improvement projects, land use and development, economic development, and other City issues. Candidates are listed here as they will appear on the ballot. All information shared is public information.
 					</p>
-					<p class="text-med uppercase"><strong>Candidates: {{ councilCandidates|size }}</strong></p>
-					<p><a class="show-hide" role="button" data-toggle="collapse" href="#councilCollapse" aria-expanded="false" aria-controls="councilCollapse"><i class="fa fa-caret-down text-med" aria-hidden="true"></i> <span class="toggle-text">Show</span> Candidates</a></p>
+					<p class="text-med"><strong>Candidates: {{ councilCandidates|size }}</strong></p>
+					<p><a class="show-hide" role="button" data-toggle="collapse" href="#councilCollapse" aria-expanded="false" aria-controls="councilCollapse" onclick="trackInboundLink('Show/Hide','Council Candidates');"><i class="fa fa-caret-down text-med" aria-hidden="true"></i> <span class="toggle-text">Show</span> Candidates</a></p>
 					
 					<div class="collapse" id="councilCollapse">
 						{% for candidate in councilCandidates %}
@@ -110,21 +110,21 @@ layout: default
 										<h4 class="">{{ candidate.name }}</h4>
 										<div class="">
 											{% if candidate.website != "" %}
-											<a class="btn btn-sm btn-primary" target="_blank" href="{{ candidate.website }}" title="view website">Website</a>
+											<a class="btn btn-sm btn-primary" target="_blank" href="{{ candidate.website }}" title="view website" onclick="trackOutboundLink('{{ candidate.website }}', true, '{{ candidate.name }} Website');">Website</a>
 											{% endif %}
 											{% if candidate.filing != ""  %}
-											<a class="btn btn-sm btn-primary" target="_blank" href="{{ candidate.filing }}" title="view filing document">Filing Document</a>
+											<a class="btn btn-sm btn-primary" target="_blank" href="{{ candidate.filing }}" title="view filing document" onclick="trackOutboundLink('{{ candidate.filing }}', true, '{{ candidate.name }} Filing');">Filing Document</a>
 											{% endif %}
 										</div>
 										<div class="social-icons">
 											{% if candidate.fb != ""  %}
-											<a class="text-xl" target="_blank" href="{{ candidate.fb }}" title="view facebook page"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+											<a class="text-xl" target="_blank" href="{{ candidate.fb }}" title="view facebook page" onclick="trackOutboundLink('{{ candidate.fb }}', true, '{{ candidate.name }} Facebook');"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
 											{% endif %}
 											{% if candidate.twitter != ""  %}
-											<a class="text-xl" target="_blank" href="{{ candidate.twitter }}" title="view twitter page"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+											<a class="text-xl" target="_blank" href="{{ candidate.twitter }}" title="view twitter page" onclick="trackOutboundLink('{{ candidate.twitter }}', true, '{{ candidate.name }} Twitter');"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
 											{% endif %}
 											{% if candidate.instagram != ""  %}
-											<a class="text-xl" target="_blank" href="{{ candidate.instagram }}" title="view instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+											<a class="text-xl" target="_blank" href="{{ candidate.instagram }}" title="view instagram" onclick="trackOutboundLink('{{ candidate.instagram }}', true, '{{ candidate.name }} Instagram');"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 											{% endif %}
 										</div>
 									</div>
@@ -141,11 +141,13 @@ layout: default
 
 					<h3>2017 Bond</h3>
 					<p>A municipal bond allows a city to borrow money in order to fund public projects and improvements. San Antonio’s 2017 Bond Program totals $850 million and is made up of 6 propositions (streets; drainage and flood control; parks, recreation, and open space; library and cultural facilities; public safety facilities; and neighborhoods), with pre-determined projects developed by a committee of community members. 
-					<p/><p>Fun facts: there will be no property tax increases as part of the 2017 Bond, and every San Antonian lives or works within one mile of a planned Bond project. (Find yours on <a href="https://qagis.sanantonio.gov/tci/proposedbonds2017/" title="bond project map">this map!</a>)
+					<p/><p>Fun facts: there will be no property tax increases as part of the 2017 Bond, and every San Antonian lives or works within one mile of a planned Bond project. (Find yours on <a href="https://qagis.sanantonio.gov/tci/proposedbonds2017/" title="bond project map" onclick="trackOutboundLink('https://qagis.sanantonio.gov/tci/proposedbonds2017/', true, 'Bond Project Map');">this map!</a>)<!--  See a full guide to all bond projects <a href="http://www.sanantonio.gov/2017Bond/InfoGuide" title="2017 Bond Guide" target="_blank" onclick="trackOutboundLink('http://www.sanantonio.gov/2017Bond/InfoGuide', true, '2017 Bond Guide');">here</a>. -->
 					</p>
-					<p class="text-sm"><a href="http://www.sanantonio.gov/2017Bond" title="learn more about the 2017 bond"></a></p>
+					<!-- <p class="underline"></p> -->
 
-					<p><a class="show-hide" role="button" data-toggle="collapse" href="#bondCollapse" aria-expanded="false" aria-controls="bondCollapse"><i class="fa fa-caret-down text-med" aria-hidden="true"></i> <span class="toggle-text">Show</span> Bond Propositions</a></p>
+					<p><a class="show-hide" role="button" data-toggle="collapse" href="#bondCollapse" aria-expanded="false" aria-controls="bondCollapse" onclick="trackInboundLink('Show/Hide','Bond Propositions');"><i class="fa fa-caret-down text-med" aria-hidden="true"></i> <span class="toggle-text">Show</span> Bond Propositions</a>
+					| <a href="http://www.sanantonio.gov/2017Bond" title="learn more about the 2017 bond" target="_blank" onclick="trackOutboundLink('http://www.sanantonio.gov/2017Bond', true, '2017 Bond Guide');">View Full Bond Guide</a>
+					</p>
 					
 					<div class="collapse" id="bondCollapse">
 						{% for prop in bondProps %}
@@ -165,6 +167,7 @@ layout: default
 					<h3>Alamo Colleges Bond</h3>
 					<p>The Alamo Colleges Bond is a $450 million package for improvements to all of the Alamo Colleges District’s schools located throughout the city. The bond will also fund new facilities to support San Antonio’s educational priorities and in anticipation of continued population growth. Just like the City of San Antonio’s 2017 Bond, the Alamo Colleges Bond will not require a property tax increase.
 					</p>
+					<p><a href="http://www.alamo.edu/Bond/" title="Alamo Colleges Bond Guide" target="_blank" onclick="trackOutboundLink('http://www.alamo.edu/Bond/', true, 'Alamo Colleges Bond Guide');">View Full Bond Guide</a></p>
 				</div>
 
 				<div class="ballot-box ballot-box--schools">
@@ -173,9 +176,10 @@ layout: default
 					{% assign districtSchools = site.data.schools["districts"][0][page.title] %}
 
 					<h3>School Board</h3>
-					<p>Each San Antonio school district is governed by a school board made up of elected district residents. These board members - or trustees - create policies for the school district, adopt annual budgets and set tax rates, report district progress to the public, and more. School districts are further divided by districts (or positions or places), and residents vote for a representative from their district. School districts overlap into several City Council districts, so if you’re not sure which of the following school districts you live in, <a href="#" title="find you school district">you can enter your information here and find out.</a>
+					<p>Each San Antonio school district is governed by a school board made up of elected district residents. These board members - or trustees - create policies for the school district, adopt annual budgets and set tax rates, report district progress to the public, and more.</p>
+					<p>School districts are further divided by districts (or positions or places), and residents vote for a representative from their district. School districts overlap into several City Council districts. <a class="underline" href="https://www.bexar.org/2231/Precinct-Finder" title="find you school district" target="_blank">Click here to find out what district you live in.</a></p>
 					</p>
-					<p><a class="show-hide" role="button" data-toggle="collapse" href="#schoolsCollapse" aria-expanded="false" aria-controls="bondCollapse"><i class="fa fa-caret-down text-med" aria-hidden="true"></i> <span class="toggle-text">Show</span> School Board Candidates</a></p>
+					<p><a class="show-hide show" role="button" data-toggle="collapse" href="#schoolsCollapse" aria-expanded="false" aria-controls="bondCollapse" onclick="trackInboundLink('Show/Hide','School Board Candidates');"><i class="fa fa-caret-down text-med" aria-hidden="true"></i> <span class="toggle-text">Show</span> School Board Candidates</a></p>
 					
 					<div class="collapse" id="schoolsCollapse">
 						{% for school in districtSchools %}
@@ -183,7 +187,7 @@ layout: default
 						<div class="option-box option-box--schools">
 							{% assign website = site.data.schools["websites"][school] %}
 							<p class="h4 has-subtitle">{{ school }}</p>
-							<a href="{{ website }}" class="text-sm subtitle" title="school board website">View Website</a>
+							<a href="{{ website }}" class="text-sm subtitle" title="school board website" onclick="trackOutboundLink('{{ website }}', true, '{{ school }} Website');">View Website</a>
 
 							<ul class="unstyled">
 								{% for candidate_hash in candidates %}
@@ -206,10 +210,12 @@ layout: default
 
 			<div class="col-md-3 col-md-offset-1">
 				<h3>{{ page.title }} Map</h3>
+				{% assign largerMapLink = site.data.stats[page.district]['map'] %}
+
 				<a href="{{ site.data.stats[page.district]['map'] }}" target="_blank" title="View larger map">
 					<img class="responsive map-thumb" src="{{ site.data.stats[page.district]['map-thumb'] }}" />
 				</a>
-				<p class="text-sm"><a href="{{ site.data.stats[page.district]['map'] }}" target="_blank" title="View larger map">View larger PDF >></a></p>
+				<p class="text-sm"><a href="{{ largerMapLink }}" target="_blank" title="View larger map" onclick="trackOutboundLink('{{ largerMapLink }}', true, 'District {{ page.district }} Map');">View larger PDF >></a></p>
 
 				<hr />
 
@@ -217,11 +223,16 @@ layout: default
 
 				<p class="h4 text-primary has-subtitle">Early Voting</p>
 				<p class="has-subtitle"><strong>April 24 - May 2</strong></p>
-				<p class="subtitle text-sm">Locations: <a href="http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations" title="map">Map</a> | <a href="https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png" title="download list">List</a></p>
+				<p class="subtitle text-sm">Locations: <a href="http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations" title="map" onclick="trackOutboundLink('http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations', true, 'Early Voting Locations: Map');">Map</a> | <a href="https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png" title="download list" onclick="trackOutboundLink('https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png', true, 'Early Voting Locations: List');">List</a></p>
 
 				<p class="h4 text-primary has-subtitle">Election Day</p>
-				<p class="has-subtitle"><strong>May 6</strong></p>
+				<p class="subtitle"><strong>May 6</strong></p>
 				<!-- <a class="subtitle" href="#">Find your polling place ></a> -->
+
+				<p class="h4 text-primary has-subtitle">Forums, Debates &amp; More</p>
+				<p class="has-subtitle"><strong>For all upcoming events: <br />
+					<a href="https://www.sa2020.org/blog/civic-engagement/get-ready-for-san-antonios-local-election/" class="" onclick="trackOutboundLink('https://www.sa2020.org/blog/civic-engagement/get-ready-for-san-antonios-local-election/', true, 'SA2020 Blog');" title="SA2020 Blog with latest election events">SA2020 Blog</a>
+				</strong></p>
 
 				<hr />
 
@@ -231,33 +242,33 @@ layout: default
 					<ul class="unstyled">
 						<!-- <li><a href="#" title=""><em>Move San Antonio</em> Voter's Guide</a></li>
 						<li><a href="#" title=""><em>League of Women Voters of San Antonio</em> Voter's Guide</a></li> -->
-						<li><a href="#" title="http://www.sanantonio.gov/Portals/0/Files/2017Bond/BondInfoGuide.pdf">2017 Bond Guide</a></li>
-						<li><a href="http://thinkvoting.com/the-voting-app/" title="">The Voting App</a></li>
-						<li><a href="" title="Download sample ballot">Download Sample Ballot</a></li>
+						
+						<li><a href="http://thinkvoting.com/the-voting-app/" title="The Voting App" target="_blank" onclick="trackOutboundLink('http://thinkvoting.com/the-voting-app/', true, 'The Voting App');">The Voting App</a></li>
+						<!-- <li><a href="https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio" title="Download sample ballot" target="_blank">Download Sample Ballot</a></li> -->
 					</ul>
 
 					<h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-play" aria-hidden="true"></i> Watch</h4>
 					<ul class="unstyled">
-						<li><a href="http://www.ksat.com/news/ksat-hosts-debate-with-sa-mayoral-candidates">KSAT-12 and SA Hispanic Chamber Mayoral Debate (3.2.17)</a></li>
-						<li><a href="https://therivardreport.com/mayoral-candidates-sharpen-positions-at-town-hall/">Rivard Report Mayoral Town Hall: (2.8.17)</a></li>
-						<li><a href="http://video.klrn.org/video/2365932909/">KLRN This Week with Manuel Medina (1.13.17)</a></li>
-						<li><a href="http://video.klrn.org/video/2365928797/">KLRN This Week with Ron Nirenberg (1.6.17)</a></li>
-						<li><a href="http://video.klrn.org/video/2365894944/">KLRN This Week with Ivy Taylor (11.18.16)</a></li>
+						<li><a href="http://www.ksat.com/news/ksat-hosts-debate-with-sa-mayoral-candidates" target="_blank" onclick="trackOutboundLink('http://www.ksat.com/news/ksat-hosts-debate-with-sa-mayoral-candidates', true, 'KSAT Mayoral Debate 3.2.17');">KSAT-12 and SA Hispanic Chamber Mayoral Debate (3.2.17)</a></li>
+						<li><a href="https://therivardreport.com/mayoral-candidates-sharpen-positions-at-town-hall/" target="_blank" onclick="trackOutboundLink('https://therivardreport.com/mayoral-candidates-sharpen-positions-at-town-hall/', true, 'Rivard Report Mayoral Town Hall: 2.8.17');">Rivard Report Mayoral Town Hall: (2.8.17)</a></li>
+						<li><a href="http://video.klrn.org/video/2365932909/" target="_blank" onclick="trackOutboundLink('http://video.klrn.org/video/2365932909/', true, 'KLRN with Manual Medina 1.13.17');">KLRN This Week with Manuel Medina (1.13.17)</a></li>
+						<li><a href="http://video.klrn.org/video/2365928797/" target="_blank" onclick="trackOutboundLink('http://video.klrn.org/video/2365928797/', true, 'KLRN with Ron Nirenberg 1.6.17');">KLRN This Week with Ron Nirenberg (1.6.17)</a></li>
+						<li><a href="http://video.klrn.org/video/2365894944/" target="_blank" onclick="trackOutboundLink('http://video.klrn.org/video/2365894944/', true, 'KLRN with Ivy Taylor 11.18.16');">KLRN This Week with Ivy Taylor (11.18.16)</a></li>
 					</ul>
 
 					<h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-volume-up" aria-hidden="true"></i> Listen</h4>
 					<ul class="unstyled">
-						<li><a href="http://tpr.org/post/source-alamo-colleges-asks-bexar-county-voters-450-million#stream/0">The Source: Alamo Colleges Bond</a></li>
-						<li><a href="http://tpr.org/post/source-study-shows-abysmally-low-mayoral-voter-turnout-texas#stream/0">The Source: Voter Turnout in Bexar County</a></li>
-						<li><a href="https://www.sanantonio.gov/Manager/CityInsider">City Insider Podcast</a></li>
+						<li><a href="http://tpr.org/post/source-alamo-colleges-asks-bexar-county-voters-450-million#stream/0" target="_blank" onclick="trackOutboundLink('http://tpr.org/post/source-alamo-colleges-asks-bexar-county-voters-450-million#stream/0', true, 'The Source: Alamo Colleges Bond');">The Source: Alamo Colleges Bond (3.1.17)</a></li>
+						<li><a href="http://tpr.org/post/source-study-shows-abysmally-low-mayoral-voter-turnout-texas#stream/0" target="_blank" onclick="trackOutboundLink('http://tpr.org/post/source-study-shows-abysmally-low-mayoral-voter-turnout-texas#stream/0', true, 'The Source: Voter Turnout');">The Source: Voter Turnout in Bexar County (2.14.17)</a></li>
+						<li><a href="https://www.sanantonio.gov/Manager/CityInsider" target="_blank" onclick="trackOutboundLink('https://www.sanantonio.gov/Manager/CityInsider', true, 'City Insider Podcast');">City Insider Podcast</a></li>
 					</ul>
 
 					<h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-rocket" aria-hidden="true"></i> Do</h4>
 					<ul class="unstyled">
-						<li><a href="http://www.votetexas.gov/?page_id=548" title="">Bring These With You to Vote</a></li>
-						<li><a href="http://www.votetexas.gov/register-to-vote/" title="">Register: Download and Print Mail-In Application</a></li>
-						<li><a href="http://www.votetexas.gov/register-to-vote/" title="">Check Your Registration</a></li>
-						<li><a href="http://www.saspeakup.com/" title="">Voice Your 2017 City of San Antonio Budget Priorities</a></li>
+						<li><a href="http://www.votetexas.gov/?page_id=548" title="What to bring with you to vote" target="_blank" onclick="trackOutboundLink('http://www.votetexas.gov/?page_id=548', true, 'Bring these with you to vote');">Bring These With You to Vote</a></li>
+						<li><a href="https://webservices.sos.state.tx.us/vrapp/index.asp" title="Registration Application" target="_blank" onclick="trackOutboundLink('https://webservices.sos.state.tx.us/vrapp/index.asp', true, 'Registration Application');">Register: Download and Print Mail-In Application</a></li>
+						<li><a href="https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio" title="Check your registration" target="_blank" onclick="trackOutboundLink('https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio', true, 'Check Your Registration');">Check Your Registration</a></li>
+						<li><a href="http://www.saspeakup.com/" title="2017 Budget Public Process" target="_blank" onclick="trackOutboundLink('http://www.saspeakup.com/', true, 'Voice Your 2017 City of San Antonio Budget Priorities');">Voice Your 2017 City of San Antonio Budget Priorities</a></li>
 					</ul>
 
 					<!-- <h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-check-square-o" aria-hidden="true"></i> Know</h4>

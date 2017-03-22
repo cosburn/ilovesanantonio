@@ -1,6 +1,11 @@
 /*------------------------------------*\
     #STRUCTURE
 \*------------------------------------*/
+
+#page-body {
+  // display: none;
+}
+
 .row { @include clearfix();}
 
 section,
