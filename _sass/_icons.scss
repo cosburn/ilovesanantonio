@@ -6,9 +6,12 @@
 .icon-med,
 .icon-small { display:inline-block; }
 
-.icon-large svg { width: 100px; height: 100px; }
-.icon-med svg   { width: 53px; height: 53px; }
-.icon-small svg { width: 35px; height: 35px; }
+.icon-large svg,
+.icon-large img { width: 100px; height: 100px; }
+.icon-med svg,
+.icon-med img   { width: 53px; height: 53px; }
+.icon-small svg,
+.icon-small img { width: 35px; height: 35px; }
 
 .media-figure.icon { margin-top: 10px; }
 

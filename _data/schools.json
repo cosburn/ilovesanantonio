@@ -48,11 +48,16 @@
 	"District 10": ["Alamo Heights ISD","Judson ISD"]
 	}],
 "websites": {
-	"Alamo Heights ISD": "http://google.com",
-	"San Antonio ISD": "http://google.com",
-	"Judson ISD": "http://google.com",
-	"Handlandale ISD": "http://google.com",
-	"Southside ISD": "http://google.com",
-	"Northside ISD": "http://google.com"
+	"Alamo Heights ISD": "http://www.ahisd.net/cms/One.aspx?portalId=8146&pageId=36478",
+	"San Antonio ISD": "https://www.saisd.net/main/index.php?option=com_content&view=article&id=6458&Itemid=0",
+	"Judson ISD": "http://www.judsonisd.org/district/schoolBoard/May062017GeneralElections.cfm",
+	"Handlandale ISD": "http://www.harlandale.net/school_board/elections/",
+	"Southside ISD": "https://www.saisd.net/main/index.php?option=com_content&view=article&id=6458&Itemid=0",
+	"Northside ISD": "https://nisd.net/board"
+	},
+"bonds": {
+	"Judson ISD": 		["http://www.judsonisd.org/jblog/archives.cfm/category/bond",""],
+	"Southside ISD": 	["","Voters in Southside ISD will see a $59.8 million bond on their ballots. This bond aims to address growth in the district, with $30.3 million spent on elementary school projects (including a new kindergarten and pre-kindergarten campus), $18.4 million on middle school projects, and $9.4 million on high school projects."],
+	"Alamo Heights": 	["",""]
 	}
 }

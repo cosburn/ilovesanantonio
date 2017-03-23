@@ -51,7 +51,7 @@
 	],
 	"2": [
 		{	"name":				"Dori L. Brown",
-			"photo":			"",
+			"photo":			"/img/candidates/D2_Brown.jpg",
 			"website":		"http://doribrown.today/",
 			"fb":					"https://www.facebook.com/Dori-L-Brown-1837328703207175/",
 			"twitter":		"",
@@ -239,7 +239,7 @@
 			"website":		"https://www.ericgosset.net/",
 			"fb":					"",
 			"twitter":		"https://twitter.com/OfficialGosset",
-			"instagram":	"https://www.instagram.com/gosset.eric/",
+			"instagram":	"",
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D6%20-%20Eric%20Gosset.pdf?ver=2017-01-23-133356-807" 
 		},
 		{	"name":				"Joseph Cortez",
@@ -364,7 +364,7 @@
 			"fb":					"https://www.facebook.com/PatStoutForD8/",
 			"twitter":		"",
 			"instagram":	"",
-			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D8%20-%20Manny%20Pelaez.pdf?ver=2017-01-20-170937-337" 
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D8%20-%20Pat%20Stout.pdf?ver=2017-01-24-142850-960" 
 		},
 		{	"name":				"Tony Valdivia",
 			"photo":			"/img/candidates/D8_Valdivia.jpeg",
@@ -485,13 +485,13 @@
 		{	"name":				"Celeste Montez-Tidwell",
 			"photo":			"/img/candidates/D10_Tidwell.jpeg",
 			"website":		"",
-			"fb":					"https://www.facebook.com/CelesteforSA/",
+			"fb":					"",
 			"twitter":		"",
 			"instagram":	"",
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D10%20-%20Celeste%20Montez-Tidwell.pdf?ver=2017-02-17-172501-527" 
 		},
 		{	"name":				"Reinette King",
-			"photo":			"/img/candidates/D10_king.jpeg",
+			"photo":			"/img/candidates/D10_King.jpeg",
 			"website":		"http://kingcampaign.net/",
 			"fb":					"https://www.facebook.com/kingcampaignSA",
 			"twitter":		"",
@@ -517,9 +517,9 @@
 		{	"name":				"Eric Robert Morse",
 			"photo":			"/img/candidates/D10_Morse.jpeg",
 			"website":		"http://morsesa.com/",
-			"fb":					"",
-			"twitter":		"",
-			"instagram":	"",
+			"fb":					"https://www.facebook.com/morse4sa/",
+			"twitter":		"https://twitter.com/ericrobertmorse",
+			"instagram":	"https://www.instagram.com/ermorse/",
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D10%20-%20Eric%20Morse.pdf?ver=2017-02-16-183623-470" 
 		},
 		{	"name":				"Jonathan Delmer",
@@ -565,7 +565,7 @@
 			"filing":			"http://www.sanantonio.gov/LinkClick.aspx?fileticket=KGYWTAF298k%3d&portalid=0" 
 		},
 		{	"name":				"Michael “Commander” Idrigo",
-			"photo":			"",
+			"photo":			"/img/candidates/Mayor_Idrogo.jpg",
 			"website":		"",
 			"fb":					"",
 			"twitter":		"",

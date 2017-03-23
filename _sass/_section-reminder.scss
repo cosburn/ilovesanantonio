@@ -4,10 +4,12 @@
 \*------------------------------------*/
 
 section.reminder {
-	.number-box {
-		width: 90%;
-		margin: 0 auto;
-		display: block;
-	    margin-top: 20px;
+	.reminder-box {
+		// text-align: center;
+		padding: 20px 50px;
+	}
+	.reminder-icon { 
+		height: 70px;
+    margin-bottom: 30px; 
 	}
 }

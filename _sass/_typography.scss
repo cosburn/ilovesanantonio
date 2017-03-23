@@ -6,8 +6,8 @@ $body-type:                 "Open Sans", sans-serif;
 $headline-type:             "Montserrat", sans-serif;
 $headline-secondary-type:   "Montserrat", sans-serif;
 
-$headline-color:            col("sa-black");
-$body-color:                col("sa-black");
+$headline-color:            darken(col("dark-gray"),10%);
+$body-color:                col("dark-gray");
 $link-color:                col("tertiary");
 $link-hover:                darken($link-color, 10%);
 
@@ -124,6 +124,10 @@ blockquote {
 
 .icon-large {
   @include font-size(5.2);
+  img { 
+    height: 70px;
+    margin-bottom: 30px;
+  }
 }
 
 .has-subtitle {

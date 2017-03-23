@@ -8,8 +8,8 @@ layout: default
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-md-offset-1 text-center">
-          <p class="h2">You say you love San Antonio, so</p>
-          <p class="h1 uppercase">It's time to show it.</p>
+          <p class="h3">You say you love San Antonio...</p>
+          <p class="h1 uppercase hero-header">It's time to show it.</p>
           <div class="spacer-sm"></div>
           <!-- Button trigger modal -->
           <p class="text-lg">San Antonio needs your voice!</p>
@@ -35,7 +35,7 @@ layout: default
             </div>
             <h3 class="">Register</h3>
           </div>
-          <p>To register, you’ll need to print the application and mail it in. But there are <a href="https://www.sa2020.org/blog/civic-engagement/get-ready-for-san-antonios-local-election/" title="sa2020 blog">plenty of chances</a> to also get registered in person.</p>
+          <p>To register, you’ll need to print the application and mail it in. But there are <a href="https://www.sa2020.org/blog/civic-engagement/get-ready-for-san-antonios-local-election/" title="sa2020 blog" target="_blank" onclick="trackOutboundLink('https://www.sa2020.org/blog/civic-engagement/get-ready-for-san-antonios-local-election/', true, 'Plenty of chances to get registered in person');">plenty of chances</a> to also get registered in person.</p>
           <p class="uppercase"><a href="https://webservices.sos.state.tx.us/vrapp/index.asp" title="Register to vote" target="_blank" onclick="trackOutboundLink('https://webservices.sos.state.tx.us/vrapp/index.asp', true, 'Registration Application');"><strong>Registration Application ></strong></a></p>
           <p class="uppercase"><a href="https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio" title="Check your registration status" target="_blank" onclick="trackOutboundLink('https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio', true, 'Check Registration');"><strong>Check Your Registration ></strong></a></p>
         </div>
@@ -116,18 +116,33 @@ layout: default
         <div class="col-md-12 text-center">
           <h2>Where did all this amazing info come from?</h2>
           <div class="logo-container">
-            <a target="_blank" href="https://www.bexar.org/elections" title="Bexar County Elections Website"><img src="/img/logos/bexar-county.jpg" title="Bexar County logo" class="credit-logo"/></a>
-            <a target="_blank" href="https://www.sanantonio.gov" title="City of San Antonio website"><img src="/img/logos/city-of-san-antonio.png" title="City of San Antonio logo" class="credit-logo"/></a>
-            <a target="_blank" href="http://www.mifamiliavota.org/where-we-are/texas/" title="Mi Familia Vota website"><img src="/img/logos/mi-familia-vota.jpg" title="Mi Familia Vota logo" class="credit-logo"/></a>
-            <a target="_blank" href="http://tpr.org/" title="Texas Public Radio website"><img src="/img/logos/tpr.png" title="Texas Public Radio logo" class="credit-logo"/></a>
-            <a target="_blank" href="http://www.klrn.org" title="KLRN website"><img src="/img/logos/klrn.png" title="KLRN logo" class="credit-logo"/></a>
-            <a target="_blank" href="http://www.ksat.com" title="KSAT website"><img src="/img/logos/ksat.png" title="KSAT logo" class="credit-logo"/></a>
-            <a target="_blank" href="http://www.lwvsanantonio.org" title="League of Women Voters website"><img src="/img/logos/league-of-women-voters.jpeg" title="League of Women Voters logo" class="credit-logo"/></a>
-            <a target="_blank" href="http://www.votetexas.gov" title="Texas Secretary of State website"><img src="/img/logos/texas-secretary-of-state.png" title="Texas Secretary of State logo" class="credit-logo"/></a>
-            <a target="_blank" href="http://nowcastsa.com" title="NowCastSA website"><img src="/img/logos/nowcastsa.png" title="NowCastSA logo" class="credit-logo"/></a>
-            <a target="_blank" href="https://therivardreport.com" title="Rivard Report website"><img src="/img/logos/rivard-report.png" title="Rivard Report logo" class="credit-logo"/></a>
-            <a target="_blank" href="http://www.sahcc.org" title="San Antonio Hispanic Chamber Website"><img src="/img/logos/sahcc.png" title="San Antonio Hispanic Chamber of Commerce logo" class="credit-logo"/></a>
-            <a target="_blank" href="http://thinkvoting.com" title="Think Voting Website"><img src="/img/logos/think-voting.png" title="Think Voting App logo" class="credit-logo"/></a>
+            <a target="_blank" href="https://www.bexar.org/elections" title="Bexar County Elections Website"><img src="/img/logos/bexar-county.jpg" alt="Bexar County logo" class="credit-logo"/></a>
+            
+            <a target="_blank" href="http://www.sanantonio.gov/ElectionsCampaignFinance" title="City of San Antonio website"><img src="/img/logos/city-of-san-antonio.png" alt="City of San Antonio logo" class="credit-logo"/></a>
+            
+            <a target="_blank" href="http://www.mifamiliavota.org/where-we-are/texas/" title="Mi Familia Vota website"><img src="/img/logos/mi-familia-vota.jpg" alt="Mi Familia Vota logo" class="credit-logo"/></a>
+            
+            <a target="_blank" href="http://tpr.org/programs/source#stream" title="Texas Public Radio website"><img src="/img/logos/tpr.png" alt="Texas Public Radio logo" class="credit-logo"/></a>
+            
+            <a target="_blank" href="http://video.klrn.org/show/texas-week" title="KLRN website"><img src="/img/logos/klrn.png" alt="KLRN logo" class="credit-logo"/></a>
+            
+            <a target="_blank" href="https://www.facebook.com/OrganizeSATX/" title="OrganizeSA"><img src="/img/logos/organize-sa.png" alt="OrganizeSA logo" class="credit-logo"/></a>
+            
+            <a target="_blank" href="http://www.lwvsanantonio.org" title="League of Women Voters website"><img src="/img/logos/league-of-women-voters.jpeg" alt="League of Women Voters logo" class="credit-logo"/></a>
+            
+            <a target="_blank" href="http://www.votetexas.gov" title="Texas Secretary of State website"><img src="/img/logos/texas-secretary-of-state.png" alt="Texas Secretary of State logo" class="credit-logo"/></a>
+            
+            <a target="_blank" href="http://nowcastsa.com/category/politics" title="NowCastSA website"><img src="/img/logos/nowcastsa.png" alt="NowCastSA logo" class="credit-logo"/></a>
+
+            <a target="_blank" href="https://therivardreport.com" title="Rivard Report website"><img src="/img/logos/rivard-report.png" alt="Rivard Report logo" class="credit-logo"/></a>
+
+            <a target="_blank" href="http://www.sahcc.org/government-affairs" title="San Antonio Hispanic Chamber Website"><img src="/img/logos/sahcc.png" alt="San Antonio Hispanic Chamber of Commerce logo" class="credit-logo"/></a>
+
+            <a target="_blank" href="http://thinkvoting.com" title="Think Voting Website"><img src="/img/logos/think-voting.png" alt="Think Voting App logo" class="credit-logo"/></a>
+
+            <a target="_blank" href="http://www.vote411.org" title="Vote411.org"><img src="/img/logos/vote411.gif" alt="Vote411 logo" class="credit-logo"/></a>
+
+            <a target="_blank" href="https://www.saspeakup.com" title="SA Speakup"><img src="/img/logos/speakup.jpg" alt="SASpeakUp Logo" class="credit-logo"/></a>
           </div>
         </div>
       </div>

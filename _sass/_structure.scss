@@ -39,13 +39,15 @@ section,
 }
 
 /* MOBILE SHOW/HIDE */
-.mobile-show { 
+.mobile-show,
+.desktop-hide { 
   display: none;
 }
+
 @media screen and (max-width: 769px) {
   .mobile-show { display: inherit; }
   .mobile-hide { display: none; }
-  .desktop-hide { display: none; }
+  .desktop-hide { display: inherit; }
 }
 
 /* OFF CANVAS NAV OVERFLOW FIX */

@@ -6,19 +6,32 @@
 	padding: 20px;
 	margin-bottom: 20px;
 	background-color: col(light-gray);
-	h3 { @include font-size(2.8); }
+	h3 { 
+		@include font-size(2.8); 
+	}
 	.option-box {
 		background-color: col("sa-white");
-		padding: 20px;
-		margin-bottom:10px;
+		padding: 10px;
+		&:not(:last-of-type) { margin-bottom: 10px; }
 		&.option-box--candidate {
-			h4, img { margin-bottom: 1rem; }
-			.btn { margin: 5px 0; }
+			h4 { 
+				margin: 1rem 0 .25rem 0;
+			}
+			.btn { 
+				margin: 5px 0; 
+			}
 			@media screen and (max-width: 769px) {
-				img { max-width: 100px; }
+				padding: 20px;
+				img { 
+					max-width: 100px; 
+					margin-bottom: 1rem;
+				}
 				.btn {
 					min-width: 70px;
 			    @include font-size(1.2);
+				}
+				h4 {
+					margin-top: 0;
 				}
 			}
 		}
@@ -44,6 +57,9 @@
 			margin-bottom: 20px;
 		}
 	}
+	@media screen and (max-width: 769px) {
+		padding: 20px 10px 10px 10px;
+	}
 }
 
 
@@ -67,7 +83,9 @@
 /* DISTRICT PAGE NUMBER BOXES */
 
 .number-box.number-box--district {
-	padding: 50px 35px;
+	padding: 50px 30px;
+  margin: 10px auto 20px auto;
+  display: block;
 	.number-box--number {
 		@include font-size(5.5);
 	}
