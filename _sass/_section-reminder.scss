@@ -5,8 +5,11 @@
 
 section.reminder {
 	.reminder-box {
-		// text-align: center;
 		padding: 20px 50px;
+		@media screen and (max-width: 769px) {
+			padding: 20px;
+			text-align: center;
+		}
 	}
 	.reminder-icon { 
 		height: 70px;

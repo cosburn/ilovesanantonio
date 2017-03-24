@@ -56,8 +56,8 @@
 	"Northside ISD": "https://nisd.net/board"
 	},
 "bonds": {
-	"Judson ISD": 		["http://www.judsonisd.org/jblog/archives.cfm/category/bond",""],
-	"Southside ISD": 	["","Voters in Southside ISD will see a $59.8 million bond on their ballots. This bond aims to address growth in the district, with $30.3 million spent on elementary school projects (including a new kindergarten and pre-kindergarten campus), $18.4 million on middle school projects, and $9.4 million on high school projects."],
-	"Alamo Heights": 	["",""]
+	"Judson ISD": 			["http://www.judsonisd.org/jblog/archives.cfm/category/bond",""],
+	"Southside ISD": 		["","Voters in Southside ISD will see a $59.8 million bond on their ballots. This bond aims to address growth in the district, with $30.3 million spent on elementary school projects (including a new kindergarten and pre-kindergarten campus), $18.4 million on middle school projects, and $9.4 million on high school projects."],
+	"Alamo Heights ISD": 	["http://www.ahisd.net/news/what_s_new/a_h_i_s_d_bond_2017",""]
 	}
 }
