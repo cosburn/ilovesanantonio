@@ -37,7 +37,7 @@ layout: default
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8">
-				<!-- <div class="addthis_inline_share_toolbox pull-right clearfix"></div> -->
+				<div class="addthis_inline_share_toolbox pull-right clearfix"></div>
 
 				<h2 class="">What's on the ballot</h2>
 
@@ -146,7 +146,7 @@ layout: default
 					<p>On the ballot, you'll be able to vote either FOR or AGAINST each Proposition individually.</p>
 					<p><strong>Fun facts:</strong> there will be no property tax increases as part of the 2017 Bond, and every San Antonian lives or works within one mile of a planned Bond project. (Find yours on <a href="https://qagis.sanantonio.gov/tci/proposedbonds2017/" title="bond project map" target="_blank" onclick="trackOutboundLink('https://qagis.sanantonio.gov/tci/proposedbonds2017/', true, 'Bond Project Map');">this map!</a>)
 					</p>
-					<p class="underline"><a href="http://www.sanantonio.gov/2017Bond" title="learn more about the 2017 bond" target="_blank" onclick="trackOutboundLink('http://www.sanantonio.gov/2017Bond', true, '2017 Bond Guide');">View Full Bond Guide</a></p>
+					<p class="underline"><a href="http://www.sanantonio.gov/2017Bond/InfoGuide" title="learn more about the 2017 bond" target="_blank" onclick="trackOutboundLink('http://www.sanantonio.gov/2017Bond/InfoGuide', true, '2017 Bond Guide');">View Full Bond Guide</a></p>
 
 					<p><a class="show-hide" role="button" data-toggle="collapse" href="#bondCollapse" aria-expanded="false" aria-controls="bondCollapse" onclick="trackInboundLink('Show/Hide','Show/Hide Bond Propositions');"><i class="fa fa-caret-down text-med" aria-hidden="true"></i> <span class="toggle-text">Show</span> Bond Propositions</a>
 					</p>
@@ -190,10 +190,12 @@ layout: default
 							{% assign website = site.data.schools["websites"][school] %}
 							{% if site.data.schools["bonds"][school] %}
 								{% assign bondInfo = site.data.schools["bonds"][school] %}
+							{% else %}
+								{% assign bondInfo = "" %}
 							{% endif %}
 							<p class="h4 has-subtitle">{{ school }}</p>
-							<a href="{{ website }}" class="text-sm subtitle" title="school board website" onclick="trackOutboundLink('{{ website }}', true, '{{ school }} Website');">View Website</a>
-							{% if bondInfo %}
+							<a href="{{ website }}" target="_blank" class="text-sm subtitle" title="school board website" onclick="trackOutboundLink('{{ website }}', true, '{{ school }} Website');">View Website</a>
+							{% if bondInfo != "" %}
 								<p class="has-subtitle"><strong>{{ school }} has a bond on the upcoming ballot.</strong></p>
 								{% if bondInfo[1] != "" %}
 								{% assign bondBlurb = bondInfo[1] %}
@@ -201,7 +203,7 @@ layout: default
 								{% endif %}
 								{% if bondInfo[0] != "" %}
 								{% assign bondWebsite = bondInfo[0] %}
-								<p class="text-sm subtitle"><a href="{{ bondWebsite }}" title="learn more about bond">Learn more</a></p>
+								<p class="text-sm subtitle"><a target="_blank" href="{{ bondWebsite }}" title="learn more about bond">Learn more</a></p>
 								{% endif %}
 							{% endif %}
 
@@ -231,7 +233,7 @@ layout: default
 				<a href="{{ site.data.stats[page.district]['map'] }}" target="_blank" title="View larger map">
 					<img class="responsive map-thumb" src="{{ site.data.stats[page.district]['map-thumb'] }}" />
 				</a>
-				<p class="text-sm"><a href="{{ largerMapLink }}" target="_blank" title="View larger map" onclick="trackOutboundLink('{{ largerMapLink }}', true, 'District {{ page.district }} Map');">View larger PDF >></a></p>
+				<p class="text-sm"><a href="{{ largerMapLink }}" target="_blank" title="View larger map" onclick="trackOutboundLink('{{ largerMapLink }}',true,'District {{ page.district }} Map');">View larger PDF >></a></p>
 
 				<hr />
 
@@ -241,7 +243,7 @@ layout: default
 
 				<p class="h4 text-primary has-subtitle">Early Voting</p>
 				<p class="has-subtitle"><strong>April 24 - May 2</strong></p>
-				<p class="subtitle text-sm">Locations: <a href="http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations" title="map" onclick="trackOutboundLink('http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations', true, 'Early Voting Locations: Map');">Map</a> | <a href="https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png" title="download list" onclick="trackOutboundLink('https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png', true, 'Early Voting Locations: List');">List</a></p>
+				<p class="subtitle text-sm">Locations: <a href="http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations" title="map" onclick="trackOutboundLink('http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations',true,'Early Voting Locations: Map');">Map</a> | <a href="https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png" title="download list" onclick="trackOutboundLink('https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png',true,'Early Voting Locations: List');">List</a></p>
 
 				<p class="h4 text-primary has-subtitle">Election Day</p>
 				<p class="subtitle"><strong>May 6</strong></p>
@@ -249,7 +251,7 @@ layout: default
 
 				<p class="h4 text-primary has-subtitle">Forums, Debates &amp; More</p>
 				<p class="has-subtitle text-sm"><strong>For all upcoming events: <br />
-					<a href="https://www.sa2020.org/blog/civic-engagement/get-ready-for-san-antonios-local-election/" class="" onclick="trackOutboundLink('https://www.sa2020.org/blog/civic-engagement/get-ready-for-san-antonios-local-election/', true, 'SA2020 Blog');" title="SA2020 Blog with latest election events">SA2020 Blog</a>
+					<a href="https://www.sa2020.org/blog/civic-engagement/get-ready-for-san-antonios-local-election/" class="" onclick="trackOutboundLink('https://www.sa2020.org/blog/civic-engagement/get-ready-for-san-antonios-local-election/',true,'SA2020 Blog');" title="SA2020 Blog with latest election events">SA2020 Blog</a>
 				</strong></p>
 
 				<hr />
@@ -261,32 +263,33 @@ layout: default
 						<!-- <li><a href="#" title=""><em>Move San Antonio</em> Voter's Guide</a></li>
 						<li><a href="#" title=""><em>League of Women Voters of San Antonio</em> Voter's Guide</a></li> -->
 						
-						<li><a href="http://thinkvoting.com/the-voting-app/" title="The Voting App" target="_blank" onclick="trackOutboundLink('http://thinkvoting.com/the-voting-app/', true, 'The Voting App');">The Voting App</a></li>
-						<!-- <li><a href="https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio" title="Download sample ballot" target="_blank">Download Sample Ballot</a></li> -->
+						<li><a href="http://thinkvoting.com/the-voting-app/" title="The Voting App" target="_blank" onclick="trackOutboundLink('http://thinkvoting.com/the-voting-app/',true,'The Voting App');">The Voting App</a></li>
+						<li><a href="http://www.bexar.org/DocumentCenter/View/4570" title="Download Sample Ballot" target="_blank" onclick="trackOutboundLink('http://www.bexar.org/DocumentCenter/View/4570',true,'Download Sample Ballot');">Download Sample Ballot</a></li>
+						
 					</ul>
 
 					<h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-play" aria-hidden="true"></i> Watch</h4>
 					<ul class="unstyled">
-						<li><a href="http://www.ksat.com/news/ksat-hosts-debate-with-sa-mayoral-candidates" target="_blank" onclick="trackOutboundLink('http://www.ksat.com/news/ksat-hosts-debate-with-sa-mayoral-candidates', true, 'KSAT Mayoral Debate 3.2.17');">KSAT-12 and SA Hispanic Chamber Mayoral Debate (3.2.17)</a></li>
-						<li><a href="https://therivardreport.com/mayoral-candidates-sharpen-positions-at-town-hall/" target="_blank" onclick="trackOutboundLink('https://therivardreport.com/mayoral-candidates-sharpen-positions-at-town-hall/', true, 'Rivard Report Mayoral Town Hall: 2.8.17');">Rivard Report Mayoral Town Hall: (2.8.17)</a></li>
-						<li><a href="http://video.klrn.org/video/2365932909/" target="_blank" onclick="trackOutboundLink('http://video.klrn.org/video/2365932909/', true, 'KLRN with Manual Medina 1.13.17');">KLRN This Week with Manuel Medina (1.13.17)</a></li>
-						<li><a href="http://video.klrn.org/video/2365928797/" target="_blank" onclick="trackOutboundLink('http://video.klrn.org/video/2365928797/', true, 'KLRN with Ron Nirenberg 1.6.17');">KLRN This Week with Ron Nirenberg (1.6.17)</a></li>
-						<li><a href="http://video.klrn.org/video/2365894944/" target="_blank" onclick="trackOutboundLink('http://video.klrn.org/video/2365894944/', true, 'KLRN with Ivy Taylor 11.18.16');">KLRN This Week with Ivy Taylor (11.18.16)</a></li>
+						<li><a href="http://www.ksat.com/news/ksat-hosts-debate-with-sa-mayoral-candidates" target="_blank" onclick="trackOutboundLink('http://www.ksat.com/news/ksat-hosts-debate-with-sa-mayoral-candidates',true,'KSAT Mayoral Debate 3.2.17');">KSAT-12 and SA Hispanic Chamber Mayoral Debate (3.2.17)</a></li>
+						<li><a href="https://therivardreport.com/mayoral-candidates-sharpen-positions-at-town-hall/" target="_blank" onclick="trackOutboundLink('https://therivardreport.com/mayoral-candidates-sharpen-positions-at-town-hall/',true,'Rivard Report Mayoral Town Hall: 2.8.17');">Rivard Report Mayoral Town Hall: (2.8.17)</a></li>
+						<li><a href="http://video.klrn.org/video/2365932909/" target="_blank" onclick="trackOutboundLink('http://video.klrn.org/video/2365932909/',true,'KLRN with Manual Medina 1.13.17');">KLRN This Week with Manuel Medina (1.13.17)</a></li>
+						<li><a href="http://video.klrn.org/video/2365928797/" target="_blank" onclick="trackOutboundLink('http://video.klrn.org/video/2365928797/',true,'KLRN with Ron Nirenberg 1.6.17');">KLRN This Week with Ron Nirenberg (1.6.17)</a></li>
+						<li><a href="http://video.klrn.org/video/2365894944/" target="_blank" onclick="trackOutboundLink('http://video.klrn.org/video/2365894944/',true,'KLRN with Ivy Taylor 11.18.16');">KLRN This Week with Ivy Taylor (11.18.16)</a></li>
 					</ul>
 
 					<h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-volume-up" aria-hidden="true"></i> Listen</h4>
 					<ul class="unstyled">
-						<li><a href="http://tpr.org/post/source-alamo-colleges-asks-bexar-county-voters-450-million#stream/0" target="_blank" onclick="trackOutboundLink('http://tpr.org/post/source-alamo-colleges-asks-bexar-county-voters-450-million#stream/0', true, 'The Source: Alamo Colleges Bond');">The Source: Alamo Colleges Bond (3.1.17)</a></li>
-						<li><a href="http://tpr.org/post/source-study-shows-abysmally-low-mayoral-voter-turnout-texas#stream/0" target="_blank" onclick="trackOutboundLink('http://tpr.org/post/source-study-shows-abysmally-low-mayoral-voter-turnout-texas#stream/0', true, 'The Source: Voter Turnout');">The Source: Voter Turnout in Bexar County (2.14.17)</a></li>
-						<li><a href="https://www.sanantonio.gov/Manager/CityInsider" target="_blank" onclick="trackOutboundLink('https://www.sanantonio.gov/Manager/CityInsider', true, 'City Insider Podcast');">City Insider Podcast</a></li>
+						<li><a href="http://tpr.org/post/source-alamo-colleges-asks-bexar-county-voters-450-million#stream/0" target="_blank" onclick="trackOutboundLink('http://tpr.org/post/source-alamo-colleges-asks-bexar-county-voters-450-million#stream/0',true,'The Source: Alamo Colleges Bond');">The Source: Alamo Colleges Bond (3.1.17)</a></li>
+						<li><a href="http://tpr.org/post/source-study-shows-abysmally-low-mayoral-voter-turnout-texas#stream/0" target="_blank" onclick="trackOutboundLink('http://tpr.org/post/source-study-shows-abysmally-low-mayoral-voter-turnout-texas#stream/0',true,'The Source: Voter Turnout');">The Source: Voter Turnout in Bexar County (2.14.17)</a></li>
+						<li><a href="https://www.sanantonio.gov/Manager/CityInsider" target="_blank" onclick="trackOutboundLink('https://www.sanantonio.gov/Manager/CityInsider',true,'City Insider Podcast');">City Insider Podcast</a></li>
 					</ul>
 
 					<h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-rocket" aria-hidden="true"></i> Do</h4>
 					<ul class="unstyled">
-						<li><a href="http://www.votetexas.gov/?page_id=548" title="What to bring with you to vote" target="_blank" onclick="trackOutboundLink('http://www.votetexas.gov/?page_id=548', true, 'Bring these with you to vote');">Bring These With You to Vote</a></li>
-						<li><a href="https://webservices.sos.state.tx.us/vrapp/index.asp" title="Registration Application" target="_blank" onclick="trackOutboundLink('https://webservices.sos.state.tx.us/vrapp/index.asp', true, 'Registration Application');">Register: Download and Print Mail-In Application</a></li>
-						<li><a href="https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio" title="Check your registration" target="_blank" onclick="trackOutboundLink('https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio', true, 'Check Your Registration');">Check Your Registration</a></li>
-						<li><a href="http://www.saspeakup.com/" title="2017 Budget Public Process" target="_blank" onclick="trackOutboundLink('http://www.saspeakup.com/', true, 'Voice Your 2018 City of San Antonio Budget Priorities');">Voice Your 2018 City of San Antonio Budget Priorities</a></li>
+						<li><a href="http://www.votetexas.gov/?page_id=548" title="What to bring with you to vote" target="_blank" onclick="trackOutboundLink('http://www.votetexas.gov/?page_id=548',true,'Bring these with you to vote');">Bring These With You to Vote</a></li>
+						<li><a href="https://webservices.sos.state.tx.us/vrapp/index.asp" title="Registration Application" target="_blank" onclick="trackOutboundLink('https://webservices.sos.state.tx.us/vrapp/index.asp',true,'Registration Application');">Register: Download and Print Mail-In Application</a></li>
+						<li><a href="https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio" title="Check your registration" target="_blank" onclick="trackOutboundLink('https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio',true,'Check Your Registration');">Check Your Registration</a></li>
+						<li><a href="http://www.saspeakup.com/" title="2017 Budget Public Process" target="_blank" onclick="trackOutboundLink('http://www.saspeakup.com/',true,'Voice Your 2018 City of San Antonio Budget Priorities');">Voice Your 2018 City of San Antonio Budget Priorities</a></li>
 					</ul>
 
 				</div>
