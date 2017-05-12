@@ -11,10 +11,10 @@
 		.modal-box {
 			padding: 40px 20px 40px 20px;
 			border: 2px solid col(hush-gray);
-			margin: 10px;
+			// margin: 10px;
 			text-align: center;
 			display: inline-block;
-			height: 135px;
+			height: 140px;
 			position: relative;
 			&:hover {
 				cursor: pointer;
@@ -43,7 +43,7 @@
 	@media (min-width: 768px) {
 		.modal-dialog { width: 700px; }
 		.modal-body { padding: 50px 15px 150px 15px; }
-		.modal-box { width: 29%;	}
+		.modal-box { width: 100%;	}
 		.modal-header h4 { margin-top: 10rem; }
 	}
 }

@@ -51,27 +51,49 @@
           </div><!--./modal-header-->
 
           <div class="modal-body step step-1">
-            <a class="step modal-step step-1 bg-hush-gray modal-box" data-step="2" onclick="trackInboundLink('Modal','Step 1: Option 1');">
-              <span class="h5">Yes!<br />What's next?</span>
-            </a>
-            <a class="bg-hush-gray h5 modal-box" target="_blank" href="https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio" onclick="trackInboundLink('Modal','Step 1: Option 2');">
-              <span class="h5">I'm not sure, I need to check.</span>
-            </a>
-            <a class="bg-hush-gray modal-box" target="_blank" href="https://webservices.sos.state.tx.us/vrapp/index.asp" onclick="trackInboundLink('Modal','Step 1: Option 3');">
-              <span class="h5">No, I need to fill out the form now.</span>
-            </a>
+            <div class="row">
+              <div class="col-sm-4">
+                <a class="step modal-step step-1 bg-hush-gray modal-box" data-step="2" onclick="trackInboundLink('Modal','Step 1: Option 1');">
+                  <span class="h5">Yes!<br />What's next?</span>
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a class="bg-hush-gray h5 modal-box" target="_blank" href="https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio" onclick="trackInboundLink('Modal','Step 1: Option 2');">
+                  <span class="h5">I'm not sure, I need to check.*</span>
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a class="bg-hush-gray modal-box" target="_blank" href="https://webservices.sos.state.tx.us/vrapp/index.asp" onclick="trackInboundLink('Modal','Step 1: Option 3');">
+                  <span class="h5">No, I need to fill out the form now.*</span>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="spacer-sm"></div>
+                <p class="text-xsm">*The deadline to register to vote in the general election has passed, but you have until May 11 to register to vote in the potential second round of voting on June 10! To register, you will need to print the application and mail it.</p>
+              </div>
+            </div>
           </div><!--./modal-body ./step-1-->
 
           <div class="modal-body step step-2">
-            <a class="modal-box bg-hush-gray step modal-step step-2" data-step="3" onclick="trackInboundLink('Modal','Step 2: Option 1');">
-              <span class="h5">Yes, and I know which one!</span>
-            </a>
-            <a class="modal-box bg-hush-gray" href="http://www.sanantonio.gov/Council/Find-My-Council-Member" target="_blank" onclick="trackInboundLink('Modal','Step 2: Option 2');">
-              <span class="h5">I'm not sure... I need to check!</span>
-            </a>
-            <a class="modal-box bg-hush-gray" href="/outside-sa" onclick="trackInboundLink('Modal','Step 2: Option 3');">
-              <span class="h5">Nope, outside city limits.</span>
-            </a>
+            <div class="row">
+              <div class="col-sm-4">
+                <a class="modal-box bg-hush-gray step modal-step step-2" data-step="3" onclick="trackInboundLink('Modal','Step 2: Option 1');">
+                  <span class="h5">Yes, and I know which one!</span>
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a class="modal-box bg-hush-gray" href="http://www.sanantonio.gov/Council/Find-My-Council-Member" target="_blank" onclick="trackInboundLink('Modal','Step 2: Option 2');">
+                  <span class="h5">I'm not sure... I need to check!</span>
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a class="modal-box bg-hush-gray" href="/outside-sa" onclick="trackInboundLink('Modal','Step 2: Option 3');">
+                  <span class="h5">Nope, outside city limits.</span>
+                </a>
+              </div>
+            </div>
           </div><!--./modal-body ./step-2-->
 
           <div class="modal-body step step-3 text-center">
