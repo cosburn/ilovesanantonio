@@ -13,6 +13,7 @@
 		border: 1px solid col("border-gray");
 		// background-color: col("light-gray");
 		padding: 10px;
+		margin-bottom: 20px;
 		&:not(:last-of-type) { margin-bottom: 10px; }
 		&.option-box--candidate {
 			h4 { 
@@ -24,7 +25,7 @@
 			@media screen and (max-width: 769px) {
 				padding: 20px;
 				img { 
-					max-width: 100px; 
+					max-width: 200px; 
 					margin-bottom: 1rem;
 				}
 				.btn {

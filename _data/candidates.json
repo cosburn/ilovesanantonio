@@ -114,16 +114,6 @@
 		}
 	],
 	"8": [
-		{	"name":				"Manny Pelaez",
-			"votes":			"3,034",
-			"votePercent": "27.26",
-			"photo":			"/img/candidates/D8_Palaez.jpeg",
-			"website":		"http://www.vote4manny.com/",
-			"fb":					"https://www.facebook.com/vote4manny/",
-			"twitter":		"",
-			"instagram":	"",
-			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D8%20-%20Manny%20Pelaez.pdf?ver=2017-01-20-170937-337" 
-		},
 		{	"name":				"Cynthia Brehm",
 			"votes":			"3,716",
 			"votePercent": "33.38",
@@ -133,6 +123,16 @@
 			"twitter":		"",
 			"instagram":	"",
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D8%20-%20Cynthia%20Brehm%20rev.pdf?ver=2017-01-20-170823-157" 
+		},
+		{	"name":				"Manny Pelaez",
+			"votes":			"3,034",
+			"votePercent": "27.26",
+			"photo":			"/img/candidates/D8_Palaez.jpeg",
+			"website":		"http://www.vote4manny.com/",
+			"fb":					"https://www.facebook.com/vote4manny/",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D8%20-%20Manny%20Pelaez.pdf?ver=2017-01-20-170937-337" 
 		}
 	],
 	"9": [
@@ -158,16 +158,6 @@
 		}
 	],
 	"10": [
-		{	"name":				"Clayton Perry",
-			"votes":			"2,715",
-			"votePercent": "21.55",
-			"photo":			"/img/candidates/D10_Perry.jpeg",
-			"website":		"http://claytonperry.org/",
-			"fb":					"https://www.facebook.com/Vote4ClaytonPerry/",
-			"twitter":		"",
-			"instagram":	"",
-			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D10%20-%20Clayton%20Perry.pdf?ver=2017-01-19-141026-043" 
-		},
 		{	"name":				"Ezra A. Johnson",
 			"votes":			"2,733",
 			"votePercent": "21.69",
@@ -177,6 +167,16 @@
 			"twitter":		"",
 			"instagram":	"",
 			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D10%20-%20Ezra%20Johnson.pdf?ver=2017-01-26-093847-290" 
+		},
+		{	"name":				"Clayton Perry",
+			"votes":			"2,715",
+			"votePercent": "21.55",
+			"photo":			"/img/candidates/D10_Perry.jpeg",
+			"website":		"http://claytonperry.org/",
+			"fb":					"https://www.facebook.com/Vote4ClaytonPerry/",
+			"twitter":		"",
+			"instagram":	"",
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/D10%20-%20Clayton%20Perry.pdf?ver=2017-01-19-141026-043" 
 		}
 	],
 	"mayor": [
@@ -188,7 +188,9 @@
 			"fb":					"https://www.facebook.com/nirenberg/",
 			"twitter":		"https://twitter.com/Ron_Nirenberg",
 			"instagram":	"https://www.instagram.com/ron_nirenberg/",
-			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/M%20-%20Ron%20Nirenberg.pdf?ver=2017-01-18-124057-240" 
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/M%20-%20Ron%20Nirenberg.pdf?ver=2017-01-18-124057-240",
+			"video":			"http://video.klrn.org/video/2365928797/",
+			"profile":		"https://therivardreport.com/councilman-ron-nirenberg-from-jazz-to-civic-leadership/" 
 		},
 		{	"name":				"Ivy R. Taylor",
 			"votes":			"41,788",
@@ -198,7 +200,9 @@
 			"fb":					"https://www.facebook.com/IvyRTaylorSA",
 			"twitter":		"https://twitter.com/IvyRTaylor",
 			"instagram":	"https://www.instagram.com/mayor.ivytaylor/",
-			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/Mayor%20-%20Ivy%20R.%20Taylor.pdf?ver=2017-01-18-112207-090" 
+			"filing":			"http://www.sanantonio.gov/Portals/0/Files/Clerk/Elections/2017%20Election/Mayor%20-%20Ivy%20R.%20Taylor.pdf?ver=2017-01-18-112207-090",
+			"video":			"http://video.klrn.org/video/2365894944/",
+			"profile":		"https://therivardreport.com/mayor-ivy-taylor-a-journey-from-planning-to-politics/"  
 		}
 	],
 }

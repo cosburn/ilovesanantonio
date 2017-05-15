@@ -21,7 +21,7 @@ layout: default
         <div class="col-md-4 col-sm-4">
           <div class="number-box number-box--district bg-sa-dark-aqua">
             <p class="number-box--number text-sa-white">{{ site.data.stats[page.district]["turnout"] }}</p>
-            <p class="number-box--description text-sa-white">of registered voters in D{{page.district}} voted in 2015</p>
+            <p class="number-box--description text-sa-white">voters in in the 2017 General Election</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-4">
@@ -42,7 +42,7 @@ layout: default
 </section>
 
 
-<section class="district-body">
+<section class="district-body section-tight">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8">
@@ -53,9 +53,9 @@ layout: default
 				<div class="ballot-box ballot-box--mayor">
 					{% assign mayorCandidates = site.data.candidates["mayor"] %}
 					<h3 class="">Mayor</h3>
-					<p>The Mayor of San Antonio works closely with City Council to pass laws and create policies for the City, as well as the City Manager, who serves as the City’s chief administrator. While City Council members are elected by district, the Mayor represents all of San Antonio (for a two-year term, with a four-term limit). Candidates are listed here as they will appear on the ballot. All information shared is public information.
+					<p>The Mayor of San Antonio works closely with City Council to pass laws and create policies for the City, as well as the City Manager, who serves as the City’s chief administrator. While City Council members are elected by district, the Mayor represents all of San Antonio (for a two-year term, with a four-term limit). Candidates listed in alphabetical order. 
 					</p>
-					<!-- <p class="text-med"><strong>Runoff Candidates:</strong></p> -->
+					<p class="text-med"><strong>Top Two Candidates:</strong></p>
 					
 					<div class="row">
 						{% for candidate in mayorCandidates %}
@@ -69,9 +69,7 @@ layout: default
 										<img class="responsive mobile-hide" src="/img/candidates/no-photo.png" alt="no photo provided" />
 										{% endif %}
 									</div>
-								<!-- </div> -->
-								<!-- <div class="row"> -->
-									<div class="col-sm-7">
+									<div class="col-sm-5 col-md-7">
 										<h4 class="">{{ candidate.name }}</h4>
 
 										<div class="">
@@ -107,21 +105,30 @@ layout: default
 									</div>
 								</div>
 							</div>
+
+							<h5 class="text-mid-gray has-subtitle">Learn More:</h5>
+							<ul class="unstyled">
+								<li>
+									<a href="{{ candidate.video }}" target="_blank" title=""><i class="fa fa-video-camera" aria-hidden="true"></i> KLRN Interview</a></li>
+								<li> 
+									<a href="{{ candidate.profile }}" target="_blank" title=""><i class="fa fa-align-left" aria-hidden="true"></i> Rivard Report Profile</a></li>
+							</ul>
 						</div>
 						{% endfor %}
 					</div>
 				</div>
 
+				{% assign councilCandidates = site.data.candidates[page.district] %}
+				{% assign length = councilCandidates | size %}
+				{% if length > 1 %}
+				
 				<div class="spacer-sm"></div>
 
 				<div class="ballot-box ballot-box--council">
-					{% assign councilCandidates = site.data.candidates[page.district] %}
-					{% assign length = councilCandidates | size %}
-					{% if length > 1 %}
 					<h3 class="">{{ page.title }} City Council Rep</h3>
-					<p>The City of San Antonio is divided into 10 districts, and each district elects one representative to City Council (for a two-year term, with a four-term limit). Together, City Council creates policies and passes laws on city services, capital improvement projects, land use and development, economic development, and other City issues. Candidates are listed here as they will appear on the ballot. All information shared is public information.
+					<p>The City of San Antonio is divided into 10 districts, and each district elects one representative to City Council (for a two-year term, with a four-term limit). Together, City Council creates policies and passes laws on city services, capital improvement projects, land use and development, economic development, and other City issues. All information shared is public information. Candidates listed in alphabetical order. 
 					</p>
-					<!-- <p class="text-med"><strong>Candidates: {{ councilCandidates|size }}</strong></p> -->
+					<p class="text-med"><strong>Top Two Candidates:</strong></p>
 					<!-- <p><a class="show-hide" role="button" data-toggle="collapse" href="#councilCollapse" aria-expanded="false" aria-controls="councilCollapse" onclick="trackInboundLink('Show/Hide','Show/Hide Council Candidates');"><i class="fa fa-caret-down text-med" aria-hidden="true"></i> <span class="toggle-text">Show</span> Candidates</a></p> -->
 					
 					<div class="row">
@@ -176,8 +183,8 @@ layout: default
 
 						{% endfor %}
 					</div><!--/.row-->
-					{% endif %}
 				</div>
+				{% endif %}
 
 			<!-- 	<div class="ballot-box ballot-box--bond">
 					{% assign bondProps = site.data.bond["bond"] %}
@@ -268,134 +275,81 @@ layout: default
 					</div>
 				</div> -->
 
-				<div class="spacer-sm"></div>
-				<h2 class="">General Election Results</h2>
-				<hr />
+				<div class="spacer-sm hidden-mobile"></div>
+				<div class="hidden-mobile">
+					<h2 class="">General Election Results</h2>
+					<hr />
 
-				{% assign councilCandidates = site.data.candidates[page.district] %}
-				{% assign length = councilCandidates | size %}
-				{% if length == 1 %}
+					{% assign councilCandidates = site.data.candidates[page.district] %}
+					{% assign length = councilCandidates | size %}
+					{% if length == 1 %}
+						
+					{% for candidate in councilCandidates %}
+					<h3 class="">{{ page.title }} City Council</h3>
+					<div class="row">
+						<div class="col-sm-3">
+							{% if candidate.photo != "" %}
+							<img class="responsive" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
+							{% else %}
+							<img class="responsive mobile-hide" src="/img/candidates/no-photo.png" alt="no photo provided" />
+							{% endif %}
+						</div>
+						<div class="col-sm-6">
+							<h4 class="has-subtitle">{{ candidate.name }} <strong><span class="text-sa-dark-aqua"><i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></h4>
+							<p class="progress-title text-xsm">Election results: {{ candidate.votePercent }}%</p>
+							<div class="progress">
+							  <div class="progress-bar bg-sa-dark-aqua" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{ candidate.votePercent }}%;">
+							    	{{ candidate.votes }} votes
+							  </div>
+							</div>
+							<!-- <div class="">
+								{% if candidate.website != "" %}
+								<a class="text-sm underline" target="_blank" href="{{ candidate.website }}" title="view website" onclick="trackOutboundLink('{{ candidate.website }}', true, '{{ candidate.name }} Website');">Website</a>
+								{% endif %}
+								{% if candidate.filing != ""  %}
+								| <a class="text-sm underline" target="_blank" href="{{ candidate.filing }}" title="view filing document" onclick="trackOutboundLink('{{ candidate.filing }}', true, '{{ candidate.name }} Filing');">Filing Document</a>
+								{% endif %}
+							</div> -->
+							<div class="social-icons">
+								{% if candidate.fb != ""  %}
+								<a class="text-xl" target="_blank" href="{{ candidate.fb }}" title="view facebook page" onclick="trackOutboundLink('{{ candidate.fb }}', true, '{{ candidate.name }} Facebook');"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+								{% endif %}
+								{% if candidate.twitter != ""  %}
+								<a class="text-xl" target="_blank" href="{{ candidate.twitter }}" title="view twitter page" onclick="trackOutboundLink('{{ candidate.twitter }}', true, '{{ candidate.name }} Twitter');"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+								{% endif %}
+								{% if candidate.instagram != ""  %}
+								<a class="text-xl" target="_blank" href="{{ candidate.instagram }}" title="view instagram" onclick="trackOutboundLink('{{ candidate.instagram }}', true, '{{ candidate.name }} Instagram');"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								{% endif %}
+							</div>
+						</div>
+					</div>
+
+					{% endfor %}
+
+					<div class="spacer-sm"></div>
+
+					{% endif %}
+
+
+					<h3>2017 Municipal Bond</h3>
+					<p><strong>Prop. 1 - Streets, Bridges and Sidewalks Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
+
+					<p><strong>Prop. 2 - Drainage and Flood Control Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
+
+					<p><strong>Prop. 3 - Parks, Recreation and Open Space Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
 					
-				{% for candidate in councilCandidates %}
-				<h3 class="">{{ page.title }} City Council</h3>
-				<div class="row">
-					<div class="col-sm-3">
-						{% if candidate.photo != "" %}
-						<img class="responsive" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
-						{% else %}
-						<img class="responsive mobile-hide" src="/img/candidates/no-photo.png" alt="no photo provided" />
-						{% endif %}
-					</div>
-					<div class="col-sm-6">
-						<h4 class="has-subtitle">{{ candidate.name }}</h4>
-						<p class="progress-title text-xsm">Election results: {{ candidate.votePercent }}%</p>
-						<div class="progress">
-						  <div class="progress-bar bg-sa-dark-aqua" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{ candidate.votePercent }}%;">
-						    	{{ candidate.votes }} votes
-						  </div>
-						</div>
-						<div class="">
-							{% if candidate.website != "" %}
-							<a class="text-sm underline" target="_blank" href="{{ candidate.website }}" title="view website" onclick="trackOutboundLink('{{ candidate.website }}', true, '{{ candidate.name }} Website');">Website</a>
-							{% endif %}
-							{% if candidate.filing != ""  %}
-							| <a class="text-sm underline" target="_blank" href="{{ candidate.filing }}" title="view filing document" onclick="trackOutboundLink('{{ candidate.filing }}', true, '{{ candidate.name }} Filing');">Filing Document</a>
-							{% endif %}
-						</div>
-						<div class="social-icons">
-							{% if candidate.fb != ""  %}
-							<a class="text-xl" target="_blank" href="{{ candidate.fb }}" title="view facebook page" onclick="trackOutboundLink('{{ candidate.fb }}', true, '{{ candidate.name }} Facebook');"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-							{% endif %}
-							{% if candidate.twitter != ""  %}
-							<a class="text-xl" target="_blank" href="{{ candidate.twitter }}" title="view twitter page" onclick="trackOutboundLink('{{ candidate.twitter }}', true, '{{ candidate.name }} Twitter');"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-							{% endif %}
-							{% if candidate.instagram != ""  %}
-							<a class="text-xl" target="_blank" href="{{ candidate.instagram }}" title="view instagram" onclick="trackOutboundLink('{{ candidate.instagram }}', true, '{{ candidate.name }} Instagram');"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							{% endif %}
-						</div>
-					</div>
+					<p><strong>Prop. 4 - Library and Cultural Facilities Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
+					
+					<p><strong>Prop. 5 - Public Safety Facilities Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
+					
+					<p><strong>Prop. 6 - Neighborhood Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
+
+					<div class="spacer-sm"></div>
+
+					<h3>Alamo Colleges Bond</h3>
+					<p><strong>Full Bond: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
+
 				</div>
-
-				{% endfor %}
-
-				<div class="spacer-sm"></div>
-				
-				{% endif %}
-
-
-				<h3>2017 Municipal Bond</h3>
-				<p><strong>Prop. 1 - Streets, Bridges and Sidewalks Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
-				<!-- <div class="row">
-					<div class="col-sm-8">
-						<div class="progress">
-						  <div class="progress-bar bg-cause-civic" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:78.0%;">
-						    	78.0%
-						  </div>
-						</div>
-					</div>
-				</div> -->
-
-				<p><strong>Prop. 2 - Drainage and Flood Control Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
-				<!-- <div class="row">
-					<div class="col-sm-8">
-						<div class="progress">
-						  <div class="progress-bar bg-cause-civic" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:97.4%;">
-						    	97.4%
-						  </div>
-						</div>
-					</div>
-				</div> -->
-
-				<p><strong>Prop. 3 - Parks, Recreation and Open Space Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
-				<!-- <div class="row">
-					<div class="col-sm-8">
-						<div class="progress">
-						  <div class="progress-bar bg-cause-civic" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:70.2%;">
-						    	70.2%
-						  </div>
-						</div>
-					</div>
-				</div> -->
-				
-				<p><strong>Prop. 4 - Library and Cultural Facilities Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
-				<!-- <div class="row">
-					<div class="col-sm-8">
-						<div class="progress">
-						  <div class="progress-bar bg-cause-civic" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:72.6%;">
-						    	72.6%
-						  </div>
-						</div>
-					</div>
-				</div> -->
-				
-				<p><strong>Prop. 5 - Public Safety Facilities Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
-				<!-- <div class="row">
-					<div class="col-sm-8">
-						<div class="progress">
-						  <div class="progress-bar bg-cause-civic" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:	70.0%;">
-						    	70.0%
-						  </div>
-						</div>
-					</div>
-				</div> -->
-				
-				<p><strong>Prop. 6 - Neighborhood Imrprovements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
-				<!-- <div class="row">
-					<div class="col-sm-8">
-						<div class="progress">
-						  <div class="progress-bar bg-cause-civic" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:	67.7%;">
-						    	67.7%
-						  </div>
-						</div>
-					</div>
-				</div> -->
-
-
-				<p></p>
-				<p></p>
-				<p> </p>
-				<p></p>
-				<p></p>
 
 			</div>
 
@@ -404,12 +358,12 @@ layout: default
 				<h3>Important Dates</h3>
 
 				<p class="h4 text-primary has-subtitle">Early Voting</p>
-				<p class="has-subtitle"><strong>April 24 - May 2</strong></p>
-				<p class="subtitle text-sm">Locations: <a href="http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations" title="map" onclick="trackOutboundLink('http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations',true,'Early Voting Locations: Map');">Map</a> | <a href="https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png" title="download list" onclick="trackOutboundLink('https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png',true,'Early Voting Locations: List');">List</a></p>
+				<p class="has-subtitle"><strong>May 30 - June 6</strong></p>
+				<!-- <p class="subtitle text-sm">Locations: <a href="http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations" title="map" onclick="trackOutboundLink('http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations',true,'Early Voting Locations: Map');">Map</a> --><!--  | <a href="https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png" title="download list" onclick="trackOutboundLink('https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png',true,'Early Voting Locations: List');">List</a> --></p>
 
 				<p class="h4 text-primary has-subtitle">Election Day</p>
-				<p class="subtitle"><strong>May 6</strong></p>
-				<!-- <a class="subtitle" href="#">Find your polling place ></a> -->
+				<p class="has-subtitle"><strong>June 10</strong></p>
+				<p><a class="subtitle text-sm" target="_blank" href="https://www.bexar.org/2231/Who-represents-me-Search">Find Your Precinct</a></p>
 
 				<!-- <p class="h4 text-primary has-subtitle">Deadline to Register in Runoff Election</p>
 				<p class="subtitle"><strong>May 11</strong></p>
@@ -433,11 +387,11 @@ layout: default
 						<li><a href="#" title=""><em>League of Women Voters of San Antonio</em> Voter's Guide</a></li> -->
 						
 						<li><a href="http://thinkvoting.com/the-voting-app/" title="The Voting App" target="_blank" onclick="trackOutboundLink('http://thinkvoting.com/the-voting-app/',true,'The Voting App');">The Voting App</a></li>
-						<li><a href="http://www.bexar.org/DocumentCenter/View/4570" title="Download Sample Ballot" target="_blank" onclick="trackOutboundLink('http://www.bexar.org/DocumentCenter/View/4570',true,'Download Sample Ballot');">Download Sample Ballot</a></li>
-						
+						<!-- <li><a href="http://www.bexar.org/DocumentCenter/View/4570" title="Download Sample Ballot" target="_blank" onclick="trackOutboundLink('http://www.bexar.org/DocumentCenter/View/4570',true,'Download Sample Ballot');">Download Sample Ballot</a></li> -->
+						<li><a href="https://therivardreport.com/taylor-nirenberg-runoff-could-pull-voters-off-the-sidelines/" title="Rivard Report Voting Article" target="_blank" onclick="trackOutboundLink('https://therivardreport.com/taylor-nirenberg-runoff-could-pull-voters-off-the-sidelines/',true,'Rivard Report Voting Article');">Rivard Report: "Taylor-Nirenberg Runoff Could Pull Voters Off the Sidelines"</a></li>
 					</ul>
 
-					<h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-play" aria-hidden="true"></i> Watch</h4>
+					<!-- <h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-play" aria-hidden="true"></i> Watch</h4>
 					<ul class="unstyled">
 						<li><a href="http://www.ksat.com/news/ksat-hosts-debate-with-sa-mayoral-candidates" target="_blank" onclick="trackOutboundLink('http://www.ksat.com/news/ksat-hosts-debate-with-sa-mayoral-candidates',true,'KSAT Mayoral Debate 3.2.17');">KSAT-12 and SA Hispanic Chamber Mayoral Debate (3.2.17)</a></li>
 						<li><a href="https://therivardreport.com/mayoral-candidates-sharpen-positions-at-town-hall/" target="_blank" onclick="trackOutboundLink('https://therivardreport.com/mayoral-candidates-sharpen-positions-at-town-hall/',true,'Rivard Report Mayoral Town Hall: 2.8.17');">Rivard Report Mayoral Town Hall: (2.8.17)</a></li>
@@ -452,11 +406,11 @@ layout: default
 						<li><a href="http://tpr.org/post/source-study-shows-abysmally-low-mayoral-voter-turnout-texas#stream/0" target="_blank" onclick="trackOutboundLink('http://tpr.org/post/source-study-shows-abysmally-low-mayoral-voter-turnout-texas#stream/0',true,'The Source: Voter Turnout');">The Source: Voter Turnout in Bexar County (2.14.17)</a></li>
 						<li><a href="https://www.sanantonio.gov/Manager/CityInsider" target="_blank" onclick="trackOutboundLink('https://www.sanantonio.gov/Manager/CityInsider',true,'City Insider Podcast');">City Insider Podcast</a></li>
 					</ul>
-
+ -->
 					<h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-rocket" aria-hidden="true"></i> Do</h4>
 					<ul class="unstyled">
 						<li><a href="http://www.votetexas.gov/?page_id=548" title="What to bring with you to vote" target="_blank" onclick="trackOutboundLink('http://www.votetexas.gov/?page_id=548',true,'Bring these with you to vote');">Bring These With You to Vote</a></li>
-						<li><a href="https://webservices.sos.state.tx.us/vrapp/index.asp" title="Registration Application" target="_blank" onclick="trackOutboundLink('https://webservices.sos.state.tx.us/vrapp/index.asp',true,'Registration Application');">Register: Download and Print Mail-In Application</a></li>
+						<!-- <li><a href="https://webservices.sos.state.tx.us/vrapp/index.asp" title="Registration Application" target="_blank" onclick="trackOutboundLink('https://webservices.sos.state.tx.us/vrapp/index.asp',true,'Registration Application');">Register: Download and Print Mail-In Application</a></li> -->
 						<li><a href="https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio" title="Check your registration" target="_blank" onclick="trackOutboundLink('https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio',true,'Check Your Registration');">Check Your Registration</a></li>
 						<li><a href="http://www.saspeakup.com/" title="2017 Budget Public Process" target="_blank" onclick="trackOutboundLink('http://www.saspeakup.com/',true,'Voice Your 2018 City of San Antonio Budget Priorities');">Voice Your 2018 City of San Antonio Budget Priorities</a></li>
 					</ul>
@@ -482,7 +436,7 @@ layout: default
 
 {% include newsletter.html %}
 
-<section class="faq-cta bg-sa-dark-aqua">
+<section class="faq-cta bg-sa-dark-aqua section-tight">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3 text-center">

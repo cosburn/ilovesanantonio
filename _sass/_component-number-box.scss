@@ -8,8 +8,8 @@
 	flex-wrap: wrap;
 }
 .number-box {
-	width: 90%;
-	padding: 70px 55px;
+	width: 100%;
+	padding: 55px 20px;
 	text-align: center;
 	margin: 10px;
 	margin-bottom: 20px;
@@ -23,7 +23,7 @@
 	}
 	.number-box--number {
 		font-family: $headline-type;
-		@include font-size(8.5);
+		@include font-size(6.5);
 		line-height: .9;
 		font-weight: 700;
 	}

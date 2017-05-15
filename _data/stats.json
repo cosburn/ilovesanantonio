@@ -1,6 +1,6 @@
 {
 	"1": {
-		"turnout": 		"14.6%",
+		"turnout": 		"10,314",
 		"size":				"22",
 		"population":	"112,465",
 		"income":			"$16,452",
@@ -8,7 +8,7 @@
 		"map-thumb":	"/img/maps/d1.png"
 	},
 	"2": {
-		"turnout": 		"9.5%",
+		"turnout": 		"6,843",
 		"size":				"55",
 		"population":	"123,533",
 		"income":			"$14,512",
@@ -16,7 +16,7 @@
 		"map-thumb":	"/img/maps/d2.png"
 	},
 	"3": {
-		"turnout": 		"12.3%",
+		"turnout": 		"7,712",
 		"size":				"92",
 		"population":	"118,883",
 		"income":			"$11,651",
@@ -24,7 +24,7 @@
 		"map-thumb":	"/img/maps/d3.png"
 	},
 	"4": {
-		"turnout": 		"8.8%",
+		"turnout": 		"5,377",
 		"size":				"63",
 		"population":	"123,165",
 		"income":			"$11,914",
@@ -32,7 +32,7 @@
 		"map-thumb":	"/img/maps/d4.png"
 	},
 	"5": {
-		"turnout": 		"8.3%",
+		"turnout": 		"5,707",
 		"size":				"19",
 		"population":	"106,589",
 		"income":			"$9,149",
@@ -40,7 +40,7 @@
 		"map-thumb":	"/img/maps/d5.png"
 	},
 	"6": {
-		"turnout": 		"9.6%",
+		"turnout": 		"8,982",
 		"size":				"57",
 		"population":	"152,533",
 		"income":			"$15,224",
@@ -48,7 +48,7 @@
 		"map-thumb":	"/img/maps/d6.png"
 	},
 	"7": {
-		"turnout": 		"14.2%",
+		"turnout": 		"12,663",
 		"size":				"30",
 		"population":	"137,533",
 		"income":			"$19,081",
@@ -56,7 +56,7 @@
 		"map-thumb":	"/img/maps/d7.png"
 	},
 	"8": {
-		"turnout": 		"13.3%",
+		"turnout": 		"12,834",
 		"size":				"59",
 		"population":	"159,568",
 		"income":			"$28,345",
@@ -64,7 +64,7 @@
 		"map-thumb":	"/img/maps/d8.png"
 	},
 	"9": {
-		"turnout": 		"15.9%",
+		"turnout": 		"16,130",
 		"size":				"55",
 		"population":	"159,214",
 		"income":			"$31,302",
@@ -72,7 +72,7 @@
 		"map-thumb":	"/img/maps/d9.png"
 	},
 	"10": {
-		"turnout": 		"14.1%",
+		"turnout": 		"13,873",
 		"size":				"51",
 		"population":	"133,045",
 		"income":			"$22,822",

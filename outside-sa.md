@@ -6,9 +6,9 @@ permalink: /outside-sa/
 hero-img: https://www.sa2020.org/wp-content/uploads/2017/03/bg-map-outside-sa.png
 ---
 
-## Don’t live in San Antonio? You can still participate.
+## Don’t live in San Antonio? Find out more about your city or municipality.
 
-Select your Bexar County city or municipality for more information on elections in your area.
+Select your Bexar County city or municipality for more information on elected officials in your area.
 
 ---------
 
