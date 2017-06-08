@@ -58,6 +58,9 @@ input[type="button"] {
 button.hamburger {
   min-width: 0;
   padding: 5px;
+  &.hamburger-main-nav { 
+    margin-left: 40px; 
+  }
 }
 
 // Button loop
