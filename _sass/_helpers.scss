@@ -13,8 +13,18 @@
 .pull-right {
   float: right;
 }
+.mobile-pull-right {
+  @media screen and (max-width: 600px) {
+    float: right !important;
+  }
+}
 .pull-left {
   float: left;
+}
+.mobile-pull-left {
+  @media screen and (max-width: 600px) {
+    float: left !important;
+  }
 }
 .uppercase {
   text-transform: uppercase;
