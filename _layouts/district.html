@@ -20,8 +20,22 @@ layout: default
 			<div class="row">
         <div class="col-md-4 col-sm-4">
           <div class="number-box number-box--district bg-sa-dark-aqua">
+          	{% if page.district == "3" %}
             <p class="number-box--number text-sa-white">{{ site.data.stats[page.district]["turnout"] }}</p>
             <p class="number-box--description text-sa-white">voters in in the 2017 General Election</p>
+            {% elsif page.district == "4" %}
+            <p class="number-box--number text-sa-white">{{ site.data.stats[page.district]["turnout"] }}</p>
+            <p class="number-box--description text-sa-white">voters in in the 2017 General Election</p>
+            {% elsif page.district == "5" %}
+            <p class="number-box--number text-sa-white">{{ site.data.stats[page.district]["turnout"] }}</p>
+            <p class="number-box--description text-sa-white">voters in in the 2017 General Election</p>
+            {% elsif page.district == "7" %}
+            <p class="number-box--number text-sa-white">{{ site.data.stats[page.district]["turnout"] }}</p>
+            <p class="number-box--description text-sa-white">voters in in the 2017 General Election</p>
+            {% else %}
+            <p class="number-box--number text-sa-white">{{ site.data.stats[page.district]["turnout"] }}</p>
+            <p class="number-box--description text-sa-white">voters in in the 2017 Runoff Election</p>
+            {% endif %}
           </div>
         </div>
         <div class="col-md-4 col-sm-4">
@@ -48,97 +62,6 @@ layout: default
 			<div class="col-md-8">
 				<div class="addthis_inline_share_toolbox pull-right clearfix"></div>
 
-				
-
-			<!-- 	<div class="ballot-box ballot-box--bond">
-					{% assign bondProps = site.data.bond["bond"] %}
-					{% assign bondTotal = site.data.bond["districtTotals"][page.district] %}
-
-
-					<h3>2017 Bond</h3>
-					<p>A municipal bond allows a city to borrow money in order to fund public projects and improvements. San Antonio’s 2017 Bond Program totals $850 million and is made up of 6 propositions (streets; drainage and flood control; parks, recreation, and open space; library and cultural facilities; public safety facilities; and neighborhoods), with pre-determined projects developed by a committee of community members. 
-					<p/>
-					<p>On the ballot, you'll be able to vote either FOR or AGAINST each Proposition individually.</p>
-					<p><strong>Fun facts:</strong> there will be no property tax increases as part of the 2017 Bond, and every San Antonian lives or works within one mile of a planned Bond project. (Find yours on <a href="https://qagis.sanantonio.gov/tci/proposedbonds2017/" title="bond project map" target="_blank" onclick="trackOutboundLink('https://qagis.sanantonio.gov/tci/proposedbonds2017/', true, 'Bond Project Map');">this map!</a>)
-					</p>
-					<p class="underline"><a href="http://www.sanantonio.gov/2017Bond/InfoGuide" title="learn more about the 2017 bond" target="_blank" onclick="trackOutboundLink('http://www.sanantonio.gov/2017Bond/InfoGuide', true, '2017 Bond Guide');">View Full Bond Guide</a></p>
-
-					<p><a class="show-hide" role="button" data-toggle="collapse" href="#bondCollapse" aria-expanded="false" aria-controls="bondCollapse" onclick="trackInboundLink('Show/Hide','Show/Hide Bond Propositions');"><i class="fa fa-caret-down text-med" aria-hidden="true"></i> <span class="toggle-text">Show</span> Bond Propositions</a>
-					</p>
-					
-					<div class="collapse" id="bondCollapse">
-						{% for prop in bondProps %}
-						<div class="option-box option-box--bond">
-							<h5>{{ prop.title }}</h5>
-							<p class="text-sm">{{ prop.description }}</p>
-							<p>Total allocated: <span class="bg-cause-civic bond-percent">{{ prop.total }}</span></p>
-							<p>Percent of total bond: <span class="bg-cause-civic bond-percent">{{ prop.percent }}%</span></p>
-							<p>Number of projects: <span class="bg-cause-civic bond-percent">{{ prop.projects }}</span></p>
-						</div>
-						{% endfor %}
-					</div>
-				</div>
-
-				<div class="ballot-box ballot-box--ac-bond">
-					<h3>Alamo Colleges Bond</h3>
-					<p>The Alamo Colleges Bond is a $450 million package for improvements to all of the Alamo Colleges District’s schools located throughout the city. The bond will also fund new facilities to support San Antonio’s educational priorities and in anticipation of continued population growth. Just like the City of San Antonio’s 2017 Bond, the Alamo Colleges Bond will not require a property tax increase.
-					</p>
-					<p><a class="underline" href="http://www.alamo.edu/Bond/" title="Alamo Colleges Bond Guide" target="_blank" onclick="trackOutboundLink('http://www.alamo.edu/Bond/', true, 'View Alamo Colleges Bond Guide');">View Full Bond Guide</a></p>
-				</div>
-
-				<div class="ballot-box ballot-box--schools">
-					{% assign schools = site.data.schools["candidates"] %}
-					{% assign district = page.title %}
-					{% assign districtSchools = site.data.schools["districts"][0][page.title] %}
-
-					<h3>School Board</h3>
-					<p>Each San Antonio school district is governed by a school board made up of elected district residents. These board members - or trustees - create policies for the school district, adopt annual budgets and set tax rates, report district progress to the public, and more.</p>
-					<p>School districts are further divided by districts (or positions or places), and residents vote for a representative from their district. School districts overlap into several City Council districts. <a class="underline" href="https://www.bexar.org/2231/Precinct-Finder" title="find you school district" target="_blank">Click here to find out what district you live in.</a></p>
-					</p>
-					<p><a class="show-hide show" role="button" data-toggle="collapse" href="#schoolsCollapse" aria-expanded="false" aria-controls="bondCollapse" onclick="trackInboundLink('Show/Hide','Show/Hide School Board Candidates');"><i class="fa fa-caret-down text-med" aria-hidden="true"></i> <span class="toggle-text">Show</span> School Board Candidates</a></p>
-					
-					<div class="collapse" id="schoolsCollapse">
-						{% for school in districtSchools %}
-						{% assign candidates = schools[school] %}
-						<div class="option-box option-box--schools">
-							{% assign website = site.data.schools["websites"][school] %}
-							{% if site.data.schools["bonds"][school] %}
-								{% assign bondInfo = site.data.schools["bonds"][school] %}
-							{% else %}
-								{% assign bondInfo = "" %}
-							{% endif %}
-							<p class="h4 has-subtitle">{{ school }}</p>
-							<a href="{{ website }}" target="_blank" class="text-sm subtitle" title="school board website" onclick="trackOutboundLink('{{ website }}', true, '{{ school }} Website');">View Website</a>
-							{% if bondInfo != "" %}
-								<p class="has-subtitle"><strong>{{ school }} has a bond on the upcoming ballot.</strong></p>
-								{% if bondInfo[1] != "" %}
-								{% assign bondBlurb = bondInfo[1] %}
-								<p class="text-sm">{{ bondBlurb }}</p>
-								{% endif %}
-								{% if bondInfo[0] != "" %}
-								{% assign bondWebsite = bondInfo[0] %}
-								<p class="text-sm subtitle"><a target="_blank" href="{{ bondWebsite }}" title="learn more about bond">Learn more</a></p>
-								{% endif %}
-							{% endif %}
-
-							<ul class="unstyled">
-								{% for candidate_hash in candidates %}
-								{% for candidate in candidate_hash %}
-								<li><strong>{{ candidate[0] }}</strong>
-									<ul class="unstyled">
-										{% for name in candidate[1] %}
-										<li>{{ name }}</li>
-										{% endfor %}
-									</ul>
-								</li>
-								{% endfor %}
-								{% endfor %}
-							</ul>
-						</div>
-						{% endfor %}
-					</div>
-				</div> -->
-
 				<h2 class="">Election Results</h2>
 				<hr />
 				<h3 class="">Mayor</h3>
@@ -151,9 +74,9 @@ layout: default
 
 					<div class="col-sm-3">
 						{% if candidate.photo != "" %}
-						<img class="responsive" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
+						<img class="responsive district-page-results" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
 						{% else %}
-						<img class="responsive mobile-hide" src="/img/candidates/no-photo.png" alt="no photo provided" />
+						<img class="responsive district-page-results mobile-hide" src="/img/candidates/no-photo.png" alt="no photo provided" />
 						{% endif %}
 					</div>
 					<div class="col-sm-6">
@@ -199,9 +122,9 @@ layout: default
 				<div class="row">
 					<div class="col-sm-3">
 						{% if candidate.photo != "" %}
-						<img class="responsive" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
+						<img class="responsive district-page-results" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
 						{% else %}
-						<img class="responsive mobile-hide" src="/img/candidates/no-photo.png" alt="no photo provided" />
+						<img class="responsive district-page-results mobile-hide" src="/img/candidates/no-photo.png" alt="no photo provided" />
 						{% endif %}
 					</div>
 					<div class="col-sm-6">
@@ -210,6 +133,9 @@ layout: default
 						<div class="">
 							{% if candidate.cityLink != "" %}
 							<a class="text-sm underline subtitle" target="_blank" href="{{ candidate.cityLink }}" title="view city webpage" onclick="trackOutboundLink('{{ candidate.cityLink }}', true, '{{ candidate.name }} City Page');">Learn More About {{candidate.name}}</a>
+							{% endif %}
+							{% if candidate.phone != "" %}
+							<p class="text-sm">Contact Office: {{ candidate.phone }}</p>
 							{% endif %}
 						</div>
 
