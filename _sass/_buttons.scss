@@ -75,7 +75,7 @@ button.hamburger {
     }
   }
   .btn.btn-outline-#{$color} {
-    color: col("primary");
+    color: col($color);
     background-color: transparent;
     border-color: $hex;
     &:hover {
