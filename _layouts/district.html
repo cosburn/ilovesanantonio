@@ -2,14 +2,6 @@
 layout: default
 ---
 
-<!-- <section class="bg-secondary" style="padding:3px;">
-	<div class="row">
-		<div class="col-md-12">
-			<p class="h4 uppercase text-center text-sa-white">{{ page.title }} is in a council runoff!</p>
-		</div>
-	</div>
-</section> -->
-
 <section class="hero has-bg-img bg-color-overlay-tertiary" style="background-image: url('/img/maps/bg-map-d{{page.district}}.png')">
 	<div class="container">
 		<div class="row">
@@ -62,7 +54,7 @@ layout: default
 			<div class="col-md-8">
 				<div class="addthis_inline_share_toolbox pull-right clearfix"></div>
 
-				<h2 class="">Election Results</h2>
+				<h2 class="">{{ page.title }} Representatives</h2>
 				<hr />
 				<h3 class="">Mayor</h3>
 				<div class="row">
@@ -80,21 +72,8 @@ layout: default
 						{% endif %}
 					</div>
 					<div class="col-sm-6">
-						<h4 class="has-subtitle">{{ candidate.name }} <strong><span class="text-sa-dark-aqua"><i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></h4>
-						<p class="progress-title text-xsm">Runoff Election results: {{ candidate.votePercent }}%</p>
-						<div class="progress">
-						  <div class="progress-bar bg-sa-dark-aqua" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{ candidate.votePercent }}%;">
-						    	{{ candidate.votes }} votes
-						  </div>
-						</div>
-						<!-- <div class="">
-							{% if candidate.website != "" %}
-							<a class="text-sm underline" target="_blank" href="{{ candidate.website }}" title="view website" onclick="trackOutboundLink('{{ candidate.website }}', true, '{{ candidate.name }} Website');">Website</a>
-							{% endif %}
-							{% if candidate.filing != ""  %}
-							| <a class="text-sm underline" target="_blank" href="{{ candidate.filing }}" title="view filing document" onclick="trackOutboundLink('{{ candidate.filing }}', true, '{{ candidate.name }} Filing');">Filing Document</a>
-							{% endif %}
-						</div> -->
+						<h4 class="has-subtitle">{{ candidate.name }}</h4>
+						
 						<div class="social-icons">
 							{% if candidate.fb != ""  %}
 							<a class="text-xl" target="_blank" href="{{ candidate.fb }}" title="view facebook page" onclick="trackOutboundLink('{{ candidate.fb }}', true, '{{ candidate.name }} Facebook');"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
@@ -128,7 +107,7 @@ layout: default
 						{% endif %}
 					</div>
 					<div class="col-sm-6">
-						<h4 class="has-subtitle">{{ candidate.name }} <strong><span class="text-sa-dark-aqua"><i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></h4>
+						<h4 class="has-subtitle">{{ candidate.name }}</h4>
 
 						<div class="">
 							{% if candidate.cityLink != "" %}
@@ -139,12 +118,7 @@ layout: default
 							{% endif %}
 						</div>
 
-						<p class="progress-title text-xsm">Election results: {{ candidate.votePercent }}%</p>
-						<div class="progress">
-						  <div class="progress-bar bg-sa-dark-aqua" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{ candidate.votePercent }}%;">
-						    	{{ candidate.votes }} votes
-						  </div>
-						</div>
+						
 						<div class="social-icons">
 							{% if candidate.fb != ""  %}
 							<a class="text-xl" target="_blank" href="{{ candidate.fb }}" title="view facebook page" onclick="trackOutboundLink('{{ candidate.fb }}', true, '{{ candidate.name }} Facebook');"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
@@ -166,53 +140,9 @@ layout: default
 				{% endif %}
 
 
-				<h3>2017 Municipal Bond</h3>
-				<p><strong>Prop. 1 - Streets, Bridges and Sidewalks Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
-
-				<p><strong>Prop. 2 - Drainage and Flood Control Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
-
-				<p><strong>Prop. 3 - Parks, Recreation and Open Space Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
-				
-				<p><strong>Prop. 4 - Library and Cultural Facilities Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
-				
-				<p><strong>Prop. 5 - Public Safety Facilities Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
-				
-				<p><strong>Prop. 6 - Neighborhood Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
-
-				<div class="spacer-sm"></div>
-
-				<h3>Alamo Colleges Bond</h3>
-				<p><strong>Full Bond: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
-
-				<div class="spacer-sm desktop-hide"></div>
-
 			</div>
 
 			<div class="col-md-3 col-md-offset-1">
-
-				<!-- <h3>Important Dates</h3>
-
-				<p class="h4 text-primary has-subtitle">Early Voting</p>
-				<p class="has-subtitle"><strong>May 30 - June 6</strong></p>
-			  <p class="subtitle text-sm">Locations: --> <!-- <a href="http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations" title="map" onclick="trackOutboundLink('http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations',true,'Early Voting Locations: Map');">Map</a>   |  --><!-- <a href=" http://www.sa2020.org/wp-content/uploads/2017/05/2017-June-Runoff-Early-Voting.png" title="download list" onclick="trackOutboundLink(' http://www.sa2020.org/wp-content/uploads/2017/05/2017-June-Runoff-Early-Voting.png',true,'Early Voting Locations: List');">List</a></p> -->
-
-				<!-- <p class="h4 text-primary has-subtitle">Election Day</p>
-				<p class="has-subtitle"><strong>June 10</strong></p>
-				<p><a class="subtitle text-sm" target="_blank" href="https://www.bexar.org/2231/Who-represents-me-Search">Find Your Precinct</a></p> -->
-
-				<!-- <p class="h4 text-primary has-subtitle">Deadline to Register in Runoff Election</p>
-				<p class="subtitle"><strong>May 11</strong></p>
-
-				<p class="h4 text-primary has-subtitle">Potential Runoff Election</p>
-				<p class="subtitle"><strong>June 10</strong></p>
-
-				
-				<p class="h4 text-primary has-subtitle">Forums, Debates &amp; More</p>
-				<p class="has-subtitle text-sm"><strong>For all upcoming events: <br />
-					<a href="https://www.sa2020.org/blog/civic-engagement/get-ready-for-san-antonios-local-election/" class="" onclick="trackOutboundLink('https://www.sa2020.org/blog/civic-engagement/get-ready-for-san-antonios-local-election/',true,'SA2020 Blog');" title="SA2020 Blog with latest election events">SA2020 Blog</a>
-				</strong></p> -->
-
-				<!-- <hr /> -->
 
 				<h3>{{ page.title }} Map</h3>
 
@@ -225,8 +155,9 @@ layout: default
 
 				<hr />
 
+				<h3>{{ page.title }} Facts</h3>
 
-				<h3 class="">Stay Involved</h3>
+				<!-- <h3 class="">Stay Involved</h3>
 				<div class="resources-list">
 					<ul class="unstyled">
 						<li><a href="https://webservices.sos.state.tx.us/vrapp/index.asp" title="Register to Vote" target="_blank" onclick="trackOutboundLink('https://webservices.sos.state.tx.us/vrapp/index.asp',true,'Register to vote');">Register to Vote</a></li>
@@ -236,7 +167,7 @@ layout: default
 						<li><a href="http://www.sa2020.org/" title="SA Tomorrow" target="_blank" onclick="trackOutboundLink('http://www.sa2020.org/',true,'Be part of San Antonios Progress');">Be part of San Antonio's Progress</a></li>
 					</ul>
 				
-				</div>
+				</div> -->
 
 			</div>
 		</div>
