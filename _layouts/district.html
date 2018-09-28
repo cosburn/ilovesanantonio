@@ -14,19 +14,19 @@ layout: default
           <div class="number-box number-box--district bg-sa-dark-aqua">
           	{% if page.district == "3" %}
             <p class="number-box--number text-sa-white">{{ site.data.stats[page.district]["turnout"] }}</p>
-            <p class="number-box--description text-sa-white">voters in in the 2017 General Election</p>
+            <p class="number-box--description text-sa-white">voters in the 2017 General Election</p>
             {% elsif page.district == "4" %}
             <p class="number-box--number text-sa-white">{{ site.data.stats[page.district]["turnout"] }}</p>
-            <p class="number-box--description text-sa-white">voters in in the 2017 General Election</p>
+            <p class="number-box--description text-sa-white">voters in the 2017 General Election</p>
             {% elsif page.district == "5" %}
             <p class="number-box--number text-sa-white">{{ site.data.stats[page.district]["turnout"] }}</p>
-            <p class="number-box--description text-sa-white">voters in in the 2017 General Election</p>
+            <p class="number-box--description text-sa-white">voters in the 2017 General Election</p>
             {% elsif page.district == "7" %}
             <p class="number-box--number text-sa-white">{{ site.data.stats[page.district]["turnout"] }}</p>
-            <p class="number-box--description text-sa-white">voters in in the 2017 General Election</p>
+            <p class="number-box--description text-sa-white">voters in the 2017 General Election</p>
             {% else %}
             <p class="number-box--number text-sa-white">{{ site.data.stats[page.district]["turnout"] }}</p>
-            <p class="number-box--description text-sa-white">voters in in the 2017 Runoff Election</p>
+            <p class="number-box--description text-sa-white">voters in the June 2017 Election</p>
             {% endif %}
           </div>
         </div>
@@ -148,7 +148,7 @@ layout: default
 
 				{% assign largerMapLink = site.data.stats[page.district]['map'] %}
 
-				<a href="{{ site.data.stats[page.district]['map'] }}" target="_blank" title="View larger map">
+				<a href="{{ largerMapLink }}" target="_blank" title="View larger map">
 					<img class="responsive map-thumb" src="{{ site.data.stats[page.district]['map-thumb'] }}" />
 				</a>
 				<p class="text-sm"><a href="{{ largerMapLink }}" target="_blank" title="View larger map" onclick="trackOutboundLink('{{ largerMapLink }}',true,'District {{ page.district }} Map');">View larger PDF >></a></p>
@@ -156,6 +156,12 @@ layout: default
 				<hr />
 
 				<h3>{{ page.title }} Facts</h3>
+				{% assign largerFactsLink = site.data.stats[page.district]['facts'] %}
+
+				<a href="{{ largerFactsLink }}" target="_blank" title="View larger facts">
+					<img class="responsive map-thumb" src="{{ site.data.stats[page.district]['facts-thumb'] }}" />
+				</a>
+				<p class="text-sm"><a href="{{ largerFactsLink }}" target="_blank" title="View larger facts" onclick="trackOutboundLink('{{ largerFactsLink }}',true,'District {{ page.district }} Facts');">View larger PDF >></a></p>
 
 				<!-- <h3 class="">Stay Involved</h3>
 				<div class="resources-list">

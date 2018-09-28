@@ -79,7 +79,7 @@ p strong { font-weight: 700; }
 
 a {
   color: $link-color;
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: 200;
  }
 a:hover { color: $link-hover; cursor: pointer; }

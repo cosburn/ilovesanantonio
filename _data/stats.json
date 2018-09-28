@@ -5,7 +5,9 @@
 		"population":	"112,465",
 		"income":			"$16,452",
 		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD1-Map8.5x11.pdf",
-		"map-thumb":	"/img/maps/d1.png"
+		"map-thumb":	"/img/maps/d1.png",
+		"facts":			"/img/district-facts/D1.pdf",
+		"facts-thumb":"/img/district-facts/d1.png"
 	},
 	"2": {
 		"turnout": 		"6,900",
@@ -13,7 +15,9 @@
 		"population":	"123,533",
 		"income":			"$14,512",
 		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD2-Map8.5x11.pdf",
-		"map-thumb":	"/img/maps/d2.png"
+		"map-thumb":	"/img/maps/d2.png",
+		"facts":			"/img/district-facts/D2.pdf",
+		"facts-thumb":"/img/district-facts/d2.png"
 	},
 	"3": {
 		"turnout": 		"7,712",
@@ -21,7 +25,9 @@
 		"population":	"118,883",
 		"income":			"$11,651",
 		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD3-Map8.5x11.pdf",
-		"map-thumb":	"/img/maps/d3.png"
+		"map-thumb":	"/img/maps/d3.png",
+		"facts":			"/img/district-facts/D3.pdf",
+		"facts-thumb":"/img/district-facts/d3.png"
 	},
 	"4": {
 		"turnout": 		"5,377",
@@ -29,7 +35,9 @@
 		"population":	"123,165",
 		"income":			"$11,914",
 		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD4-Map8.5x11.pdf",
-		"map-thumb":	"/img/maps/d4.png"
+		"map-thumb":	"/img/maps/d4.png",
+		"facts":			"/img/district-facts/D4.pdf",
+		"facts-thumb":"/img/district-facts/d4.png"
 	},
 	"5": {
 		"turnout": 		"5,707",
@@ -37,7 +45,9 @@
 		"population":	"106,589",
 		"income":			"$9,149",
 		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD5-Map8.5x11.pdf",
-		"map-thumb":	"/img/maps/d5.png"
+		"map-thumb":	"/img/maps/d5.png",
+		"facts":			"/img/district-facts/D5.pdf",
+		"facts-thumb":"/img/district-facts/d5.png"
 	},
 	"6": {
 		"turnout": 		"9,238",
@@ -45,7 +55,9 @@
 		"population":	"152,533",
 		"income":			"$15,224",
 		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD6-Map8.5x11.pdf",
-		"map-thumb":	"/img/maps/d6.png"
+		"map-thumb":	"/img/maps/d6.png",
+		"facts":			"/img/district-facts/D6.pdf",
+		"facts-thumb":"/img/district-facts/d6.png"
 	},
 	"7": {
 		"turnout": 		"12,663",
@@ -53,7 +65,9 @@
 		"population":	"137,533",
 		"income":			"$19,081",
 		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD7-Map8.5x11.pdf",
-		"map-thumb":	"/img/maps/d7.png"
+		"map-thumb":	"/img/maps/d7.png",
+		"facts":			"/img/district-facts/D7.pdf",
+		"facts-thumb":"/img/district-facts/d7.png"
 	},
 	"8": {
 		"turnout": 		"13,375",
@@ -61,7 +75,9 @@
 		"population":	"159,568",
 		"income":			"$28,345",
 		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD8-Map8.5x11.pdf",
-		"map-thumb":	"/img/maps/d8.png"
+		"map-thumb":	"/img/maps/d8.png",
+		"facts":			"/img/district-facts/D8.pdf",
+		"facts-thumb":"/img/district-facts/d8.png"
 	},
 	"9": {
 		"turnout": 		"16,921",
@@ -69,7 +85,9 @@
 		"population":	"159,214",
 		"income":			"$31,302",
 		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD9-Map8.5x11.pdf",
-		"map-thumb":	"/img/maps/d9.png"
+		"map-thumb":	"/img/maps/d9.png",
+		"facts":			"/img/district-facts/D9.pdf",
+		"facts-thumb":"/img/district-facts/d9.png"
 	},
 	"10": {
 		"turnout": 		"14,146",
@@ -77,6 +95,8 @@
 		"population":	"133,045",
 		"income":			"$22,822",
 		"map":				"http://www.sanantonio.gov/Portals/0/Files/GIS/PoliticalMaps/CCD10-Map8.5x11.pdf",
-		"map-thumb":	"/img/maps/d10.png"
+		"map-thumb":	"/img/maps/d10.png",
+		"facts":			"/img/district-facts/D10.pdf",
+		"facts-thumb":"/img/district-facts/d10.png"
 	}
 }
